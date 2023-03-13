@@ -1,0 +1,211 @@
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[letterpaper,margin=0.8in,nohead]{geometry}
+
+\usepackage[colorlinks]{hyperref}
+\usepackage{url}
+\usepackage{breakurl}
+
+\hypersetup{
+    colorlinks,
+    linkcolor={red},
+    citecolor={red},
+    urlcolor={blue}
+}
+
+\usepackage{verbatim}
+\usepackage{fancyvrb}
+\usepackage{scrextend}
+\usepackage{enumitem}
+\usepackage{url}
+\usepackage{tabularx}
+
+\usepackage{caption}
+\usepackage{graphicx}
+\usepackage{subcaption}
+
+\usepackage{changepage}   % for the adjustwidth environment
+
+\newenvironment{answer}{\em \color{blue} \begin{adjustwidth}{1cm}{1cm}}{\end{adjustwidth}}
+
+% math
+\usepackage{amsthm,amsmath}
+\usepackage{amsfonts}
+
+\newcommand{\mc}[1]{\mathcal{#1}}	% Mechanisms / Algorithms
+\newcommand{\rv}[1]{\mathbf{#1}}    % Random variable
+
+\newcommand{\pr}[1]{\mathrm{Pr}\{#1\}} % Probability
+
+\newtheorem{corollary}{\bf Corollary}%[theorem]
+\newtheorem{lemma}{\bf Lemma}%[theorem]
+\newtheorem{definition}{\bf Definition}%[section]
+
+\newtheorem{observation}{\bf Observation}%[theorem]
+
+% load cleveref last!
+\usepackage[capitalise]{cleveref}
+
+
+\begin{document}
+
+\title{EN4720: Security in Cyber-Physical Systems \\Exercise --- Big Security Breaches and Exploring CVE}
+
+%% This is an individual assignment!!
+%% TODO: put your name and index number here here!
+\author{ \textcolor{blue}{Name: Thalagala B. P.} \\ \textcolor{blue}{Index No: 180631J}}
+
+\maketitle
+
+\begin{center}
+	\color{red}\bf This is an individual exercise! \\ Due Date: 17 March 2023 by 11.59 PM
+\end{center}
+
+\section*{Big Security Breaches}
+%
+
+It is important that you keep yourself up to date on previous and contemporary computer security breaches. Find real-world examples of breaches of Confidentiality, Integrity, Availability, Authentication, Authorization, and Non-repudiation using the Internet and fill the following table. Add a three-four sentence explanation for each example.
+
+You can refer to books, web pages, research publications to gather the information. Feel free to copy-paste from the source, but make sure you add the citation. The first row is filled for you as an example.
+
+\begin{table}[htbp]
+    \caption{Real-world examples of security breaches.
+    }
+    \begin{tabularx}{\columnwidth}{|p{3cm}|p{3cm}|X|}
+        \hline
+        \textbf{Security Goal} & \textbf{Example} & \textbf{Explanation}  \\
+        
+        \hline
+        \textcolor{blue}{Confidentiality} & 
+        \textcolor{blue}{Apache Struts vulnerability} & 
+        \textcolor{blue}{An Apache Struts vulnerability allowed hackers to steal data on 143 million Equifax customers~\cite{luszcz2018apache}. Struts is vulnerable to remote command injection attacks through incorrectly parsing an attacker’s invalid Content-Type HTTP header. The Struts vulnerability allows these commands to be executed under the privileges of the Web server. This resulted in sensitive data leakage~\cite{apachestruts}.}
+        \\ \hline
+        
+        \hline
+        Confidentiality & 
+        &
+        \\ \hline
+        
+        \hline
+        Integrity & 
+        &
+        \\ \hline
+        
+        \hline
+        Availability & 
+        &
+        \\ \hline
+        
+        \hline
+        Authentication & 
+        &
+        \\ \hline
+        
+        \hline
+        Authorization & 
+        &
+        \\ \hline
+        
+        \hline
+        Non-Repudiation &
+        &
+        \\ \hline
+        
+        
+    \end{tabularx}
+\end{table}
+
+The following sites may help you to get started:
+\begin{itemize}
+    \item http://www.networkworld.com/topics/security.html
+    \item http://www.zdnet.com.au/topic/security/ 
+\end{itemize}
+
+Furthermore, as security professionals, it is important that we stay updated. Below are some resources that you can use to stay updated. 
+
+\begin{table}[htbp]
+    \caption{Channels to stay informed.
+    }
+    \begin{tabularx}{\columnwidth}{|X|X|X|X|}
+        \hline
+        \textbf{Technology Partners} & \textbf{Government}       & \textbf{Security Organizations} & \textbf{Security News Sites}  \\
+        
+        \hline
+        Microsoft & 
+        US-CERT & 
+        SANS ISC &
+        Dark Reading
+        \\ \hline
+        
+        \hline
+        Red Hat & 
+        NIST NVD & 
+        &
+        The Hacker News
+        \\ \hline
+        
+        \hline
+        Ubuntu & 
+        SLCERT &
+        &
+        CSO Online
+        \\ \hline
+    \end{tabularx}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%
+
+\section*{Exploring CVE}
+%
+
+CVE, short for Common Vulnerabilities and Exposures, is a list of publicly disclosed computer security flaws. Learn more about CVE \href{https://www.redhat.com/en/topics/security/what-is-cve}{here}. 
+
+Search the CVE database at \href{https://cve.mitre.org/}{cve.mitre.org} for vulnerabilities in one of the smartphone apps you use. Study a few of them carefully to get a sense of how beneficial this database can be for a security professional. Identify five flaws in your selected app and fill out the table below. 
+
+\begin{itemize}
+    \item Column 1: CVE ID of the vulnerability.
+    \item Column 2: A brief description of the vulnerability in a way that a novice user can understand.
+    \item Column 3: Which security goal (out of the CIA triad) is breached as a result of the vulnerability.
+    \item Column 4: Add the title and URL for any known real-life incidents.
+\end{itemize}
+
+\begin{table}[htbp]
+    \caption{Vulnerabilities in a smartphone application.
+    }
+    \begin{tabularx}{\columnwidth}{|X|X|p{3cm}|X|}
+        \hline
+        \textbf{Vulnerability} & \textbf{Brief Description} & \textbf{Breach of security goal} & \textbf{Any known real-life case with URL}\\
+        
+        \hline
+        & 
+        &
+        &
+        \\ \hline
+        
+        & 
+        &
+        &
+        \\ \hline
+        
+        &
+        &
+        &
+        \\\hline
+        
+        &
+        &
+        &
+        \\\hline
+        
+        &
+        &
+        &
+        \\\hline
+    \end{tabularx}
+\end{table}
+
+
+\bibliographystyle{plain} % We choose the &quot;plain&quot; reference style
+\bibliography{refs} % Entries are in the &quot;refs.bib&quot; file</code></pre>
+
+\end{document}

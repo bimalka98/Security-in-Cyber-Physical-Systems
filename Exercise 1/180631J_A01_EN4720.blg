@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: 180631J_A01_EN4720.aux
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+The style file: plain.bst
+Reallocating 'name_of_file' (item size: 1) to 5 items.
+Database file #1: refs.bib
+Warning--to sort, need author or key in apachestruts
+You've used 2 entries,
+            2118 wiz_defined-function locations,
+            509 strings with 4260 characters,
+and the built_in function-call counts, 435 in all, are:
+= -- 41
+> -- 8
+< -- 0
++ -- 4
+- -- 2
+* -- 28
+:= -- 69
+add.period$ -- 4
+call.type$ -- 2
+change.case$ -- 7
+chr.to.int$ -- 0
+cite$ -- 3
+duplicate$ -- 18
+empty$ -- 47
+format.name$ -- 2
+if$ -- 92
+int.to.chr$ -- 0
+int.to.str$ -- 2
+missing$ -- 1
+newline$ -- 11
+num.names$ -- 2
+pop$ -- 11
+preamble$ -- 1
+purify$ -- 5
+quote$ -- 0
+skip$ -- 15
+stack$ -- 0
+substring$ -- 23
+swap$ -- 2
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 8
+warning$ -- 1
+while$ -- 4
+width$ -- 3
+write$ -- 19
+(There was 1 warning)

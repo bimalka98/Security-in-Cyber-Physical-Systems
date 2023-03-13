@@ -1,0 +1,12 @@
+\begin{thebibliography}{1}
+
+\bibitem{apachestruts}
+{CVE-2017-5638: The Apache Struts vulnerability explained: Synopsys}, Nov 2021.
+
+\bibitem{luszcz2018apache}
+Jeff Luszcz.
+\newblock Apache struts 2: how technical and development gaps caused the
+  equifax breach.
+\newblock {\em Network Security}, 2018(1):5--8, 2018.
+
+\end{thebibliography}
