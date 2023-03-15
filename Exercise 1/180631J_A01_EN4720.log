@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.9)  15 MAR 2023 12:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.9)  15 MAR 2023 21:59
 entering extended mode
 **./180631J_A01_EN4720.tex
 (180631J_A01_EN4720.tex
@@ -652,96 +652,171 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 59.
 (C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 116--116
+Underfull \hbox (badness 10000) in paragraph at lines 118--118
 []|\OT1/cmr/bx/n/10.95 Confidentiality
  []
 
 
-Underfull \hbox (badness 1253) in paragraph at lines 116--116
+Underfull \hbox (badness 1253) in paragraph at lines 118--118
 \OT1/cmr/m/n/10.95 (\OT1/cmr/m/it/10.95 Keep data pri-vate
  []
 
 
-Underfull \hbox (badness 3219) in paragraph at lines 116--116
+Underfull \hbox (badness 3219) in paragraph at lines 118--118
 \OT1/cmr/m/it/10.95 or se-cret/ Con-trol
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--116
+Underfull \hbox (badness 10000) in paragraph at lines 118--118
+[]|\OT1/cmr/m/n/10.95 Marriott ho-tel
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--118
+\OT1/cmr/m/n/10.95 chain's reser-va-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--118
+\OT1/cmr/m/n/10.95 sys-tem com-pro-mi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--118
 \OT1/cmr/m/it/10.95 No unau-tho-rized
  []
 
 
-Underfull \hbox (badness 2582) in paragraph at lines 116--116
+Underfull \hbox (badness 10000) in paragraph at lines 118--118
+[]|\OT1/cmr/m/n/10.95 SolarWinds at-tack
+ []
+
+
+Underfull \hbox (badness 2582) in paragraph at lines 118--118
 []|\OT1/cmr/bx/n/10.95 Availability \OT1/cmr/m/n/10.95 (\OT1/cmr/m/it/10.95 Sys
 -
  []
 
 
-Underfull \hbox (badness 5667) in paragraph at lines 116--116
+Underfull \hbox (badness 5667) in paragraph at lines 118--118
 \OT1/cmr/m/it/10.95 tems are up and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--116
+Underfull \hbox (badness 10000) in paragraph at lines 118--118
 \OT1/cmr/m/n/10.95 Denial-of-Service
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--116
+Underfull \hbox (badness 10000) in paragraph at lines 118--118
 []|\OT1/cmr/bx/n/10.95 Authentication
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--116
+Underfull \hbox (badness 10000) in paragraph at lines 118--118
 []|\OT1/cmr/bx/n/10.95 Authorization
  []
 
 
-Underfull \hbox (badness 6268) in paragraph at lines 116--116
+Underfull \hbox (badness 6268) in paragraph at lines 118--118
 \OT1/cmr/m/it/10.95 ac-cess should this
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--116
+Underfull \hbox (badness 10000) in paragraph at lines 118--118
+[]|\OT1/cmr/m/n/10.95 Adobe Sys-tems
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--118
 []|\OT1/cmr/bx/n/10.95 Non-Repudiation
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--116
+Underfull \hbox (badness 10000) in paragraph at lines 118--118
 \OT1/cmr/m/n/10.95 (\OT1/cmr/m/it/10.95 To not al-low
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--116
+Underfull \hbox (badness 10000) in paragraph at lines 118--118
 \OT1/cmr/m/it/10.95 some-one to deny
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--154
+Underfull \hbox (badness 10000) in paragraph at lines 118--118
+[]|\OT1/cmr/m/n/10.95 2016 Demo-cratic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--156
 []|\OT1/cmr/bx/n/10.95 Security Or-ga-ni-za-
  []
 
 
-Underfull \hbox (badness 2846) in paragraph at lines 205--205
-[]|\OT1/cmr/bx/n/10.95 Any known real-life
+Overfull \hbox (4.05577pt too wide) in paragraph at lines 211--211
+[]|\OT1/cmr/bx/n/10.95 Vulnerability| 
  []
 
-(180631J_A01_EN4720.bbl [1
 
-{C:/Users/bimal/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2]) [3] (18063
-1J_A01_EN4720.aux)
+Underfull \hbox (badness 1478) in paragraph at lines 211--211
+[]|\OT1/cmr/bx/n/10.95 Any known
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 211--211
+[]|\OT1/cmr/m/n/10.95 CVE-2020-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 211--211
+[]|\OT1/cmr/m/n/10.95 CVE-2021-
+ []
+
+
+Underfull \hbox (badness 1742) in paragraph at lines 211--211
+[]|\OT1/cmr/m/n/10.95 A lack of file-name val-i-da-tion when un-zip-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 211--211
+[]|\OT1/cmr/m/n/10.95 CVE-2020-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 211--211
+[]|\OT1/cmr/m/n/10.95 CVE-2019-
+ []
+
+
+Underfull \hbox (badness 6094) in paragraph at lines 211--211
+[]|\OT1/cmr/m/n/10.95 Integrity, Con-fi-
+ []
+
+(180631J_A01_EN4720.bbl
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 5
+.
+
+(C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
+File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 5.
+
+[1
+
+{C:/Users/bimal/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2] [3])
+[4] (180631J_A01_EN4720.aux)
 Package rerunfilecheck Info: File `180631J_A01_EN4720.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 13859 strings out of 479321
- 229875 string characters out of 2856584
- 592899 words of memory out of 3000000
- 31117 multiletter control sequences out of 15000+600000
+ 13890 strings out of 479321
+ 230440 string characters out of 2856584
+ 599899 words of memory out of 3000000
+ 31138 multiletter control sequences out of 15000+600000
  411522 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 111i,11n,117p,470b,465s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 111i,11n,117p,476b,465s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\bimal\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1095.pk><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/publ
@@ -749,10 +824,11 @@ ic/amsfonts/cm/cmbx12.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/public/amsfonts/cm/cmr10.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX
 /fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/bimal/AppData/Local/Program
 s/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/bimal/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on 180631J_A01_EN4720.pdf (3 pages, 109366 bytes).
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/bimal/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on 180631J_A01_EN4720.pdf (4 pages, 124233 bytes).
 PDF statistics:
- 66 PDF objects out of 1000 (max. 8388607)
- 12 named destinations out of 1000 (max. 500000)
+ 100 PDF objects out of 1000 (max. 8388607)
+ 19 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -82,34 +82,36 @@ You can refer to books, web pages, research publications to gather the informati
         \\ \hline
         
         \hline
-        \textbf{Confidentiality} (\textit{Keep data private or secret/ Control access}) & 
-        &
+        \textbf{Confidentiality} (\textit{Keep data private or secret/ Control access}) & Marriott hotel chain's reservation system compromisation 2018
+        & In late 2018, the Marriott hotel chain announced that one of its reservation systems had been compromised, with hundreds of millions of customer records, including credit card and passport numbers, being exfiltrated by the attackers\cite{fruhlinger_marriott_2020}.
         \\ \hline
         
         \hline
         \textbf{Integrity} (\textit{Trusted/ No unauthorized modification}) & 
-        &
+        SolarWinds attack of 2020
+        &  SolarWinds offers an IT performance management and monitoring system called Orion. The hackers used a supply chain attack to insert malicious pieces of code into the Orion framework. It allowed the hackers to access system files and hide their tracks by blending into the Orion activity. More than 18,000 customers of SolarWinds were affected including  the US departments of health, treasury, and state\cite{noauthor_solarwinds_nodate}.
         \\ \hline
         
         \hline
         \textbf{Availability} (\textit{Systems are up and running}) &
         GitHub Distributed Denial-of-Service (DDoS) attack 2018 &
-        February 28, 2018 GitHub.com was unavailable from 17:21 to 17:26 UTC and intermittently unavailable from 17:26 to 17:30 UTC due to a DDoS attack. The attack originated from over a thousand different autonomous systems (ASNs) across tens of thousands of unique endpoints. It was an amplification attack using the Memcached-based approach that peaked at 1.35Tbps via 126.9 million packets per second.
+        February 28, 2018 GitHub.com was unavailable from 17:21 to 17:26 UTC and intermittently unavailable from 17:26 to 17:30 UTC due to a DDoS attack. The attack originated from over a thousand different autonomous systems (ASNs) across tens of thousands of unique endpoints. It was an amplification attack using the Memcached-based approach that peaked at 1.35Tbps via 126.9 million packets per second\cite{kottler_february_2018}.
         \\ \hline
         
         \hline
-        \textbf{Authentication} (\textit{Who are you?/ Are you who you claim to be?}) & 
-        &
+        \textbf{Authentication} (\textit{Who are you?/ Are you who you claim to be?}) & 2012 LinkedIn hack
+        & The social networking website LinkedIn was hacked on June 5, 2012, and passwords for nearly 6.5 million user accounts were stolen by Russian cyber criminals. Owners of the hacked accounts were no longer able to access their accounts, and the website repeatedly encouraged its users to change their passwords after the incident\cite{LinkedIn}.
         \\ \hline
         
         \hline
-        \textbf{Authorization} (\textit{What abilities and access should this user have?}) & 
-        &
+        \textbf{Authorization} (\textit{What abilities and access should this user have?}) & Adobe Systems Data Breach 2013
+        & October 2013, hackers stole login information and nearly 3 million credit card numbers from 38 million Adobe users\cite{Adobe}.
         \\ \hline
         
         \hline
         \textbf{Non-Repudiation} (\textit{To not allow someone to deny something}) &
-        &
+        2016 Democratic National Committee (DNC) email leak
+        & A collection of DNC emails stolen by one or more hackers, who are alleged to be Russian intelligence agency hackers. This collection included 19,252 emails and 8,034 attachments from the DNC, the governing body of the United States' Democratic Party\cite{dnc_mails}.
         \\ \hline
         
         
@@ -173,29 +175,33 @@ Search the CVE database at \href{https://cve.mitre.org/}{cve.mitre.org} for vuln
 \begin{table}[htbp]
     \caption{Vulnerabilities in a smartphone application.
     }
-    \begin{tabularx}{\columnwidth}{|X|X|p{3cm}|X|}
+    \begin{tabularx}{\columnwidth}{|X|p{8cm}|p{3cm}|X|}
         \hline
         \textbf{Vulnerability} & \textbf{Brief Description} & \textbf{Breach of security goal} & \textbf{Any known real-life case with URL}\\
         
         \hline
-        & 
-        &
-        &
-        \\ \hline
+        CVE-2020-1908
+        & Improper authorization of the Screen Lock feature in WhatsApp and WhatsApp Business for iOS prior to v2.20.100 could have permitted use of `Siri' to interact with the WhatsApp application even after the phone was locked. An attacker who gains access to Siri may be able to read and send messages, access contacts, and perform other actions within the WhatsApp application without having to unlock the phone.
+        & Confidentiality
+        & None reported
         
-        & 
-        &
-        &
         \\ \hline
+        CVE-2021-24035
+        & A lack of filename validation when unzipping archives prior to WhatsApp for Android v2.21.8.13 and WhatsApp Business for Android v2.21.8.13 could have allowed path traversal attacks that overwrite WhatsApp files. This can allow an attacker to access files and directories outside of the intended location by manipulating the path used to access them. 
+        & Integrity
+        & None reported
         
-        &
-        &
-        &
+        \\ \hline
+        CVE-2020-1901
+        & Receiving a large text message containing URLs in WhatsApp for iOS prior to v2.20.91.4 could have caused the application to freeze while processing the message. This can result in a denial of service to the user when he is involved in some interaction with the App.
+        & Availability
+        & None reported
+        
         \\\hline
-        
-        &
-        &
-        &
+        CVE-2019-3571
+        & An input validation issue affected WhatsApp Desktop versions prior to 0.3.3793 which allows malicious clients to send files to users that would be displayed with a wrong extension. The attacker can send files that can either execute malicious code, access sensitive information or both. The user may believe that they are opening a safe file, but the actual contents could be malicious.
+        & Integrity, Confidentiality
+        & None reported
         \\\hline
         
         &

@@ -1,7 +1,33 @@
 \begin{thebibliography}{1}
 
+\bibitem{noauthor_solarwinds_nodate}
+{SolarWinds} {Attack} \& {Details} {You} {Need} {To} {Know} {About} {It}
+  {\textbar} {Simplilearn}.
+
 \bibitem{apachestruts}
 {CVE-2017-5638: The Apache Struts vulnerability explained: Synopsys}, Nov 2021.
+
+\bibitem{LinkedIn}
+2012 {LinkedIn} hack, November 2022.
+\newblock Page Version ID: 1122344573.
+
+\bibitem{dnc_mails}
+2016 {Democratic} {National} {Committee} email leak, February 2023.
+\newblock Page Version ID: 1141363117.
+
+\bibitem{Adobe}
+Terena Bell.
+\newblock Adobe’s {CSO} talks security, the 2013 breach, and how he sets
+  priorities, April 2018.
+
+\bibitem{fruhlinger_marriott_2020}
+Josh Fruhlinger.
+\newblock Marriott data breach {FAQ}: {How} did it happen and what was the
+  impact?, February 2020.
+
+\bibitem{kottler_february_2018}
+Sam Kottler.
+\newblock February 28th {DDoS} {Incident} {Report}, March 2018.
 
 \bibitem{luszcz2018apache}
 Jeff Luszcz.
