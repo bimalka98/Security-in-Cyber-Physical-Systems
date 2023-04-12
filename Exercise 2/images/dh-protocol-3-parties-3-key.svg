@@ -2,13 +2,16 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   sodipodi:docname="dh-protocol-3-parties.svg"
+   sodipodi:docname="dh-protocol-3-parties-3-key.svg"
    inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
    id="svg5"
    version="1.1"
    viewBox="0 0 338.66666 190.5"
    height="720"
    width="1280"
+   inkscape:export-filename="dh-protocol-3-parties.png"
+   inkscape:export-xdpi="271.041"
+   inkscape:export-ydpi="271.041"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -30,7 +33,7 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="1.0680556"
-     inkscape:cx="593.60208"
+     inkscape:cx="521.04031"
      inkscape:cy="360"
      inkscape:window-width="1920"
      inkscape:window-height="1001"

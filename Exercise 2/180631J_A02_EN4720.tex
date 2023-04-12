@@ -22,6 +22,7 @@
 
 \usepackage{caption}
 \usepackage{graphicx}
+\usepackage{float}
 \usepackage{subcaption}
 
 \usepackage{changepage}   % for the adjustwidth environment
@@ -116,11 +117,24 @@
 		\caption{Diffie Hellman Protocol} \label{fig:dh-protocol}
 	\end{figure}
 	\begin{enumerate}
-		\item Design an extension of the Diffie-Hellman protocol to allow secure key exchange between the three parties.
+		\item Design an extension of the Diffie-Hellman protocol to allow secure key exchange between the three parties.\\
+		
 		\begin{answer}
-			%% TODO: Add answer here
-			% Sample answer
-			Your answer here
+			
+			The below method can be used to extend the DH protocol to share a common key between three parties. The method is graphically represented in the Figure \ref{fig:dh-protocol-extension} as well. The answer was adopted from \url{https://crypto.stackexchange.com/a/1027}
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.7\columnwidth]{images/3-parties-1-key.png}
+				\caption{Extended Diffie-Hellman Protocol for three parties to share a common key} \label{fig:dh-protocol-extension}
+			\end{figure}
+		
+		\begin{enumerate}
+			\item Alice, Bob and Charlie each picks a random number from the chosen multiplicative group ($\mathbb{Z}_p$). Let those numbers be a, b and c respectively, and Alice, Bob and Charlie are in a loop.
+			
+			\item The method repeats for two rounds. In the first round each party computes $g^i ~mod~ p$ for the selected $i$ and passes to the next person in the loop.
+		\end{enumerate}
+		
 		\end{answer}
 		\item Alice, Bob, and Charlie are planning to use $(p, g) = (23, 9)$ to agree on a key for a Caesar cipher. Assume that the Caesar cipher is right shifting the number of letters equal to the key to produce the ciphertext (e.g., if the key is 5 and the plaintext letter is U, it will be replaced by Z in the ciphertext). Assuming 4, 7, and 13 to be secret exponents of Alice, Bob, and Charlie respectively, find the common key that they need to use in Caesar's cipher.
 		\begin{answer}

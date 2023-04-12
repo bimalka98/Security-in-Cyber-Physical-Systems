@@ -2,13 +2,16 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   sodipodi:docname="dh-protocol-3-parties.svg"
+   sodipodi:docname="dh-protocol-3-parties-1key.svg"
    inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
    id="svg5"
    version="1.1"
    viewBox="0 0 338.66666 190.5"
    height="720"
    width="1280"
+   inkscape:export-filename="dh-protocol-3-parties-1key.png"
+   inkscape:export-xdpi="271.041"
+   inkscape:export-ydpi="271.041"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -25,13 +28,13 @@
      bordercolor="#666666"
      borderopacity="1.0"
      inkscape:pageshadow="2"
-     inkscape:pageopacity="0.0"
+     inkscape:pageopacity="1"
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="1.0680556"
-     inkscape:cx="593.60208"
-     inkscape:cy="360"
+     inkscape:cx="521.97657"
+     inkscape:cy="369.36279"
      inkscape:window-width="1920"
      inkscape:window-height="1001"
      inkscape:window-x="-9"
@@ -44,17 +47,17 @@
   <defs
      id="defs2">
     <marker
-       style="overflow:visible;"
+       style="overflow:visible"
        id="Arrow1Mend"
-       refX="0.0"
-       refY="0.0"
+       refX="0"
+       refY="0"
        orient="auto"
        inkscape:stockid="Arrow1Mend"
        inkscape:isstock="true">
       <path
-         transform="scale(0.4) rotate(180) translate(10,0)"
-         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt;"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
          id="path24385" />
     </marker>
     <marker
@@ -575,7 +578,7 @@
      id="layer1">
     <g
        id="g683"
-       transform="matrix(0.81504615,0,0,0.81504615,41.127756,3.1722281)">
+       transform="matrix(0.81504615,0,0,0.81504615,41.127756,-6.3527721)">
       <circle
          style="fill:#ff8080;stroke:#000000;stroke-width:0.499999;stroke-linecap:round"
          id="path1382"
@@ -596,7 +599,7 @@
     </g>
     <g
        id="g688"
-       transform="matrix(0.81504615,0,0,0.81504615,18.522907,3.1722281)">
+       transform="matrix(0.81504615,0,0,0.81504615,18.522907,-6.3527721)">
       <circle
          style="fill:#80ff80;stroke:#000000;stroke-width:0.499999;stroke-linecap:round"
          id="path1382-5"
@@ -617,7 +620,7 @@
     </g>
     <g
        id="g693"
-       transform="matrix(0.81504615,0,0,0.81504615,30.19139,2.3444253)">
+       transform="matrix(0.81504615,0,0,0.81504615,30.19139,-7.1805748)">
       <circle
          style="fill:#8080ff;stroke:#000000;stroke-width:0.499999;stroke-linecap:round"
          id="path1382-3"
@@ -636,94 +639,65 @@
            x="150.04655"
            y="160.31424">Charlie</tspan></text>
     </g>
-    <g
-       id="g4595"
-       transform="translate(2.6458334,-3.6114599)">
-      <g
-         id="g24690"
-         transform="matrix(0.68476552,0,0,0.68476552,49.415345,6.1858742)">
-        <path
-           style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
-           d="m 112.69856,32.689932 c 112.82013,0 112.82013,0 112.82013,0"
-           id="path24294" />
-        <path
-           style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend-0)"
-           d="m 227.48937,45.624161 c -112.82013,0 -112.82013,0 -112.82013,0"
-           id="path24294-2" />
-      </g>
-      <text
-         xml:space="preserve"
-         style="font-size:6.90073px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;stroke-width:0.215647"
-         x="146.13725"
-         y="26.409504"
-         id="text26096"><tspan
-           sodipodi:role="line"
-           id="tspan26094"
-           style="stroke-width:0.215647"
-           x="146.13725"
-           y="26.409504">A = g<tspan
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.684766;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="m 129.23327,15.43435 c 77.25533,0 77.25533,0 77.25533,0"
+       id="path24294" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.684766;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend-0)"
+       d="m 129.23326,24.291264 c 77.25533,0 77.25533,0 77.25533,0"
+       id="path24294-2" />
+    <text
+       xml:space="preserve"
+       style="font-size:6.90073px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;stroke-width:0.215647"
+       x="148.25392"
+       y="13.273045"
+       id="text26096"><tspan
+         sodipodi:role="line"
+         id="tspan26094"
+         style="stroke-width:0.215647"
+         x="148.25392"
+         y="13.273045">A1 = g<tspan
    style="font-size:4.48547px;baseline-shift:super;stroke-width:0.215647"
    id="tspan30602">a</tspan> mod p </tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-size:6.90073px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;baseline-shift:baseline;stroke-width:0.215647"
-         x="145.82726"
-         y="43.644897"
-         id="text35646"><tspan
-           sodipodi:role="line"
-           id="tspan35644"
-           style="font-size:6.90073px;baseline-shift:baseline;stroke-width:0.215647"
-           x="145.82726"
-           y="43.644897">B = g<tspan
-   style="font-size:4.48547px;baseline-shift:super;stroke-width:0.215647"
-   id="tspan38270">b</tspan> mod p</tspan></text>
-    </g>
-    <g
-       id="g4584"
-       transform="translate(2.6458334,-3.7041668)">
-      <g
-         id="g24690-2-0"
-         transform="matrix(-0.35125985,0.58780977,0.58780977,0.35125985,232.712,-28.603899)">
-        <path
-           style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend-08-6)"
-           d="m 112.69856,32.689932 c 112.82013,0 112.82013,0 112.82013,0"
-           id="path24294-8-6" />
-        <path
-           style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend-0-6-1)"
-           d="m 227.48937,45.624161 c -112.82013,0 -112.82013,0 -112.82013,0"
-           id="path24294-2-7-9" />
-      </g>
-      <text
-         xml:space="preserve"
-         style="font-size:6.90073px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;stroke-width:0.215647"
-         x="9.3159237"
-         y="221.71568"
-         id="text26096-9"
-         transform="rotate(-58.577193)"><tspan
-           sodipodi:role="line"
-           id="tspan26094-0"
-           style="stroke-width:0.215647"
-           x="9.3159237"
-           y="221.71568">C = g<tspan
-   style="font-size:65%;baseline-shift:super"
-   id="tspan3307">c</tspan> mod p </tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-size:6.90073px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;baseline-shift:baseline;stroke-width:0.215647"
-         x="8.6578503"
-         y="204.81694"
-         id="text35646-3"
-         transform="rotate(-58.757622)"><tspan
-           sodipodi:role="line"
-           id="tspan35644-1"
-           style="font-size:6.90073px;baseline-shift:baseline;stroke-width:0.215647"
-           x="8.6578503"
-           y="204.81694">B = g<tspan
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.684766;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend-08-6)"
+       d="M 214.98681,35.894906 C 175.35763,102.21165 175.35763,102.21165 175.35763,102.21165"
+       id="path24294-8-6" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.684766;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend-0-6-1)"
+       d="M 222.29578,40.61381 C 182.6666,106.93055 182.6666,106.93055 182.6666,106.93055"
+       id="path24294-2-7-9" />
+    <text
+       xml:space="preserve"
+       style="font-size:6.90073px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;baseline-shift:baseline;stroke-width:0.215647"
+       x="21.340813"
+       y="200.21761"
+       id="text35646-3"
+       transform="rotate(-58.757622)"><tspan
+         sodipodi:role="line"
+         id="tspan35644-1"
+         style="font-size:6.90073px;baseline-shift:baseline;stroke-width:0.215647"
+         x="21.340813"
+         y="200.21761">B1 = g<tspan
    style="font-size:4.48547px;baseline-shift:super;stroke-width:0.215647"
    id="tspan38270-9">b</tspan> mod p</tspan></text>
-    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:6.90073px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;baseline-shift:baseline;stroke-width:0.215647"
+       x="22.14757"
+       y="218.48865"
+       id="text35646-3-1"
+       transform="rotate(-58.757622)"><tspan
+         sodipodi:role="line"
+         id="tspan35644-1-2"
+         style="font-size:6.90073px;baseline-shift:baseline;stroke-width:0.215647"
+         x="22.14757"
+         y="218.48865">B2 = g<tspan
+   style="font-size:65%;baseline-shift:super"
+   id="tspan7746">ab</tspan> mod p</tspan></text>
     <g
-       transform="matrix(0.28753035,0,0,0.28753035,147.55047,59.309876)"
+       transform="matrix(0.28753035,0,0,0.28753035,119.55762,49.243028)"
        ns7:version="1.8.2"
        ns7:texconverter="pdflatex"
        ns7:pdfconverter="inkscape"
@@ -802,48 +776,65 @@
       </g>
       <text
          xml:space="preserve"
-         style="font-size:20px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;stroke-width:0.75"
+         style="font-size:20px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;letter-spacing:0px;text-anchor:start;stroke-width:0.75"
          x="-338.82928"
          y="-148.38916"
          id="text596"><tspan
            sodipodi:role="line"
            id="tspan594"
-           style="font-size:20px;text-align:center;text-anchor:middle;stroke-width:0.75"
+           style="font-style:normal;font-size:20px;text-align:start;text-anchor:start;stroke-width:0.75"
            x="-338.82928"
            y="-148.38916">Pick a in Z<tspan
-   style="font-size:65%;baseline-shift:sub"
+   style="font-style:normal;font-size:65%;text-align:start;baseline-shift:sub;text-anchor:start"
    id="tspan662">p</tspan> </tspan><tspan
            sodipodi:role="line"
-           style="font-size:20px;text-align:center;text-anchor:middle;stroke-width:0.75"
+           style="font-style:normal;font-size:20px;text-align:start;text-anchor:start;stroke-width:0.75"
            x="-338.82928"
            y="-123.38916"
            id="tspan652">uniformly at random</tspan><tspan
            sodipodi:role="line"
-           style="font-size:20px;text-align:center;text-anchor:middle;stroke-width:0.75"
+           style="font-style:normal;font-size:20px;text-align:start;text-anchor:start;stroke-width:0.75"
            x="-338.82928"
            y="-98.38916"
-           id="tspan654">Compute</tspan><tspan
+           id="tspan654" /><tspan
            sodipodi:role="line"
-           style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:Arial;-inkscape-font-specification:'Arial Italic';text-align:center;text-anchor:middle;stroke-width:0.75"
+           style="font-style:normal;font-size:20px;text-align:start;text-anchor:start;stroke-width:0.75"
            x="-338.82928"
-           y="-73.340576"
-           id="tspan3203">KAB = B<tspan
-   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:65%;font-family:Arial;-inkscape-font-specification:'Arial Italic';baseline-shift:super"
+           y="-73.38916"
+           id="tspan7728">Then compute,</tspan><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-size:20px;text-align:start;text-anchor:start;stroke-width:0.75"
+           x="-338.82928"
+           y="-48.38916"
+           id="tspan7730">A1 = g<tspan
+   style="font-style:normal;font-size:65%;text-align:start;baseline-shift:super;text-anchor:start"
+   id="tspan7732">a</tspan> mod p (initial) </tspan><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:Arial;-inkscape-font-specification:'Arial Italic';text-align:start;text-anchor:start;stroke-width:0.75"
+           x="-338.82928"
+           y="-23.340574"
+           id="tspan3203">A2 = C1<tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:65%;font-family:Arial;-inkscape-font-specification:'Arial Italic';text-align:start;baseline-shift:super;text-anchor:start"
    id="tspan695">a</tspan> mod p = g<tspan
-   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:65%;font-family:Arial;-inkscape-font-specification:'Arial Italic';baseline-shift:super"
-   id="tspan660">ab</tspan> mod p</tspan><tspan
+   style="font-style:normal;font-size:65%;text-align:start;baseline-shift:super;text-anchor:start"
+   id="tspan7324">ac</tspan> mod p</tspan><tspan
            sodipodi:role="line"
-           style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:Arial;-inkscape-font-specification:'Arial Italic';text-align:center;text-anchor:middle;stroke-width:0.75"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:Arial;-inkscape-font-specification:'Arial Italic';text-align:start;text-anchor:start;stroke-width:0.75"
            x="-338.82928"
-           y="-48.291988"
-           id="tspan3209">KAC = C<tspan
-   style="font-size:65%;baseline-shift:super"
-   id="tspan3641">a</tspan> mod p = g<tspan
-   style="font-size:65%;baseline-shift:super"
-   id="tspan3643">ac</tspan> mod p</tspan></text>
+           y="1.7080116"
+           id="tspan7750">Key = C2<tspan
+   style="font-style:normal;font-size:65%;text-align:start;baseline-shift:super;text-anchor:start"
+   id="tspan7754">a</tspan> mod p = g<tspan
+   style="font-style:normal;font-size:65%;baseline-shift:super"
+   id="tspan8084">bca</tspan> mod p</tspan><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:Arial;-inkscape-font-specification:'Arial Italic';text-align:start;text-anchor:start;stroke-width:0.75"
+           x="-338.82928"
+           y="26.708012"
+           id="tspan3209" /></text>
     </g>
     <g
-       transform="matrix(0.28753035,0,0,0.28753035,378.64064,59.309875)"
+       transform="matrix(0.28753035,0,0,0.28753035,351.88641,49.243028)"
        ns7:version="1.8.2"
        ns7:texconverter="pdflatex"
        ns7:pdfconverter="inkscape"
@@ -922,48 +913,70 @@
       </g>
       <text
          xml:space="preserve"
-         style="font-size:20px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;stroke-width:0.75"
+         style="font-size:20px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;letter-spacing:0px;text-anchor:start;stroke-width:0.75"
          x="-338.82928"
          y="-148.38916"
          id="text596-0"><tspan
            sodipodi:role="line"
            id="tspan594-0"
-           style="font-size:20px;text-align:center;text-anchor:middle;stroke-width:0.75"
+           style="font-style:normal;font-size:20px;text-align:start;text-anchor:start;stroke-width:0.75"
            x="-338.82928"
            y="-148.38916">Pick b in Z<tspan
-   style="font-size:65%;baseline-shift:sub"
+   style="font-style:normal;font-size:65%;text-align:start;baseline-shift:sub;text-anchor:start"
    id="tspan662-3">p</tspan> </tspan><tspan
            sodipodi:role="line"
-           style="font-size:20px;text-align:center;text-anchor:middle;stroke-width:0.75"
+           style="font-style:normal;font-size:20px;text-align:start;text-anchor:start;stroke-width:0.75"
            x="-338.82928"
            y="-123.38916"
            id="tspan652-07">uniformly at random</tspan><tspan
            sodipodi:role="line"
-           style="font-size:20px;text-align:center;text-anchor:middle;stroke-width:0.75"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start;stroke-width:0.75"
            x="-338.82928"
            y="-98.38916"
-           id="tspan654-4">Compute</tspan><tspan
+           id="tspan7734"></tspan><tspan
            sodipodi:role="line"
-           style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:Arial;-inkscape-font-specification:'Arial Italic';text-align:center;text-anchor:middle;stroke-width:0.75"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start;stroke-width:0.75"
            x="-338.82928"
-           y="-73.340576"
-           id="tspan656-3">KAB = A<tspan
-   style="font-size:65%;baseline-shift:super"
+           y="-73.38916"
+           id="tspan8409">Then compute,</tspan><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:Arial;-inkscape-font-specification:'Arial Italic';text-align:start;text-anchor:start;stroke-width:0.75"
+           x="-338.82928"
+           y="-48.340576"
+           id="tspan7736">B1 = g<tspan
+   style="font-style:normal;font-size:65%;text-align:start;baseline-shift:super;text-anchor:start"
+   id="tspan7738">b</tspan> mod p (initial) </tspan><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:Arial;-inkscape-font-specification:'Arial Italic';text-align:start;text-anchor:start;stroke-width:0.75"
+           x="-338.82928"
+           y="-23.291988"
+           id="tspan7318">B2 = A1<tspan
+   style="font-style:normal;font-size:65%;text-align:start;baseline-shift:super;text-anchor:start"
    id="tspan1681">b</tspan> mod p = g<tspan
-   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:65%;font-family:Arial;-inkscape-font-specification:'Arial Italic';baseline-shift:super"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:65%;font-family:Arial;-inkscape-font-specification:'Arial Italic';text-align:start;baseline-shift:super;text-anchor:start"
    id="tspan660-40">ab</tspan> mod p</tspan><tspan
            sodipodi:role="line"
-           style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:Arial;-inkscape-font-specification:'Arial Italic';text-align:center;text-anchor:middle;stroke-width:0.75"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:Arial;-inkscape-font-specification:'Arial Italic';text-align:start;text-anchor:start;stroke-width:0.75"
            x="-338.82928"
-           y="-48.291988"
-           id="tspan3633">KBC = C<tspan
-   style="font-size:65%;baseline-shift:super"
-   id="tspan3645">b</tspan> mod p = g<tspan
-   style="font-size:65%;baseline-shift:super"
-   id="tspan3647">bc</tspan> mod p</tspan></text>
+           y="1.7565975"
+           id="tspan7756">Key = A2<tspan
+   style="font-style:normal;font-size:65%;text-align:start;baseline-shift:super;text-anchor:start"
+   id="tspan7760">b</tspan> mod p = g<tspan
+   style="font-style:normal;font-size:65%;text-align:start;baseline-shift:super;text-anchor:start"
+   id="tspan7758">acb</tspan> mod p</tspan><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:Arial;-inkscape-font-specification:'Arial Italic';text-align:start;text-anchor:start;stroke-width:0.75"
+           x="-338.82928"
+           y="26.805183"
+           id="tspan7428" /><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:Arial;-inkscape-font-specification:'Arial Italic';text-align:start;text-anchor:start;stroke-width:0.75"
+           x="-338.82928"
+           y="51.805183"
+           id="tspan3633" /></text>
     </g>
     <g
-       transform="matrix(0.28753035,0,0,0.28753035,264.45498,196.09529)"
+       transform="matrix(0.28753035,0,0,0.28753035,235.79116,187.06571)"
        ns7:version="1.8.2"
        ns7:texconverter="pdflatex"
        ns7:pdfconverter="inkscape"
@@ -1042,90 +1055,138 @@
       </g>
       <text
          xml:space="preserve"
-         style="font-size:20px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;stroke-width:0.75"
+         style="font-size:20px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;letter-spacing:0px;text-anchor:start;stroke-width:0.75"
          x="-338.82928"
          y="-148.38916"
          id="text596-9-0"><tspan
            sodipodi:role="line"
            id="tspan594-05-1"
-           style="font-size:20px;text-align:center;text-anchor:middle;stroke-width:0.75"
+           style="font-style:normal;font-size:20px;text-align:start;text-anchor:start;stroke-width:0.75"
            x="-338.82928"
            y="-148.38916">Pick c in Z<tspan
-   style="font-size:65%;baseline-shift:sub"
+   style="font-style:normal;font-size:65%;text-align:start;baseline-shift:sub;text-anchor:start"
    id="tspan662-99-6">p</tspan> </tspan><tspan
            sodipodi:role="line"
-           style="font-size:20px;text-align:center;text-anchor:middle;stroke-width:0.75"
+           style="font-style:normal;font-size:20px;text-align:start;text-anchor:start;stroke-width:0.75"
            x="-338.82928"
            y="-123.38916"
            id="tspan652-7-6">uniformly at random</tspan><tspan
            sodipodi:role="line"
-           style="font-size:20px;text-align:center;text-anchor:middle;stroke-width:0.75"
+           style="font-style:normal;font-size:20px;text-align:start;text-anchor:start;stroke-width:0.75"
            x="-338.82928"
            y="-98.38916"
-           id="tspan654-9-4">Compute</tspan><tspan
+           id="tspan7740" /><tspan
            sodipodi:role="line"
-           style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:Arial;-inkscape-font-specification:'Arial Italic';text-align:center;text-anchor:middle;stroke-width:0.75"
+           style="font-style:normal;font-size:20px;text-align:start;text-anchor:start;stroke-width:0.75"
            x="-338.82928"
-           y="-73.340576"
-           id="tspan3637">KAC = A<tspan
-   style="font-size:65%;baseline-shift:super"
+           y="-73.38916"
+           id="tspan654-9-4">Then compute,</tspan><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-size:20px;text-align:start;text-anchor:start;stroke-width:0.75"
+           x="-338.82928"
+           y="-48.38916"
+           id="tspan7742">C1 = g<tspan
+   style="font-style:normal;font-size:65%;text-align:start;baseline-shift:super;text-anchor:start"
+   id="tspan7744">c</tspan> mod p (initial)</tspan><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:Arial;-inkscape-font-specification:'Arial Italic';text-align:start;text-anchor:start;stroke-width:0.75"
+           x="-338.82928"
+           y="-23.340574"
+           id="tspan3635">C2 = B1<tspan
+   style="font-style:normal;font-size:65%;text-align:start;baseline-shift:super;text-anchor:start"
    id="tspan3649">c</tspan> mod p = g<tspan
-   style="font-size:65%;baseline-shift:super"
-   id="tspan3651">ac</tspan> mod p</tspan><tspan
+   style="font-style:normal;font-size:65%;text-align:start;baseline-shift:super;text-anchor:start"
+   id="tspan7322">bc</tspan> mod p</tspan><tspan
            sodipodi:role="line"
-           style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:Arial;-inkscape-font-specification:'Arial Italic';text-align:center;text-anchor:middle;stroke-width:0.75"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:Arial;-inkscape-font-specification:'Arial Italic';text-align:start;text-anchor:start;stroke-width:0.75"
            x="-338.82928"
-           y="-48.291988"
-           id="tspan3635">KBC = B<tspan
-   style="font-size:65%;baseline-shift:super"
-   id="tspan3655">c</tspan> mod p = g<tspan
-   style="font-size:65%;baseline-shift:super"
-   id="tspan3653">bc</tspan> mod p</tspan></text>
+           y="1.6594257"
+           id="tspan7762">Key = B2<tspan
+   style="font-style:normal;font-size:65%;text-align:start;baseline-shift:super;text-anchor:start"
+   id="tspan7766">c</tspan> mod p = g<tspan
+   style="font-style:normal;font-size:65%;text-align:start;baseline-shift:super;text-anchor:start"
+   id="tspan7764">abc</tspan> mod p</tspan></text>
     </g>
-    <g
-       id="g4270"
-       transform="translate(2.6458334,-3.7041668)">
-      <g
-         id="g24690-2"
-         transform="matrix(0.35125985,0.58780977,-0.58780977,0.35125985,96.90637,-29.949897)">
-        <path
-           style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend-08)"
-           d="m 112.69856,32.689932 c 112.82013,0 112.82013,0 112.82013,0"
-           id="path24294-8" />
-        <path
-           style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend-0-6)"
-           d="m 227.48937,45.624161 c -112.82013,0 -112.82013,0 -112.82013,0"
-           id="path24294-2-7" />
-      </g>
-      <text
-         xml:space="preserve"
-         style="font-size:6.90073px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;stroke-width:0.215647"
-         x="117.70981"
-         y="-64.093872"
-         id="text26096-9-5"
-         transform="rotate(60.381628)"><tspan
-           sodipodi:role="line"
-           id="tspan26094-0-9"
-           style="stroke-width:0.215647"
-           x="117.70981"
-           y="-64.093872">C = g<tspan
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.684766;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend-08)"
+       d="M 159.95072,101.84842 C 120.32154,35.531665 120.32154,35.531665 120.32154,35.531665"
+       id="path24294-8" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.684766;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend-0-6)"
+       d="M 152.64176,106.56732 C 113.01258,40.250569 113.01258,40.250569 113.01258,40.250569"
+       id="path24294-2-7" />
+    <text
+       xml:space="preserve"
+       style="font-size:6.90073px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;stroke-width:0.215647"
+       x="106.09921"
+       y="-90.781799"
+       id="text26096-9-5"
+       transform="rotate(60.381628)"><tspan
+         sodipodi:role="line"
+         id="tspan26094-0-9"
+         style="stroke-width:0.215647"
+         x="106.09921"
+         y="-90.781799">C1 = g<tspan
    style="font-size:65%;baseline-shift:super"
    id="tspan3307-1">c</tspan> mod p </tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-size:6.90073px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;stroke-width:0.215647"
-         x="118.64972"
-         y="-78.398445"
-         id="text26096-5"
-         transform="rotate(59.132158)"><tspan
-           sodipodi:role="line"
-           id="tspan26094-4"
-           style="stroke-width:0.215647"
-           x="118.64972"
-           y="-78.398445">A = g<tspan
-   style="font-size:4.48547px;baseline-shift:super;stroke-width:0.215647"
-   id="tspan30602-3">a</tspan> mod p </tspan></text>
-    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:6.90073px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;stroke-width:0.215647"
+       x="104.16906"
+       y="-72.403313"
+       id="text26096-9-5-6"
+       transform="rotate(60.381628)"><tspan
+         sodipodi:role="line"
+         id="tspan26094-0-9-8"
+         style="stroke-width:0.215647"
+         x="104.16906"
+         y="-72.403313">C2 = g<tspan
+   style="font-size:65%;baseline-shift:super"
+   id="tspan7748">bc</tspan> mod p </tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8.46667px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;stroke-width:0.264583"
+       x="98.34655"
+       y="100.71233"
+       id="text6917"><tspan
+         sodipodi:role="line"
+         id="tspan6915"
+         style="stroke-width:0.264583"
+         x="98.34655"
+         y="100.71233"></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8.46667px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;stroke-width:0.264583"
+       x="148.88231"
+       y="32.092674"
+       id="text7328"><tspan
+         sodipodi:role="line"
+         id="tspan7326"
+         style="stroke-width:0.264583"
+         x="148.88231"
+         y="32.092674"></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:6.90073px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;stroke-width:0.215647"
+       x="147.45538"
+       y="30.467815"
+       id="text26096-4"><tspan
+         sodipodi:role="line"
+         id="tspan26094-1"
+         style="stroke-width:0.215647"
+         x="147.45538"
+         y="30.467815">A2 = g<tspan
+   style="font-size:65%;baseline-shift:super"
+   id="tspan7362">ac</tspan> mod p </tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8.46667px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;stroke-width:0.264583"
+       x="175.63654"
+       y="174.64563"
+       id="text8088"><tspan
+         sodipodi:role="line"
+         id="tspan8086"
+         style="stroke-width:0.264583"></tspan></text>
   </g>
   <metadata
      id="metadata828">
