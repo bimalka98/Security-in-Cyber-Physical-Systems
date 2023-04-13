@@ -116,6 +116,7 @@
 		\includegraphics[width=0.7\columnwidth]{images/dh-protocol.jpg}
 		\caption{Diffie Hellman Protocol} \label{fig:dh-protocol}
 	\end{figure}
+\pagebreak
 	\begin{enumerate}
 		\item Design an extension of the Diffie-Hellman protocol to allow secure key exchange between the three parties.\\
 		
@@ -125,28 +126,42 @@
 			
 			\begin{figure}[H]
 				\centering
-				\includegraphics[width=0.7\columnwidth]{images/3-parties-1-key.png}
+				\includegraphics[width=0.9\columnwidth]{images/3-parties-1-key.png}
 				\caption{Extended Diffie-Hellman Protocol for three parties to share a common key} \label{fig:dh-protocol-extension}
 			\end{figure}
 		
 		\begin{enumerate}
-			\item Alice, Bob and Charlie each picks a random number from the chosen multiplicative group ($\mathbb{Z}_p$). Let those numbers be a, b and c respectively, and Alice, Bob and Charlie are in a loop.
+			\item Alice, Bob and Charlie each picks a random number from the chosen multiplicative group ($\mathbb{Z}_p$). Let those numbers be a, b and c respectively, and Alice, Bob and Charlie are in a loop as shown in the Figure \ref{fig:dh-protocol-extension}.
 			
-			\item The method repeats for two rounds. In the first round each party computes $g^i ~mod~ p$ for the selected $i$ and passes to the next person in the loop.
+			\item Initially each party computes $Init_{val} = g^i ~mod~ p$ (\textbf{A1, B1, C1} in the Figure \ref{fig:dh-protocol-extension}), for their selected $i$ where $i ~\in \{a, b, c\}$ and passes to the next person in the loop.
+			
+			\item Upon receiving an $Init_{val}$ from the previous party of the loop, each party again computes $Inter_{val} = {Init_{val}}^i ~mod~ p$, (\textbf{A2, B2, C2} in the Figure \ref{fig:dh-protocol-extension}) and passes to the next person in the loop.
+			
+			\item Finally, upon receiving the $Inter_{val}$ from the previous party, each party calculates $Key_{val} = {Inter_{val}}^i ~mod~ p$ (\textbf{Key} in the Figure \ref{fig:dh-protocol-extension}), which becomes the common key between the three parties.
 		\end{enumerate}
+	
+	The key will take the form $g^{abc} ~mod ~p$ after the above described process and will be a common key that can be used among the three parties for information encryption and decryption.
 		
 		\end{answer}
+	\pagebreak
 		\item Alice, Bob, and Charlie are planning to use $(p, g) = (23, 9)$ to agree on a key for a Caesar cipher. Assume that the Caesar cipher is right shifting the number of letters equal to the key to produce the ciphertext (e.g., if the key is 5 and the plaintext letter is U, it will be replaced by Z in the ciphertext). Assuming 4, 7, and 13 to be secret exponents of Alice, Bob, and Charlie respectively, find the common key that they need to use in Caesar's cipher.
 		\begin{answer}
-			%% TODO: Add answer here
-			% Sample answer
-			Your answer here
+			\[
+			\begin{split}
+				Key &= g^{abc} ~mod ~p\\
+				& = 9^{4 \times 7 \times 13} ~mod ~ 23\\
+				& = 9
+			\end{split}
+			\]
 		\end{answer}
 		\item Derive the encrypted message for the message ``Hello" using the above encryption key.  Show all the major steps in deriving the answer.
-		\begin{answer}
-			%% TODO: Add answer here
-			% Sample answer
-			Your answer here
+		\begin{answer}		
+		\begin{enumerate}
+			\item Since the key is 9, each letter in the original message is right shifted by 9 letters to produce the Caesar cipher.
+			\item  Assume there is no requirement to preserve the case sensitivity of the message. Then the message is ``HELLO''
+			\item Now for each letter in the word, replace it by the letter 9 slots to its right. Then `H' is replaced by `Q', `E' is replaced by `N', `L' is replaced by `U' and `O' is replaced by `X'.
+			\item  Then the ciphertext will be ``QNUUX"".
+		\end{enumerate}
 		\end{answer}
 	\end{enumerate}
 	

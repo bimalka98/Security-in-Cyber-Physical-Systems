@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2023.4.12)  12 APR 2023 22:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2023.4.12)  13 APR 2023 11:12
 entering extended mode
 **./180631J_A02_EN4720.tex
 (180631J_A02_EN4720.tex
@@ -676,62 +676,65 @@ File: images/dh-protocol.jpg Graphic file (type jpg)
 Package pdftex.def Info: images/dh-protocol.jpg  used on input line 116.
 (pdftex.def)             Requested size: 349.06227pt x 167.07433pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--121
-
- []
-
-<images/3-parties-1-key.png, id=7, 963.77779pt x 542.15834pt>
-File: images/3-parties-1-key.png Graphic file (type png)
-<use images/3-parties-1-key.png>
-Package pdftex.def Info: images/3-parties-1-key.png  used on input line 128.
-(pdftex.def)             Requested size: 349.06227pt x 196.35983pt.
 [1
 
 {C:/Users/bimal/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <./images/dh-pro
-tocol.jpg>] [2 <./images/3-parties-1-key.png>]
+tocol.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 121--122
+
+ []
+
+<images/3-parties-1-key.png, id=19, 963.77779pt x 542.15834pt>
+File: images/3-parties-1-key.png Graphic file (type png)
+<use images/3-parties-1-key.png>
+Package pdftex.def Info: images/3-parties-1-key.png  used on input line 129.
+(pdftex.def)             Requested size: 448.79327pt x 252.46501pt.
+[2 <./images/3-parties-1-key.png>] [3]
 LaTeX Font Info:    Trying to load font information for OML+cmr on input line 1
-62.
+77.
 
 (C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/latex/base\omlcmr.fd
 File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/bx/n' in size <10.95> not available
-(Font)              Font shape `OML/cmm/b/it' tried instead on input line 162.
+(Font)              Font shape `OML/cmm/b/it' tried instead on input line 177.
 
-[3]
+[4]
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 246.
- [4] [5] (180631J_A02_EN4720.aux)
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 261.
+ [5] [6] (180631J_A02_EN4720.aux)
 Package rerunfilecheck Info: File `180631J_A02_EN4720.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 14027 strings out of 479321
- 232180 string characters out of 2856583
+ 14036 strings out of 479321
+ 232255 string characters out of 2856583
  589401 words of memory out of 3000000
- 31232 multiletter control sequences out of 15000+600000
- 411750 words of font info for 58 fonts, out of 8000000 for 9000
+ 31233 multiletter control sequences out of 15000+600000
+ 412109 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 111i,11n,117p,514b,594s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 111i,15n,117p,533b,594s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\bimal\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1095.pk><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/publ
 ic/amsfonts/cm/cmbx12.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmitt10.pfb><C:/Users/bimal/AppData/Local/Programs/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/bimal/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/bimal/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/bimal/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/User
-s/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-<C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
-r17.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmsy10.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmsy8.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/ty
-pe1/public/amsfonts/cm/cmti10.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on 180631J_A02_EN4720.pdf (5 pages, 575601 bytes).
+ype1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/bimal/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmitt10.pfb><C:/Users/bimal/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/bimal/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/bimal
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/U
+sers/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.p
+fb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmr12.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmr17.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmr8.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/bimal/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/bimal/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on 180631J_A02_EN4720.pdf (6 pages, 603595 bytes).
 PDF statistics:
- 159 PDF objects out of 1000 (max. 8388607)
- 54 named destinations out of 1000 (max. 500000)
+ 183 PDF objects out of 1000 (max. 8388607)
+ 61 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
