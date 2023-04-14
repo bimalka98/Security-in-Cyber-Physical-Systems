@@ -185,17 +185,47 @@
 	\begin{enumerate}
 		\item Add screenshots requested in Step \#3.
 		\begin{answer}
-			%% TODO: Add answer here
-			% Sample answer
-			Your answer here
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.6\columnwidth]{images/p2_q1_1}
+				\caption{Open the \textit{sampletext.txt} file using the CrypTool software} \label{fig:enc-step-1}
+			\end{figure}
+		
+			`\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.6\columnwidth]{images/p2_q1_2}
+				\caption{Enter the 8 bit Hexadecimal key for encryption} \label{fig:enc-step-2}
+			\end{figure}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.6\columnwidth]{images/p2_q1_3}
+				\caption{Encrypted text using the selected key} \label{fig:enc-step-3}
+			\end{figure}
 		\end{answer}
 		
 		\item Add screenshots requested in Step \#4.
 		\begin{answer}
-			%% TODO: Add answer here
-			% Sample answer
-			Your answer here
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.6\columnwidth]{images/p2_q2_1}
+				\caption{Configure the Brute Force analysis of RC2} \label{fig:dec-step-1}
+			\end{figure}
+			
+			`\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.6\columnwidth]{images/p2_q2_2}
+				\caption{All possible keys obtained through the Brute Force attack} \label{fig:dec-step-2}
+			\end{figure}
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.6\columnwidth]{images/p2_q2_3}
+				\caption{Decrypted message} \label{fig:dec-step-3}
+			\end{figure}
 		\end{answer}
+	
+	
 		\item Complete Table~\ref{tab:time-taken-to-bruteforce}.
 		\begin{table}[h!]
 			\caption{Time taken to brute force} \label{tab:time-taken-to-bruteforce}
@@ -203,13 +233,15 @@
 				\hline
 				\textbf{Key length (bits)} & \textbf{Time to brute force} & \textbf{Maximum number of keys} \\
 				\hline
-				8 & & \\\hline
+				% 9F
+				8 &  $<$ 1 s& 33\\\hline
 				
 				\hline
-				16 & & \\\hline
+				% 8A2D
+				16 & $<$ 1 s & 1 \\\hline
 				
 				\hline
-				24 & & \\ \hline
+				24 & 1 min 34 s & 1\\ \hline
 				
 				\hline
 				64 & & \\ \hline
