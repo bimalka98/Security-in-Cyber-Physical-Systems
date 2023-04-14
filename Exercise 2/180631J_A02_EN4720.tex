@@ -179,7 +179,7 @@
 		\item Repeat steps 3,4 for the key sizes 16, 24, 64, and 128 bits.
 		\item Answer the questions given below.
 	\end{enumerate}
-	
+	\pagebreak
 	\subsubsection*{Questions}
 	
 	\begin{enumerate}
@@ -244,28 +244,28 @@
 				24 & 1 min 34 s & 1\\ \hline
 				
 				\hline
-				64 & & \\ \hline
+				64 & $3.8\times10^6$ years& None \\ \hline
 				
 				\hline
-				128 & & \\ \hline
+				128 &$7.5\times10^{25}$ years& None\\ \hline
 				
 			\end{tabularx}
 		\end{table}
 		\item What is the impact of key length on time to decrypt a message using brute force?
 		\begin{answer}
-			%% TODO: Add answer here
-			% Sample answer
-			Your answer here
+			When the key length is increased, time to decrypt the message grows drastically
 		\end{answer}
 		\item What could be done to diminish the amount of time required to perform the attack?
 		\begin{answer}
-			%% TODO: Add answer here
-			% Sample answer
-			Your answer here
+			\begin{itemize}
+				\item Guess some of the characters or enter the known parts in the key and fix them, rather than letting computer to perform every possible combination of the characters. This limits the search space of keys.
+				
+				\item Carry out the decryption in parallel using several computers.
+			\end{itemize}
 		\end{answer}
 		
 	\end{enumerate}
-	
+	\pagebreak
 	\subsection*{Problem 3 - Public Key Encryption}
 	
 	You are given that $n=65$ and $\phi(n)=48$ for a certain RSA scheme.

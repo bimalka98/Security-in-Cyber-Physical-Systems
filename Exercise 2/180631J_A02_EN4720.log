@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2023.4.12)  14 APR 2023 10:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2023.4.12)  14 APR 2023 10:51
 entering extended mode
 **./180631J_A02_EN4720.tex
 (180631J_A02_EN4720.tex
@@ -698,50 +698,51 @@ File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/bx/n' in size <10.95> not available
 (Font)              Font shape `OML/cmm/b/it' tried instead on input line 177.
-<images/p2_q1_1.png, id=56, 585.387pt x 323.40825pt>
+
+[4]
+<images/p2_q1_1.png, id=69, 585.387pt x 323.40825pt>
 File: images/p2_q1_1.png Graphic file (type png)
 <use images/p2_q1_1.png>
 Package pdftex.def Info: images/p2_q1_1.png  used on input line 190.
 (pdftex.def)             Requested size: 299.20059pt x 165.3012pt.
-<images/p2_q1_2.png, id=57, 582.37575pt x 324.61275pt>
+<images/p2_q1_2.png, id=70, 582.37575pt x 324.61275pt>
 File: images/p2_q1_2.png Graphic file (type png)
 <use images/p2_q1_2.png>
 Package pdftex.def Info: images/p2_q1_2.png  used on input line 196.
 (pdftex.def)             Requested size: 299.20059pt x 166.77869pt.
-
-[4 <./images/p2_q1_1.png>]
-<images/p2_q1_3.png, id=75, 584.78474pt x 325.81725pt>
+<images/p2_q1_3.png, id=71, 584.78474pt x 325.81725pt>
 File: images/p2_q1_3.png Graphic file (type png)
 <use images/p2_q1_3.png>
 Package pdftex.def Info: images/p2_q1_3.png  used on input line 202.
 (pdftex.def)             Requested size: 299.20059pt x 166.7015pt.
-<images/p2_q2_1.png, id=76, 584.78474pt x 324.0105pt>
+ [5 <./images/p2_q1_1.png> <./images/p2_q1_2.png> <./images/p2_q1_3.png>]
+<images/p2_q2_1.png, id=84, 584.78474pt x 324.0105pt>
 File: images/p2_q2_1.png Graphic file (type png)
 <use images/p2_q2_1.png>
 Package pdftex.def Info: images/p2_q2_1.png  used on input line 211.
 (pdftex.def)             Requested size: 299.20059pt x 165.77711pt.
-<images/p2_q2_2.png, id=77, 583.58025pt x 325.215pt>
+<images/p2_q2_2.png, id=85, 583.58025pt x 325.215pt>
 File: images/p2_q2_2.png Graphic file (type png)
 <use images/p2_q2_2.png>
 Package pdftex.def Info: images/p2_q2_2.png  used on input line 217.
 (pdftex.def)             Requested size: 299.20059pt x 166.74075pt.
- [5 <./images/p2_q1_2.png> <./images/p2_q1_3.png> <./images/p2_q2_1.png>]
-<images/p2_q2_3.png, id=89, 585.387pt x 327.624pt>
+<images/p2_q2_3.png, id=86, 585.387pt x 327.624pt>
 File: images/p2_q2_3.png Graphic file (type png)
 <use images/p2_q2_3.png>
 Package pdftex.def Info: images/p2_q2_3.png  used on input line 223.
 (pdftex.def)             Requested size: 299.20059pt x 167.45595pt.
- [6 <./images/p2_q2_2.png> <./images/p2_q2_3.png>]
+
+[6 <./images/p2_q2_1.png> <./images/p2_q2_2.png> <./images/p2_q2_3.png>]
+[7]
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 293.
- [7]
-[8] (180631J_A02_EN4720.aux)
+ [8] [9] (180631J_A02_EN4720.aux)
 Package rerunfilecheck Info: File `180631J_A02_EN4720.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 14104 strings out of 479321
- 233503 string characters out of 2856583
+ 14105 strings out of 479321
+ 233509 string characters out of 2856583
  587401 words of memory out of 3000000
  31287 multiletter control sequences out of 15000+600000
  412109 words of font info for 59 fonts, out of 8000000 for 9000
@@ -765,9 +766,9 @@ ype1/public/amsfonts/cm/cmsy10.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTe
 X/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/bimal/AppData/Local/Progra
 ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/bimal/AppData/Loc
 al/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on 180631J_A02_EN4720.pdf (8 pages, 1105410 bytes).
+Output written on 180631J_A02_EN4720.pdf (9 pages, 1108282 bytes).
 PDF statistics:
- 212 PDF objects out of 1000 (max. 8388607)
- 69 named destinations out of 1000 (max. 500000)
+ 216 PDF objects out of 1000 (max. 8388607)
+ 70 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
