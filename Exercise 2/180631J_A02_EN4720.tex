@@ -31,6 +31,7 @@
 
 % math
 \usepackage{amsthm,amsmath}
+\usepackage{amssymb}
 \usepackage{amsfonts}
 
 \newcommand{\mc}[1]{\mathcal{#1}}	% Mechanisms / Algorithms
@@ -271,8 +272,61 @@
 	You are given that $n=65$ and $\phi(n)=48$ for a certain RSA scheme.
 	\begin{enumerate}
 		\item Calculate the private key $d$ assuming the public key $e=7$.
+		
+		\begin{answer}
+			$d$, takes the form $1 = e*d~mod ~\phi = 7*d~mod ~48$ and it can be calculated using the Extended Euclidean Algorithm. The steps are given below.
+			
+			\begin{enumerate}
+				\item Euclidean Algorithm
+				\[
+				\begin{split}
+					48 &= 6*\left(7\right) + 6\\
+					7 &= 1*\left(6\right) + 1
+				\end{split}
+				\]
+				
+				\item Back Substitution
+				\[
+				\begin{split}
+					1 &= 7 - 1*\left(6\right)\\
+					1 &= 7 - 1*\left(48 - 6*\left(7\right) \right) \\
+					1 &= 7*\left(7\right) - 1*\left(48\right)\\
+				\end{split}
+				\]
+				
+				\item The coefficient in front of the $e = 7$, is the required $d$. Therefore $d = 7$.
+			\end{enumerate}					
+			
+		\end{answer}
+		
 		\item Show all major steps of encryption and decryption using textbook RSA for the message given below. Specifically, derive the ciphertext and show that the plaintext can be recovered at the receiver after decrypting.\\
 		$m=$ last digit of your index number (e.g., if the index number is 180234N, $m=4$). If the last digital is 0 (zero) or 1 (one), use $m=5$. 
+		\begin{answer}					
+		\begin{enumerate}
+			\item Encryption for $m=5$ since last digit of index number is 1. 
+			\[
+			\begin{split}
+				ciphertext &= m^e ~mod ~n\\
+				&= 5^7~mod~65 \\
+				&=60 ~ \because (5^7 = 1201*65 + 60)
+			\end{split}
+			\]
+			
+			\item Decryption
+			\[
+			\begin{split}
+				plaintext &= c^d ~mod~65\\
+				&=60^7~mod~65\\
+				&= \left\{ \left( 60^2~mod~65 \right)* \left( 60^2~mod~65 \right)* \left( 60^2~mod~65 \right) * \left( 60^1~mod~65 \right) \right\} ~mod ~65\\
+				&= \left\{ \left( 25 \right)* \left( 25 \right)* \left( 25 \right) * \left( 60 \right) \right\} ~mod ~65\\
+				&=5~ \because (25^3 * 60 = 14423*65 + 5)
+			\end{split}
+			\]
+			
+			\item The coefficient in front of the $e = 7$, is the required $d$. Therefore $d = 7$.
+		\end{enumerate}
+	\end{answer}
+
 		\item Find the candidates for the primes $p,q$ that were used to generate this RSA scheme.
 		\item Suppose that $c$ is the ciphertext that you find above for the message $m$. Show how an attacker can recover the plaintext message $m$ from the ciphertext $c$ assuming that he can request a decryption of a single ciphertext $c' \neq c$. 
 	\end{enumerate}

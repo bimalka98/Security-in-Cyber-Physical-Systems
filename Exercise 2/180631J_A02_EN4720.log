@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2023.4.12)  14 APR 2023 10:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2023.4.12)  17 APR 2023 20:05
 entering extended mode
 **./180631J_A02_EN4720.tex
 (180631J_A02_EN4720.tex
@@ -506,6 +506,9 @@ LaTeX Info: Redefining \Relbar on input line 971.
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
 )
+(C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
 (C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
@@ -513,12 +516,11 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)
+))
 \c@corollary=\count292
 \c@lemma=\count293
 \c@definition=\count294
 \c@observation=\count295
-
 (C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/latex/cleveref\cleveref.sty
 Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
 Package cleveref Info: `hyperref' support loaded on input line 2370.
@@ -546,24 +548,24 @@ File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 ) (180631J_A02_EN4720.aux)
 \openout1 = `180631J_A02_EN4720.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -607,7 +609,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
-Package hyperref Info: Link coloring ON on input line 51.
+Package hyperref Info: Link coloring ON on input line 52.
  (C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -620,9 +622,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count297
 )
-LaTeX Info: Redefining \ref on input line 51.
-LaTeX Info: Redefining \pageref on input line 51.
-LaTeX Info: Redefining \nameref on input line 51.
+LaTeX Info: Redefining \ref on input line 52.
+LaTeX Info: Redefining \pageref on input line 52.
+LaTeX Info: Redefining \nameref on input line 52.
  (180631J_A02_EN4720.out) (180631J_A02_EN4720.out)
 \@outlinefile=\write4
 \openout4 = `180631J_A02_EN4720.out'.
@@ -659,12 +661,12 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 60.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 61.
 
  (C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 60.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 61.
 
 
 (C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -673,102 +675,115 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <images/dh-protocol.jpg, id=4, 687.31781pt x 328.97906pt>
 File: images/dh-protocol.jpg Graphic file (type jpg)
 <use images/dh-protocol.jpg>
-Package pdftex.def Info: images/dh-protocol.jpg  used on input line 116.
+Package pdftex.def Info: images/dh-protocol.jpg  used on input line 117.
 (pdftex.def)             Requested size: 349.06227pt x 167.07433pt.
 
 [1
 
 {C:/Users/bimal/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <./images/dh-pro
 tocol.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 121--122
+Underfull \hbox (badness 10000) in paragraph at lines 122--123
 
  []
 
 <images/3-parties-1-key.png, id=19, 963.77779pt x 542.15834pt>
 File: images/3-parties-1-key.png Graphic file (type png)
 <use images/3-parties-1-key.png>
-Package pdftex.def Info: images/3-parties-1-key.png  used on input line 129.
+Package pdftex.def Info: images/3-parties-1-key.png  used on input line 130.
 (pdftex.def)             Requested size: 448.79327pt x 252.46501pt.
 [2 <./images/3-parties-1-key.png>] [3]
 LaTeX Font Info:    Trying to load font information for OML+cmr on input line 1
-77.
+78.
 
 (C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/latex/base\omlcmr.fd
 File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/bx/n' in size <10.95> not available
-(Font)              Font shape `OML/cmm/b/it' tried instead on input line 177.
+(Font)              Font shape `OML/cmm/b/it' tried instead on input line 178.
 
 [4]
 <images/p2_q1_1.png, id=69, 585.387pt x 323.40825pt>
 File: images/p2_q1_1.png Graphic file (type png)
 <use images/p2_q1_1.png>
-Package pdftex.def Info: images/p2_q1_1.png  used on input line 190.
+Package pdftex.def Info: images/p2_q1_1.png  used on input line 191.
 (pdftex.def)             Requested size: 299.20059pt x 165.3012pt.
 <images/p2_q1_2.png, id=70, 582.37575pt x 324.61275pt>
 File: images/p2_q1_2.png Graphic file (type png)
 <use images/p2_q1_2.png>
-Package pdftex.def Info: images/p2_q1_2.png  used on input line 196.
+Package pdftex.def Info: images/p2_q1_2.png  used on input line 197.
 (pdftex.def)             Requested size: 299.20059pt x 166.77869pt.
 <images/p2_q1_3.png, id=71, 584.78474pt x 325.81725pt>
 File: images/p2_q1_3.png Graphic file (type png)
 <use images/p2_q1_3.png>
-Package pdftex.def Info: images/p2_q1_3.png  used on input line 202.
+Package pdftex.def Info: images/p2_q1_3.png  used on input line 203.
 (pdftex.def)             Requested size: 299.20059pt x 166.7015pt.
  [5 <./images/p2_q1_1.png> <./images/p2_q1_2.png> <./images/p2_q1_3.png>]
 <images/p2_q2_1.png, id=84, 584.78474pt x 324.0105pt>
 File: images/p2_q2_1.png Graphic file (type png)
 <use images/p2_q2_1.png>
-Package pdftex.def Info: images/p2_q2_1.png  used on input line 211.
+Package pdftex.def Info: images/p2_q2_1.png  used on input line 212.
 (pdftex.def)             Requested size: 299.20059pt x 165.77711pt.
 <images/p2_q2_2.png, id=85, 583.58025pt x 325.215pt>
 File: images/p2_q2_2.png Graphic file (type png)
 <use images/p2_q2_2.png>
-Package pdftex.def Info: images/p2_q2_2.png  used on input line 217.
+Package pdftex.def Info: images/p2_q2_2.png  used on input line 218.
 (pdftex.def)             Requested size: 299.20059pt x 166.74075pt.
 <images/p2_q2_3.png, id=86, 585.387pt x 327.624pt>
 File: images/p2_q2_3.png Graphic file (type png)
 <use images/p2_q2_3.png>
-Package pdftex.def Info: images/p2_q2_3.png  used on input line 223.
+Package pdftex.def Info: images/p2_q2_3.png  used on input line 224.
 (pdftex.def)             Requested size: 299.20059pt x 167.45595pt.
 
 [6 <./images/p2_q2_1.png> <./images/p2_q2_2.png> <./images/p2_q2_3.png>]
 [7]
+Overfull \hbox (10.69249pt too wide) detected at line 324
+[]
+ []
+
+
+Overfull \hbox (104.75703pt too wide) detected at line 324
+[]
+ []
+
+[8]
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 293.
- [8] [9] (180631J_A02_EN4720.aux)
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 347.
+ [9] [10] (180631J_A02_EN4720.aux)
 Package rerunfilecheck Info: File `180631J_A02_EN4720.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 14105 strings out of 479321
- 233509 string characters out of 2856583
- 587401 words of memory out of 3000000
- 31287 multiletter control sequences out of 15000+600000
+ 14521 strings out of 479321
+ 237672 string characters out of 2856583
+ 593449 words of memory out of 3000000
+ 31693 multiletter control sequences out of 15000+600000
  412109 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 111i,15n,117p,533b,598s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 111i,17n,117p,533b,598s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\bimal\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1095.pk><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/publ
 ic/amsfonts/cm/cmbx12.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/bimal/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmitt10.pfb><C:/Users/bimal/AppData/Local/Pr
-ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/bimal/AppData
-/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/bimal
-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/U
-sers/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.p
-fb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
-/cmr12.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmr17.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmr8.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTe
-X/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/bimal/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/bimal/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on 180631J_A02_EN4720.pdf (9 pages, 1108282 bytes).
+TeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/bimal/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmitt10.pfb><C:/Users/bimal/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/bima
+l/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Us
+ers/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.
+pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
+m/cmr10.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmr12.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmr17.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/bimal/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/bimal/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/bimal/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/
+Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/m
+sbm10.pfb>
+Output written on 180631J_A02_EN4720.pdf (10 pages, 1128878 bytes).
 PDF statistics:
- 216 PDF objects out of 1000 (max. 8388607)
- 70 named destinations out of 1000 (max. 500000)
+ 236 PDF objects out of 1000 (max. 8388607)
+ 77 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
