@@ -322,12 +322,21 @@
 				&=5~ \because (25^3 * 60 = 14423*65 + 5)
 			\end{split}
 			\]
-			
-			\item The coefficient in front of the $e = 7$, is the required $d$. Therefore $d = 7$.
+
 		\end{enumerate}
+	$\therefore$ the plaintext can be recovered at the receiver after decrypting.
 	\end{answer}
 
 		\item Find the candidates for the primes $p,q$ that were used to generate this RSA scheme.
+		
+		\begin{answer}
+			\begin{enumerate}
+				\item $48$ can be written as, $48 = 12 * 4$
+				\item $65$, can be written as, $65 = \left( 12 + 1 \right) * \left( 4 + 1\right)$
+			\end{enumerate}
+		$\therefore$ the used prime factors to generate $n$, are 13 and 5.
+		\end{answer}
+		
 		\item Suppose that $c$ is the ciphertext that you find above for the message $m$. Show how an attacker can recover the plaintext message $m$ from the ciphertext $c$ assuming that he can request a decryption of a single ciphertext $c' \neq c$. 
 	\end{enumerate}
 	
