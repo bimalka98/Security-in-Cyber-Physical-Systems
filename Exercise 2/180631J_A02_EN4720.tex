@@ -375,17 +375,20 @@
 		\item Add screenshots requested in Step \#2.
 		
 		\begin{answer}
-			%% TODO: Add answer here
-			% Sample answer
-			Your answer here
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.7\columnwidth]{images/p3/s1}
+				\caption{Output of the {\tt ls} command} \label{fig:pa-ls}
+			\end{figure}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.7\columnwidth]{images/p3/s2}
+				\caption{Output of the {\tt cat originalhashfile} command} \label{fig:pa-cat}
+			\end{figure}
 		\end{answer}
 		
-		% \begin{figure}[h!]
-			% \centering
-			% \includegraphics[scale=1]{images/ex2_hashing_sol1.png}
-			% \label{fig:ex2_hashing_sol1}
-			% \end{figure}
-		
+
 		
 		\item Complete Table~\ref{tab:hash-digest-originalhashfile}. Add screenshots requested in Step \#3 below the table.
 		
@@ -417,31 +420,48 @@
 				\hline
 				\textbf{Hash Algorithm} & \textbf{Hash of the Original File} \\
 				\hline
-				MD5 &  \\\hline
+				MD5 & caf4d10c96b7b646e24ae72f366b4c7d \\\hline
 				
 				\hline
-				SHA1 &  \\\hline
+				SHA1 & e64870421f78773bf65437f515fd384170ce8839 \\\hline
 				
 				\hline
-				SHA256 &  \\ \hline
+				SHA256 & cc544b593a0faa91f34774289a66b7400d1ce3fa36cfaec64a958228c5ead764  \\ \hline
 				
 				\hline
-				SHA512 &  \\ \hline
+				SHA512 & cc7aebdfdf19a2f9882deb0ff1fc01a5be9f25cb2b916bd179b4ec88436113c5dc\\ & 24618487bed98fcc3d11574bafabde3a5c785eed6bccef496a7817d132d73a \\ \hline
 				
 			\end{tabularx}
 		\end{table}
-		
-		% \begin{figure}[h!]
-			% \centering
-			% \includegraphics[scale=1]{images/ex2_hashing_sol2.png}
-			% \label{fig:ex2_hashing_sol2}
-			% \end{figure}
+
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.7\columnwidth]{images/p3/s3}
+			\caption{Output of the {\tt md5sum originalhashfile} command} \label{fig:md5sum}
+		\end{figure}
+	
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.7\columnwidth]{images/p3/s4}
+			\caption{Output of the {\tt sha1sum originalhashfile} command} \label{fig:sha1sum}
+		\end{figure}
+	
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.7\columnwidth]{images/p3/s5}
+			\caption{Output of the {\tt sha256sum originalhashfile} command} \label{fig:sha256sum}
+		\end{figure}
+	
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.7\columnwidth]{images/p3/s6}
+			\caption{Output of the {\tt sha512sum originalhashfile} command} \label{fig:sha512sum}
+		\end{figure}
 		
 		\item Among the hash algorithms used, which one is the most cryptographically secure? Justify your answer.
 		
 		\begin{answer}
-			%% TODO: Add answer here
-			Your answer here
+			{\tt sha512sum}, because
 		\end{answer}
 		
 		\item Why is MD5 not considered as a reliable hashing algorithm?
@@ -453,46 +473,26 @@
 		
 		\item Which of the algorithms fall under the category of SHA-2?
 		\begin{answer}
-			%% TODO: Add answer here
-			Your answer here
+			SHA-2, SHA-3
 		\end{answer}
 		
 		\item Add screenshots requested in Step \#5.
 		
 		\begin{answer}
-			%% TODO: Add answer here
-			% Sample answer
-			Your answer here
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.7\columnwidth]{images/p3/s7}
+				\caption{Output of the {\tt ls} command} \label{fig:pa-ls2}
+			\end{figure}
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.7\columnwidth]{images/p3/s8}
+				\caption{Output of the {\tt cat modifiedhashfile} command} \label{fig:pa-cat2}
+			\end{figure}
 		\end{answer}
 		
-		% \begin{figure}[h!]
-			% \centering
-			% \includegraphics[scale=1]{images/ex2_hashing_sol3.png}
-			% \label{fig:ex2_hashing_sol3}
-			% \end{figure}
-		
-		\item Complete Table~\ref{tab:hash-digest-modifiedhashfile}. Add screenshots requested in Step \#6 below the table.
-		
-		% \begin{table}[h]
-			%     \caption{Hash digests of the modified file
-				%     } \label{tab:hash-digest-modifiedhashfile}
-			%     \begin{tabularx}{\columnwidth}{|p{4cm}|X|}
-				%         \hline
-				%         \textbf{Hash Algorithm} & \textbf{Hash of the Modified File} \\
-				%         \hline
-				%         MD5 & 658fb63dcd71f730284c6d924e55baa5\\ \hline
-				
-				%         \hline
-				%         SHA1 & 1c4416490482fafef63f9afb3c8709d76efde1f1\\ \hline
-				
-				%         \hline
-				%         SHA256 & 2ee4b6655994db95f3d0e47f0d7ab43c51cf3bab2363c75a1a92fcc052545ddc \\ \hline
-				
-				%         \hline
-				%         SHA512 & a6da55e69664a3bac0d96daed5f16fec55cb15b956688a2baa88ee5d22a8b59f347\\&470fcd858d8831da0ce5513745f108830ef9baf51104bef492b6d17aae522\\ \hline
-				
-				%     \end{tabularx}
-			% \end{table}
+		\item Complete Table~\ref{tab:hash-digest-modifiedhashfile}. Add screenshots requested in Step \#6 below the table.		
 		
 		\begin{table}[h]
 			\caption{Hash digests of the modified file
@@ -501,46 +501,62 @@
 				\hline
 				\textbf{Hash Algorithm} & \textbf{Hash of the Modified File} \\
 				\hline
-				MD5 & \\ \hline
+				MD5 & e335818d74506e6ef35419fea121b102 \\ \hline
 				
 				\hline
-				SHA1 & \\ \hline
+				SHA1 & b002d4e2319a4bce10a19779bcd37b6829c4ee1a \\ \hline
 				
 				\hline
-				SHA256 &  \\ \hline
+				SHA256 & 2621e717d282129cac13b08f3f2c3b45a44af25f56b2b2d762fa553a6e9f54f8 \\ \hline
 				
 				\hline
-				SHA512 & \\ \hline
+				SHA512 & 0716eb7534e87ee353c2bf1ab16ca3a6747c19c1234426209e11d6c9ce1244e0cb\\&f2a4bc5a8175e8f26b4d457ab2a8f8fdf90568e8726b2d557a3780514a861c \\ \hline
 				
 			\end{tabularx}
 		\end{table}
 		
-		% \begin{figure}[h!]
-			% \centering
-			% \includegraphics[scale=1]{images/ex2_hashing_sol4.png}
-			% \label{fig:ex2_hashing_sol4}
-			% \end{figure}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.7\columnwidth]{images/p3/s9}
+			\caption{Output of the {\tt md5sum modifiedhashfile} command} \label{fig:md5sum2}
+		\end{figure}
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.7\columnwidth]{images/p3/s10}
+			\caption{Output of the {\tt sha1sum modifiedhashfile} command} \label{fig:sha1sum2}
+		\end{figure}
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.7\columnwidth]{images/p3/s11}
+			\caption{Output of the {\tt sha256sum modifiedhashfile} command} \label{fig:sha256sum2}
+		\end{figure}
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.7\columnwidth]{images/p3/s12}
+			\caption{Output of the {\tt sha512sum modifiedhashfile} command} \label{fig:sha512sum2}
+		\end{figure}
 		
 		\item Comparing the output from one algorithm in Table~\ref{tab:hash-digest-originalhashfile} and Table~\ref{tab:hash-digest-modifiedhashfile}, is there a difference between the hash digests? If yes, why?
 		
 		\begin{answer}
-			%% TODO: Add answer here
-			Your answer here
+			Let's compare the hash digest of {\tt SHA1} algorithm for the two files.
+			\begin{enumerate}
+				\item {\tt originalhashfile} - {\tt e64870421f78773bf65437f515fd384170ce8839}
+				\item {\tt modifiedhashfile} - {\tt b002d4e2319a4bce10a19779bcd37b6829c4ee1a}
+			\end{enumerate}
+		
+			As it can be observed, 
+			\begin{itemize}
+				\item 	In terms of the length there is no difference between the two hash digests digests (a property of the hashing algorithms), even though we have two different input files.
+				
+				\item In terms of the similarity there is a drastic change between the tow hash digests (the avalanche effect), even though we made only a simple change to the input file.
+			\end{itemize}
+
 		\end{answer}
 		
-		% \item Explore ``\href{https://www.slavasoft.com/hashcalc/}{HashCalc}'', ``\href{http://md5deep.sourceforge.net/}{md5deep}'' and ``\href{http://md5deep.sourceforge.net/}{hashdeep}'' tools and summarize their capabilities in three/four sentences each.
-		
-		% \begin{answer}
-			% %% TODO: Add answer here
-			% HashCalc: Your answer here
-			
-			% md5deep: Your answer here
-			
-			% hashdeep: Your answer here
-			
-			% \end{answer}
 		
 	\end{enumerate}
-	% \bibliographystyle{plain} % We choose the &quot;plain&quot; reference style
-	% \bibliography{refs} % Entries are in the &quot;refs.bib&quot; file</code></pre>
 \end{document}

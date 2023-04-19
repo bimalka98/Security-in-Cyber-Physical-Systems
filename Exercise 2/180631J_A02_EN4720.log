@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2023.4.12)  17 APR 2023 20:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2023.4.12)  19 APR 2023 20:23
 entering extended mode
 **./180631J_A02_EN4720.tex
 (180631J_A02_EN4720.tex
@@ -748,18 +748,84 @@ Overfull \hbox (104.75703pt too wide) detected at line 324
 [8]
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 356.
- [9] [10] (180631J_A02_EN4720.aux)
+ [9]
+<images/p3/s1.png, id=145, 704.6325pt x 177.66376pt>
+File: images/p3/s1.png Graphic file (type png)
+<use images/p3/s1.png>
+Package pdftex.def Info: images/p3/s1.png  used on input line 380.
+(pdftex.def)             Requested size: 349.06227pt x 88.01024pt.
+<images/p3/s2.png, id=146, 701.62125pt x 174.6525pt>
+File: images/p3/s2.png Graphic file (type png)
+<use images/p3/s2.png>
+Package pdftex.def Info: images/p3/s2.png  used on input line 386.
+(pdftex.def)             Requested size: 349.06227pt x 86.89163pt.
+<images/p3/s3.png, id=148, 704.6325pt x 176.45924pt>
+File: images/p3/s3.png Graphic file (type png)
+<use images/p3/s3.png>
+Package pdftex.def Info: images/p3/s3.png  used on input line 439.
+(pdftex.def)             Requested size: 349.06227pt x 87.41354pt.
+<images/p3/s4.png, id=149, 705.23476pt x 175.857pt>
+File: images/p3/s4.png Graphic file (type png)
+<use images/p3/s4.png>
+Package pdftex.def Info: images/p3/s4.png  used on input line 445.
+(pdftex.def)             Requested size: 349.06227pt x 87.04277pt.
+ [10 <./images/p3/s1.png> <./images/p3/s2.png> <./images/p3/s3.png>]
+<images/p3/s5.png, id=164, 705.23476pt x 176.45924pt>
+File: images/p3/s5.png Graphic file (type png)
+<use images/p3/s5.png>
+Package pdftex.def Info: images/p3/s5.png  used on input line 451.
+(pdftex.def)             Requested size: 349.06227pt x 87.34085pt.
+<images/p3/s6.png, id=165, 704.03024pt x 176.45924pt>
+File: images/p3/s6.png Graphic file (type png)
+<use images/p3/s6.png>
+Package pdftex.def Info: images/p3/s6.png  used on input line 457.
+(pdftex.def)             Requested size: 349.06227pt x 87.49164pt.
+<images/p3/s7.png, id=166, 704.03024pt x 175.25475pt>
+File: images/p3/s7.png Graphic file (type png)
+<use images/p3/s7.png>
+Package pdftex.def Info: images/p3/s7.png  used on input line 484.
+(pdftex.def)             Requested size: 349.06227pt x 86.89442pt.
+<images/p3/s8.png, id=167, 704.6325pt x 175.857pt>
+File: images/p3/s8.png Graphic file (type png)
+<use images/p3/s8.png>
+Package pdftex.def Info: images/p3/s8.png  used on input line 490.
+(pdftex.def)             Requested size: 349.06227pt x 87.11522pt.
+
+[11 <./images/p3/s4.png> <./images/p3/s5.png> <./images/p3/s6.png> <./images/p3
+/s7.png>]
+<images/p3/s9.png, id=185, 703.428pt x 175.857pt>
+File: images/p3/s9.png Graphic file (type png)
+<use images/p3/s9.png>
+Package pdftex.def Info: images/p3/s9.png  used on input line 520.
+(pdftex.def)             Requested size: 349.06227pt x 87.26549pt.
+<images/p3/s10.png, id=186, 703.428pt x 175.25475pt>
+File: images/p3/s10.png Graphic file (type png)
+<use images/p3/s10.png>
+Package pdftex.def Info: images/p3/s10.png  used on input line 526.
+(pdftex.def)             Requested size: 349.06227pt x 86.96663pt.
+<images/p3/s11.png, id=187, 704.6325pt x 175.857pt>
+File: images/p3/s11.png Graphic file (type png)
+<use images/p3/s11.png>
+Package pdftex.def Info: images/p3/s11.png  used on input line 532.
+(pdftex.def)             Requested size: 349.06227pt x 87.11522pt.
+<images/p3/s12.png, id=188, 705.23476pt x 178.86826pt>
+File: images/p3/s12.png Graphic file (type png)
+<use images/p3/s12.png>
+Package pdftex.def Info: images/p3/s12.png  used on input line 538.
+(pdftex.def)             Requested size: 349.06227pt x 88.53323pt.
+ [12 <./images/p3/s8.png> <./images/p3/s9.png> <./images/p3/s10.png> <./images/
+p3/s11.png>] [13 <./images/p3/s12.png>] (180631J_A02_EN4720.aux)
 Package rerunfilecheck Info: File `180631J_A02_EN4720.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 14522 strings out of 479321
- 237679 string characters out of 2856583
+ 14662 strings out of 479321
+ 239956 string characters out of 2856583
  593449 words of memory out of 3000000
- 31693 multiletter control sequences out of 15000+600000
- 412109 words of font info for 59 fonts, out of 8000000 for 9000
+ 31802 multiletter control sequences out of 15000+600000
+ 412277 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 111i,17n,117p,533b,598s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 111i,17n,117p,533b,652s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\bimal\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1095.pk><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/publ
@@ -778,12 +844,13 @@ ublic/amsfonts/cm/cmr17.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts
 X/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/bimal/AppData/Local/Progr
 ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/bimal/AppData/Loc
 al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/bimal/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/
-Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/m
-sbm10.pfb>
-Output written on 180631J_A02_EN4720.pdf (10 pages, 1129787 bytes).
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users
+/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10
+.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
+symbols/msbm10.pfb>
+Output written on 180631J_A02_EN4720.pdf (13 pages, 1377289 bytes).
 PDF statistics:
- 237 PDF objects out of 1000 (max. 8388607)
- 78 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 295 PDF objects out of 1000 (max. 8388607)
+ 95 named destinations out of 1000 (max. 500000)
+ 101 words of extra memory for PDF output out of 10000 (max. 10000000)
 
