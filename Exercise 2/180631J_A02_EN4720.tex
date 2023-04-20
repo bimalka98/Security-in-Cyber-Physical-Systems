@@ -336,10 +336,24 @@
 			\end{enumerate}
 		$\therefore$ the used prime factors to generate $n$, are 13 and 5.
 		\end{answer}
+		\pagebreak
+		\item Suppose that $c$ is the ciphertext that you find above for the message $m$. Show how an attacker can recover the plaintext message $m$ from the ciphertext $c$ assuming that he can request a decryption of a single ciphertext $c' \neq c$.
 		
-		\item Suppose that $c$ is the ciphertext that you find above for the message $m$. Show how an attacker can recover the plaintext message $m$ from the ciphertext $c$ assuming that he can request a decryption of a single ciphertext $c' \neq c$. 
+		\begin{answer}
+			\begin{enumerate}
+				\item The number $n=65~ and ~ e = 7$ is already a public knowledge. In order to decrypt any given message, attacker has to figure out only the private exponent $d$.
+				
+				\item Once the attacker has access to a ciphertext  $c'$ which corresponds to some plaintext $m'$, all he has to do is guess some private exponent, decrypt $c'$ using it and check it matches with $m'$.
+				
+				\item Once he found a match, it means he has recovered the private key $d$. Now he can decrypt any ciphertext which intends for the victim party.
+			\end{enumerate}
+			 
+			 
+			
+		\end{answer}
+		 
 	\end{enumerate}
-	
+	\pagebreak
 	\subsection*{Problem 4 - Hash Functions}
 	
 	{For this part of the exercise you are required to install \href{https://www.kali.org/get-kali/#kali-platforms}{Kali Linux}. Kali Linux comes preinstalled with several hashing utilities. These include \textbf{md5sum}, \textbf{sha1sum},
@@ -368,7 +382,7 @@
 		\item Answer the questions given below.
 		
 	\end{enumerate}
-	
+	\pagebreak
 	\subsubsection*{Questions}
 	\begin{enumerate}
 		
