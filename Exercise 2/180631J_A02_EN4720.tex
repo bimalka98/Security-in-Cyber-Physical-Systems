@@ -368,7 +368,7 @@
 		\item Answer the questions given below.
 		
 	\end{enumerate}
-	\newpage
+	
 	\subsubsection*{Questions}
 	\begin{enumerate}
 		
@@ -461,19 +461,18 @@
 		\item Among the hash algorithms used, which one is the most cryptographically secure? Justify your answer.
 		
 		\begin{answer}
-			{\tt sha512sum}, because
+			{\tt sha512sum}. Security of a hash function depends on three factors: 1. Preimage resistance/ One-waynes, 2. Collision Resistance, and 3. Second Preimage resistance. When it comes to {\tt sha512sum} which is a SHA-2 hash, with the modern computing capabilities it is \textbf{hard to attack and break} the mentioned three properties of it.
 		\end{answer}
 		
 		\item Why is MD5 not considered as a reliable hashing algorithm?
 		
 		\begin{answer}
-			%% TODO: Add answer here
-			Your answer here
+			MD5 is an already broken hashing algorithm which is susceptible to collision attacks and birthday attacks. That is security experts have demonstrated methods, other than naive brute force attacks which can be used to break the hash even with limited computing capabilities.
 		\end{answer}
 		
 		\item Which of the algorithms fall under the category of SHA-2?
 		\begin{answer}
-			SHA-2, SHA-3
+			{\tt sha256sum} and {\tt sha512sum}
 		\end{answer}
 		
 		\item Add screenshots requested in Step \#5.
@@ -552,7 +551,7 @@
 			\begin{itemize}
 				\item 	In terms of the length there is no difference between the two hash digests digests (a property of the hashing algorithms), even though we have two different input files.
 				
-				\item In terms of the similarity there is a drastic change between the tow hash digests (the avalanche effect), even though we made only a simple change to the input file.
+				\item In terms of the similarity there is a drastic change between the two hash digests (the avalanche effect), even though we made only a simple change to the input file.
 			\end{itemize}
 
 		\end{answer}
