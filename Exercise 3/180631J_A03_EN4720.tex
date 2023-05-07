@@ -1,0 +1,200 @@
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[letterpaper,margin=0.8in,nohead]{geometry}
+
+\usepackage[colorlinks]{hyperref}
+\usepackage{url}
+\usepackage{breakurl}
+
+\hypersetup{
+	colorlinks,
+	linkcolor={red},
+	citecolor={red},
+	urlcolor={blue}
+}
+
+\usepackage{verbatim}
+\usepackage{fancyvrb} 
+\usepackage{scrextend}
+\usepackage{enumitem}
+\usepackage{url}
+\usepackage{tabularx}
+
+\usepackage{caption}
+\usepackage{graphicx}
+\usepackage{subcaption}
+
+\usepackage{changepage}   % for the adjustwidth environment
+
+\newenvironment{answer}{\em \color{blue} \begin{adjustwidth}{1cm}{1cm}}{\end{adjustwidth}}
+
+% math
+\usepackage{amsthm,amsmath}
+\usepackage{amsfonts}
+
+\newcommand{\mc}[1]{\mathcal{#1}}	% Mechanisms / Algorithms
+\newcommand{\rv}[1]{\mathbf{#1}}    % Random variable
+
+\newcommand{\pr}[1]{\mathrm{Pr}\{#1\}} % Probability
+
+\newtheorem{corollary}{\bf Corollary}%[theorem]
+\newtheorem{lemma}{\bf Lemma}%[theorem]
+\newtheorem{definition}{\bf Definition}%[section]
+
+\newtheorem{observation}{\bf Observation}%[theorem]
+
+% load cleveref last!
+\usepackage[capitalise]{cleveref}
+
+
+\begin{document}
+	
+	\title{EN4720: Security in Cyber-Physical Systems \\ Exercise --- Authentication}
+	
+	%% This is an individual assignment!!
+	%% TODO: put your name and index number here here!
+	\author{ \textcolor{blue}{Name: John Doe} \\ \textcolor{blue}{Index No: XXXXX}}
+	
+	\maketitle
+	
+	\begin{center}
+		\color{red}\bf This is an individual exercise! \\ Due Date: 19 May 2023 by 11.59 PM
+	\end{center}
+	
+	\begin{center}
+		\small Content adopted from the Udacity Security Engineer Nano-Degree and ECU CSI 1101.    
+	\end{center}
+	
+	\vspace{1in}
+	
+	This exercise has to be carried out using a Linux-based PC/virtual machine. Read all the instructions and questions before attempting the exercise. Add answers under each question in the Questions section and submit the resulting PDF. All files used in this exercise can be found in {\it ex3-resources} folder.
+	
+	\subsection*{Instructions}
+	
+	\begin{enumerate}
+		\item Explore and understand how Unix systems store and manage passwords.
+		
+		\item Download the shadow.hex file from the ``files'' folder. This file has been encrypted using RC4 encryption. 40 bits hexadecimal key: \textcolor{magenta}{5D 49 34 71 64}. Decrypt the file using any available decryption tool (e.g., cryptool).
+		
+		\item Download the ``500\_passwords.txt'' file from the “files” folder. Run ``hashcat'' password cracking utility to crack the passwords in the decrypted shadow file with the help of the dictionary ``500\_passwords.txt''. Please note that, to crack the passwords in the decrypted shadow file using hashcat, you need to take encrypted password fields of each user into a different file. You may rename that file as ``encrypted\_passwords.txt''.
+		
+		\item Download the ``myhashes.txt'', ``mydictionary.txt'', ``myruleset.txt''  files from the “files” folder. Note that, myhashes.txt containes MD5 hashes. Run a rule-based attack using “hashcat” password cracking utility to crack the passwords in the myhashes.txt file with the help of the dictionary “mydictionary.txt” and the ruleset myruleset.txt.
+		
+		\item Answer the questions given below.
+		
+	\end{enumerate}
+	
+	\newpage
+	\subsection*{Questions}
+	
+	\begin{enumerate}
+		
+		\item What is the difference between \textcolor{magenta}{/etc/passwd} and \textcolor{magenta}{/etc/shadow} files? Complete Table~\ref{tab:difference-passwd-shadow}.
+		
+		\begin{answer}
+			%% TODO: Add answer here
+			Your answer here
+			
+			\begin{table}[h!]
+				\caption{Difference between /etc/passwd amd etc/shadow files} \label{tab:difference-passwd-shadow}
+				\begin{tabularx}{\columnwidth}{|p{4cm}|X|X|}
+					\hline
+					\textbf{Attribute} & \textbf{/etc/passwd} & \textbf{etc/shadow} \\
+					\hline
+					Number of fields & & \\\hline
+					
+					\hline
+					Accessible users & & \\\hline
+				\end{tabularx}
+			\end{table}
+			
+		\end{answer}
+		
+		
+		
+		\item You will find seven fields in the /etc/passwd file as indicated in Figure~\ref{fig:etc-passwd-format}. Explain the purpose of each field.
+		
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.65\columnwidth]{images/ex3-etc-passwd-format.png}
+			\caption{Example storage format of /etc/passwd file} \label{fig:etc-passwd-format}
+		\end{figure}
+		
+		\begin{answer}
+			%% TODO: Add answer here
+			Your answer here
+		\end{answer}
+		
+		\item Dump the content of your /etc/shadow file to the terminal using \textcolor{magenta}{sudo cat /etc/shadow} and add a screenshot.
+		
+		\begin{answer}
+			%% TODO: Add answer here
+			Your answer here
+		\end{answer}
+		
+		\item Identify the different fields present in one line in the shadow file and explain the purpose of each field. Clearly mark the fields and provide the explanation.
+		
+		\begin{answer}
+			%% TODO: Add answer here
+			Your answer here
+		\end{answer}
+		
+		\item Complete Step \#2 mentioned under \textbf{Instructions}. Add a screenshot of the decrypted shadow.hex file content. What is the type of hash in the decrypted shadow file?
+		
+		\begin{answer}
+			%% TODO: Add answer here
+			Your answer here
+		\end{answer}
+		
+		\item Complete Step \#3 mentioned under \textbf{Instructions}. Add a screenshot of a part of the ``500\_passwords.txt'' file content using vi/vim/nano.
+		
+		\begin{answer}
+			%% TODO: Add answer here
+			Your answer here
+		\end{answer}
+		
+		\item What is the command you used to crack the passwords in the shadow file? Briefly explain each field in the command.
+		
+		\begin{answer}
+			%% TODO: Add answer here
+			Your answer here
+		\end{answer}
+		
+		\item Add a screenshot of all the cracked passwords.
+		
+		\begin{answer}
+			%% TODO: Add answer here
+			Your answer here
+		\end{answer}
+		
+		\item Provide recommendations to enhance the strength of the passwords.
+		
+		\begin{answer}
+			%% TODO: Add answer here
+			Your answer here
+		\end{answer}
+		
+		\item Briefly explain about ``Rule-based Attack'' and how it uses time and memory for the hash cracking process using a diagram.
+		
+		\begin{answer}
+			%% TODO: Add answer here
+			Your answer here
+		\end{answer}
+		
+		\item Complete Step \#4 mentioned under \textbf{Instructions}. Add a screenshot of the mydictionary.txt and myruleset.txt file contents. Define each rule in myrulset.txt using standard rules in the rule-based attack.
+		
+		\begin{answer}
+			%% TODO: Add answer here
+			Your answer here
+		\end{answer}
+		
+		\item Add a screenshot of all the cracked passwords. Run a dictionary attack without myruleset.txt (using only the dictionary) and compare the two cracked files.
+		
+		\begin{answer}
+			%% TODO: Add answer here
+			Your answer here
+		\end{answer}
+		
+	\end{enumerate}
+	
+\end{document}
