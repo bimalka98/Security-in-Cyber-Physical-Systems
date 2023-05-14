@@ -186,29 +186,54 @@
 		\item Complete Step \#2 mentioned under \textbf{Instructions}. Add a screenshot of the decrypted shadow.hex file content. What is the type of hash in the decrypted shadow file?
 		
 		\begin{answer}
-			%% TODO: Add answer here
-			Your answer here
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=0.7\columnwidth]{images/shdwdecrypt}
+				\caption{Content of the decrypted shadow.hex file using the key \textcolor{magenta}{5D 49 34 71 64}} \label{fig:shadow.hex}
+			\end{figure}
+		
+		All the password hashes start with hash ID, \$6\$. This indicates that they use SHA-512 hashing algorithm.
+		
 		\end{answer}
 		
 		\item Complete Step \#3 mentioned under \textbf{Instructions}. Add a screenshot of a part of the ``500\_passwords.txt'' file content using vi/vim/nano.
 		
 		\begin{answer}
-			%% TODO: Add answer here
-			Your answer here
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=0.7\columnwidth]{images/dict_500}
+				\caption{A part of the content of ``500\_passwords.txt'' file} \label{fig:dict_500}
+			\end{figure}
 		\end{answer}
 		
 		\item What is the command you used to crack the passwords in the shadow file? Briefly explain each field in the command.
 		
 		\begin{answer}
-			%% TODO: Add answer here
-			Your answer here
+			
+			\begin{verbatim}
+				hashcat -m 1800 -a 0 encrypted_passwords.txt 500_passwords.txt
+				    --potfile-path=cracked.pot
+			\end{verbatim}
+			
+			\begin{itemize}
+				\item {\tt -m 1800} specifies the code for the hash mode: 1800 -  sha512crypt \$6\$, SHA512 (Unix) in the category of `Operating System'.
+				
+				\item {\tt -a 0} specifies the `Straight' attack mode that is dictionary attack.
+				
+				\item An optional parameter can be passed to specify the path to the `.pot' file, where the cracked passwords are saved. {\tt --potfile-path=cracked.pot}. This will save the pot file in the same directory as the other input files.
+			\end{itemize}
+			
+			
 		\end{answer}
 		
 		\item Add a screenshot of all the cracked passwords.
 		
 		\begin{answer}
-			%% TODO: Add answer here
-			Your answer here
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=0.9\columnwidth]{images/cracked_shadow}
+				\caption{Cracked passwords using Hashcat tool} \label{fig:cracked_shadow}
+			\end{figure}
 		\end{answer}
 		
 		\item Provide recommendations to enhance the strength of the passwords.
