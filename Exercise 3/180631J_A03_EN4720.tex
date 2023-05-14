@@ -53,7 +53,7 @@
 	
 	%% This is an individual assignment!!
 	%% TODO: put your name and index number here here!
-	\author{ \textcolor{blue}{Name: John Doe} \\ \textcolor{blue}{Index No: XXXXX}}
+	\author{ \textcolor{blue}{Name: Thalagala B. P.} \\ \textcolor{blue}{Index No: 180631J}}
 	
 	\maketitle
 	
@@ -92,8 +92,25 @@
 		\item What is the difference between \textcolor{magenta}{/etc/passwd} and \textcolor{magenta}{/etc/shadow} files? Complete Table~\ref{tab:difference-passwd-shadow}.
 		
 		\begin{answer}
-			%% TODO: Add answer here
-			Your answer here
+			\textcolor{magenta}{/etc/passwd} file stores the account details of the users on a given host machine. The content of the file is word-readable and everyone has the read permission for that file. 
+			
+			\begin{verbatim}
+			(user@host)-[/etc]
+			$ ls -lh | grep passwd
+			-rw-r--r--  1 root root   2.0K Apr  2 14:44 passwd
+			-rw-r--r--  1 root root   2.0K Apr  2 14:38 passwd-
+			\end{verbatim}
+		
+			\textcolor{magenta}{/etc/shadow} file stores the details about the passwords of users and encrypted passwords. The shadow file can only be read by the root account.
+			
+			\begin{verbatim}
+			(user@host)-[/etc]
+			$ ls -lh | grep shadow
+			-rw-r-----  1 root shadow  770 Apr  2 14:44 gshadow
+			-rw-r-----  1 root shadow  761 Apr  2 14:44 gshadow-
+			-rw-r-----  1 root shadow  968 Apr  2 14:44 shadow
+			-rw-r-----  1 root shadow  949 Apr  2 14:38 shadow-
+			\end{verbatim}
 			
 			\begin{table}[h!]
 				\caption{Difference between /etc/passwd amd etc/shadow files} \label{tab:difference-passwd-shadow}
@@ -101,10 +118,10 @@
 					\hline
 					\textbf{Attribute} & \textbf{/etc/passwd} & \textbf{etc/shadow} \\
 					\hline
-					Number of fields & & \\\hline
+					Number of fields & 7 & 9\\\hline
 					
 					\hline
-					Accessible users & & \\\hline
+					Accessible users & Anyone can read& Only {\tt root} user and members of {\tt shadow} group can read \\\hline
 				\end{tabularx}
 			\end{table}
 			
@@ -121,9 +138,22 @@
 		\end{figure}
 		
 		\begin{answer}
-			%% TODO: Add answer here
-			Your answer here
+			\begin{enumerate}
+				\item \textbf{games}: name of the user for whom this entry corresponds to.
+				\item \textbf{x} : indicates that a password exists for the user. However, the password is stored in the \textcolor{magenta}{/etc/shadow} file. If instead of x it shows a ! symbol, this indicates that a password does not exist.
+				\item \textbf{5} : User ID of this user. User IDs for created users begin from 1000 and run up to 59999
+				\item \textbf{60}: Group ID of the group this user belongs to.
+				\item \textbf{games}: indicates multiple comma separated fields of information inclusive of full name and telephone numbers. Here, no telephone numbers have been provided.
+				\item \textbf{/usr/games} : location of home directory assigned to this user.
+				\item \textbf{/usr/sbin/nologin} : default shell assigned to this user.
+			\end{enumerate}
+			
+			
+			
 		\end{answer}
+		Note: Information adopted from,  \\\url{https://www.maketecheasier.com/how-linux-stores-manages-user-passwords/}
+		
+		
 		
 		\item Dump the content of your /etc/shadow file to the terminal using \textcolor{magenta}{sudo cat /etc/shadow} and add a screenshot.
 		
