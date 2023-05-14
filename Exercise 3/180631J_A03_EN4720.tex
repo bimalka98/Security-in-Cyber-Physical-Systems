@@ -101,7 +101,7 @@
 			-rw-r--r--  1 root root   2.0K Apr  2 14:38 passwd-
 			\end{verbatim}
 		
-			\textcolor{magenta}{/etc/shadow} file stores the details about the passwords of users and encrypted passwords. The shadow file can only be read by the root account.
+			\textcolor{magenta}{/etc/shadow} file stores the details about the passwords of users and hashed passwords. The shadow file can only be read by the root account.
 			
 			\begin{verbatim}
 			(user@host)-[/etc]
@@ -133,41 +133,55 @@
 		
 		\begin{figure}[h]
 			\centering
-			\includegraphics[width=0.65\columnwidth]{images/ex3-etc-passwd-format.png}
+			\includegraphics[width=0.7\columnwidth]{images/ex3-etc-passwd-format.png}
 			\caption{Example storage format of /etc/passwd file} \label{fig:etc-passwd-format}
 		\end{figure}
 		
 		\begin{answer}
 			\begin{enumerate}
-				\item \textbf{games}: name of the user for whom this entry corresponds to.
-				\item \textbf{x} : indicates that a password exists for the user. However, the password is stored in the \textcolor{magenta}{/etc/shadow} file. If instead of x it shows a ! symbol, this indicates that a password does not exist.
-				\item \textbf{5} : User ID of this user. User IDs for created users begin from 1000 and run up to 59999
-				\item \textbf{60}: Group ID of the group this user belongs to.
-				\item \textbf{games}: indicates multiple comma separated fields of information inclusive of full name and telephone numbers. Here, no telephone numbers have been provided.
-				\item \textbf{/usr/games} : location of home directory assigned to this user.
-				\item \textbf{/usr/sbin/nologin} : default shell assigned to this user.
+				\item {\tt games}: name of the user for whom this entry corresponds to.
+				\item {\tt x} : indicates that a password exists for the user. However, the password is stored in the \textcolor{magenta}{/etc/shadow} file. If instead of x it shows a ! symbol, this indicates that a password does not exist.
+				\item {\tt 5} : User ID of this user. User IDs for created users begin from 1000 and run up to 59999
+				\item {\tt 60}: Group ID of the group this user belongs to.
+				\item {\tt games}: can contain multiple comma separated sub-fields of information inclusive of full name and telephone numbers. Here, no telephone numbers have been provided.
+				\item {\tt /usr/games} : location of home directory assigned to this user.
+				\item {\tt /usr/sbin/nologin} : default shell assigned to this user.
 			\end{enumerate}
 			
 			
 			
 		\end{answer}
-		Note: Information adopted from,  \\\url{https://www.maketecheasier.com/how-linux-stores-manages-user-passwords/}
+		\textbf{Note}: Information adopted from,  \\\url{https://www.maketecheasier.com/how-linux-stores-manages-user-passwords/}
 		
 		
 		
 		\item Dump the content of your /etc/shadow file to the terminal using \textcolor{magenta}{sudo cat /etc/shadow} and add a screenshot.
 		
 		\begin{answer}
-			%% TODO: Add answer here
-			Your answer here
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.8\columnwidth]{images/myshadow}
+			\caption{Content of /etc/shadow file} \label{fig:myshadow}
+		\end{figure}
 		\end{answer}
 		
 		\item Identify the different fields present in one line in the shadow file and explain the purpose of each field. Clearly mark the fields and provide the explanation.
 		
 		\begin{answer}
-			%% TODO: Add answer here
-			Your answer here
+			there are 9 fields in an entry in the shadow file, and each field can be identified as follows. Let us consider the entry of the user ``kalibee''
+			
+			\begin{enumerate}
+				\item {\tt kalibee} - name of the user for whom this entry corresponds to
+				\item {\tt \$y\$j9T\$bqi0jQs2qKqJqk4...7kH1} - hashed user password. Along with the information about, the hashing algorithm, used salt value.
+				\item {\tt 19449} - last password change time (in days since Jan 1, 1970)
+				\item {\tt 0} - the number of days after which the password can be changed. A value of 0 means the password can be changed at any time.
+				\item {\tt 99999} - the number of days after which the password must be changed. A value of 99999 indicates a user can retain the password as long as desired.
+				\item {\tt 7} -  if the password is set to expire, this fields indicates the number of days to warn the user about password expiry.
+				\item {\tt :::} - Three empty fields. The first one indicates the number of days to wait after password expiry, following which the account will be disabled. The second one indicates the number of days since January 1, 1970, that an account has been disabled. The third field is reserved for future use. The empty fields indicate that the existing password for this user has not expired and is not set to expire soon.
+			\end{enumerate}
 		\end{answer}
+		
+		\textbf{Note}: Information adopted from,  \\\url{https://www.maketecheasier.com/how-linux-stores-manages-user-passwords/}
 		
 		\item Complete Step \#2 mentioned under \textbf{Instructions}. Add a screenshot of the decrypted shadow.hex file content. What is the type of hash in the decrypted shadow file?
 		
