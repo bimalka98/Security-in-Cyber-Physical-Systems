@@ -251,22 +251,52 @@
 		\item Briefly explain about ``Rule-based Attack'' and how it uses time and memory for the hash cracking process using a diagram.
 		
 		\begin{answer}
-			%% TODO: Add answer here
-			Your answer here
+			While pure dictionary attacks use the bare passwords in a given file, rule-based attacks can generate new candidate passwords using a dictionary of passwords. In order to to do that, password cracking tools have functions to modify, cut or extend words and has conditional operators to skip some, etc. That makes it the most flexible, accurate and efficient attack.
 		\end{answer}
 		
 		\item Complete Step \#4 mentioned under \textbf{Instructions}. Add a screenshot of the mydictionary.txt and myruleset.txt file contents. Define each rule in myrulset.txt using standard rules in the rule-based attack.
 		
 		\begin{answer}
-			%% TODO: Add answer here
-			Your answer here
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=0.7\columnwidth]{images/mydict}
+				\caption{Content of the {\tt mydictionary.txt} file} \label{fig:mydict}
+			\end{figure}
+		
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=0.7\columnwidth]{images/myrules}
+				\caption{Content of the {\tt myruleset.txt} file} \label{fig:myrules}
+			\end{figure}
+		
+		Definitions of the rules shown in the Figure \ref{fig:myrules},
+		
+		\begin{itemize}
+			\item {\tt t} - Toggle the case of all characters in word.
+			\item {\tt r} - Reverse the entire word
+			\item {\tt \}} - Rotate the word right
+			\item {\tt se3} and {\tt so0}- (sXY) Replace all instances of X with Y
+		\end{itemize}
+		
 		\end{answer}
 		
 		\item Add a screenshot of all the cracked passwords. Run a dictionary attack without myruleset.txt (using only the dictionary) and compare the two cracked files.
 		
 		\begin{answer}
-			%% TODO: Add answer here
-			Your answer here
+			
+			Through the rule-based attack, the tool can generate new candidate passwords other than the original password set. This increases the keyspace to 30 passwords from only 6 passwords, which increases the effectiveness of the attack.
+			
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=0.7\columnwidth]{images/cracked_with_rules}
+				\caption{Cracked passwords using the rule-based attack. \textbf{Command} : {\tt hashcat -m 0 -a 0 myhashes.txt mydictionary.txt -r myruleset.txt --potfile-path=cracked.pot}} \label{fig:cracked_with_rules}
+			\end{figure}
+			
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=0.7\columnwidth]{images/cracked_with_norules}
+				\caption{Cracked passwords using bare dictionary attack. \textbf{Command} : {\tt hashcat -m 0 -a 0 myhashes.txt mydictionary.txt --potfile-path=cracked.pot}} \label{fig:cracked_with_norules}
+			\end{figure}
 		\end{answer}
 		
 	\end{enumerate}
