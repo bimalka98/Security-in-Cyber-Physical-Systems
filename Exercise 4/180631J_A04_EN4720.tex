@@ -173,30 +173,43 @@
 		\item Note that the permissions on a newly created file allow all users on the system to read the file. Assume that you want to keep resolutions.txt file private. Modify the file's permissions, such that read access for others is removed. 
 		
 		\begin{answer}
-			%% TODO: Add answer here
-			Your answer here
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.65\columnwidth]{images/q8}
+				\caption{Removing the read access for {\tt other} users} \label{fig:q8}
+			\end{figure}
 		\end{answer}
 		
 		
 		\item Using the other new account (if you used \textcolor{magenta}{alice} before, now use \textcolor{magenta}{bob}), confirm that other users on the system are not able to read your resolutions.txt file by trying to dump the file to the terminal.
 		
 		\begin{answer}
-			%% TODO: Add answer here
-			Your answer here
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.65\columnwidth]{images/q9}
+				\caption{Confirming that other users on the system are not able to read your {\tt resolutions.txt} file, by trying to viewing its content from bob's account} \label{fig:q9}
+			\end{figure}
 		\end{answer}
 		
+		\pagebreak
 		\item Compose a short shopping list in your preferred text editor, or using the command line. Store the file as exercise4/shopping.txt. Change the group owner of the file to \textcolor{ForestGreen}{friends}.
 		
 		\begin{answer}
-			%% TODO: Add answer here
-			Your answer here
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.65\columnwidth]{images/q10}
+				\caption{Creating the {\tt shopping.txt} file and change its group owner} \label{fig:q10}
+				\end{figure}
 		\end{answer}
 		
 		\item As the alternate user \textcolor{magenta}{alice}, confirm that you can view the file. Also, note that you can modify the file, by adding an additional item to the shopping list. Dump the file content to the terminal to show that the new item is added.
 		
 		\begin{answer}
-			%% TODO: Add answer here
-			Your answer here
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.65\columnwidth]{images/q11_1}
+				\caption{Confirming the view and write permission of the users of the friends group} \label{fig:q11_1}
+			\end{figure}
 		\end{answer}
 		
 		\item Recall that your other new account (\textcolor{magenta}{bob}) is not a member of the group \textcolor{ForestGreen}{friends}. Try becoming \textcolor{magenta}{bob} and repeat the previous steps. You should be able to view, but not modify, the file.
