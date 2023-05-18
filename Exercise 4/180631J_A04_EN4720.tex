@@ -46,6 +46,7 @@
 
 % load cleveref last!
 \usepackage[capitalise]{cleveref}
+\usepackage{float}
 
 
 \begin{document}
@@ -54,7 +55,7 @@
 	
 	%% This is an individual assignment!!
 	%% TODO: put your name and index number here here!
-	\author{ \textcolor{blue}{Name: John Doe} \\ \textcolor{blue}{Index No: XXXXX}}
+	\author{ \textcolor{blue}{Name: Thalagala B. P.} \\ \textcolor{blue}{Index No: 180631J}}
 	
 	\maketitle
 	
@@ -81,7 +82,13 @@
 	
 	\section*{Questions}
 	
-	For all the questions in this section, add a screenshot of the terminal (including all the commands you ran to perform the task) unless specified otherwise. The evaluator should be able to see each step that you followed to perform each task. In all screenshots, the areas marked (which are unique to your terminal display) in Figure 1 (the sample answer to Question 1) must be visible.
+%	For all the questions in this section, add a screenshot of the terminal (including all the commands you ran to perform the task) unless specified otherwise. The evaluator should be able to see each step that you followed to perform each task. In all screenshots, the areas marked (which are unique to your terminal display) in Figure 1 (the sample answer to Question 1) must be visible.
+%	
+%	\begin{figure}[h]
+%		\centering
+%		\includegraphics[width=0.65\columnwidth]{images/ex4-sample-terminal-output.png}
+%		\caption{Sample Terminal Output} \label{fig:sample-terminal-output}
+%	\end{figure}
 	
 	\begin{enumerate}
 		
@@ -89,51 +96,78 @@
 		
 		\begin{figure}[h]
 			\centering
-			\includegraphics[width=0.65\columnwidth]{images/ex4-sample-terminal-output.png}
-			\caption{Sample Terminal Output} \label{fig:sample-terminal-output}
+			\includegraphics[width=0.65\columnwidth]{images/q1}
+			\caption{Currently logged in user} \label{fig:q1}
 		\end{figure}
 		
 		\item Create a sub directory as excercise4. Create a text file resolutions.txt with “Hello World” text in the file and store the file in the newly created directory as exercise4/resolutions.txt. Dump the file to the terminal using the \texttt{cat} command.
 		
 		\begin{answer}
-			%% TODO: Add answer here
-			Your answer here
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=0.65\columnwidth]{images/q2}
+				\caption{Creating a sub-directory, creating a file with the required text and dump its content to the terminal} \label{fig:q2}
+			\end{figure}
 		\end{answer}
 		
 		\item Create two new user accounts as \textcolor{magenta}{alice} and \textcolor{magenta}{\textcolor{magenta}{bob}}.
 		
 		\begin{answer}
-			%% TODO: Add answer here
-			Your answer here
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=0.65\columnwidth]{images/q3}
+				\caption{Creating two new user accounts} \label{fig:q3}
+			\end{figure}
 		\end{answer}
 		
 		\item Create a group as \textcolor{ForestGreen}{friends} and add \textcolor{magenta}{alice} and yourself (currently logged in user) to the group \textcolor{ForestGreen}{friends}
 		
 		\begin{answer}
-			%% TODO: Add answer here
-			Your answer here
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.65\columnwidth]{images/q4}
+				\caption{Creating a group and add members} \label{fig:q4}
+			\end{figure}
 		\end{answer}
 		
 		\item Make sure your (currently logged in user's) home directory has execute permissions for all the users.
 		
 		\begin{answer}
-			%% TODO: Add answer here
-			Your answer here
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.65\columnwidth]{images/q5}
+				\caption{Execution permission to the current user's home directory} \label{fig:q5}
+			\end{figure}
 		\end{answer}
-		
+		\pagebreak
 		\item Become (log in as) one of your new user accounts (\textcolor{magenta}{alice} or \textcolor{magenta}{bob}). You can simply \texttt{su -} to the alternate user.
 		
 		\begin{answer}
-			%% TODO: Add answer here
-			Your answer here
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.65\columnwidth]{images/q6}
+				\caption{Log-in as the user {\tt alice}} \label{fig:q6}
+			\end{figure}
 		\end{answer}
 		
 		
 		\item As the new user, confirm that you can view the file by dumping the content to the terminal. Try adding a new item to the resolutions.txt file. Why can’t you modify the file as the new user?
 		
 		\begin{answer}
-			%% TODO: Add answer here
-			Your answer here
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.65\columnwidth]{images/q7_1}
+				\caption{Viewing the content of the {\tt resolutions.txt} file} \label{fig:q7_1}
+			\end{figure}
+		
+		As the Figure \ref{fig:q7_2} illustrates, altering the content of the {\tt resolutions.txt} file, is denied. Because, the {\tt other} users in the Linux host machine has only the {\tt read}  permission for that file, and no write permission is given to them. This fact is verified by the output of the last command in the Figure \ref{fig:q7_1}, which inspects various permissions to the {\tt resolutions.txt} file. The line segment {\tt -rw-r--r--} indicates that the User {\tt bimalka98} has Read and Write permissions (rw-), the Group {\tt bimalka98} has Read permission (r--), and Others have Read permission (r--).
+
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.65\columnwidth]{images/q7_2}
+				\caption{Trying to alter the content of the {\tt resolutions.txt} file: Permission Denied.} \label{fig:q7_2}
+			\end{figure}
 		\end{answer}
 		
 		\item Note that the permissions on a newly created file allow all users on the system to read the file. Assume that you want to keep resolutions.txt file private. Modify the file's permissions, such that read access for others is removed. 
