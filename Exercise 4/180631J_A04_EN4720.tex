@@ -235,7 +235,7 @@
 		\item What are the challenges that organizations face during the cyber security authorization process, and how can they be overcome?				
 		
 		\begin{answer}
-		The following answer was adopted from \url{https://www.accenture.com/us-en/blogs/security/keys-successful-access-authorization}
+		The following answer was adopted from \url{https://www.accenture.com/us-en/blogs/security/keys-successful-access-authorization} and `Bing Chat' feature.
 		
 		Challenges and ways to overcome them:
 		\begin{itemize}
@@ -252,19 +252,54 @@
 		\item How do different cyber security authorization frameworks differ from one another, and what are the key considerations that organizations should take into account when choosing a framework to follow?
 		
 		\begin{answer}
-			The following answer was adopted from \url{https://www.knowledgehut.com/blog/security/cyber-security-frameworks}
+			The following answer was adopted from \url{https://www.knowledgehut.com/blog/security/cyber-security-frameworks} and `Bing Chat' feature.
 			
-			Key considerations that organizations should take into account when choosing a framework to follow:
+			
+			Cyber security authorization frameworks differ from one another, depending on the facts that are mentioned below. An organization should take these specifications into account when choosing a framework to follow.
+			
 			\begin{itemize}
-				\item 
+				\item \textbf{Industry requirements/ Regulatory compliance} - Depending on the specific industry that a particular organization belongs to, the information security measures it should take into account differs. Such as procedures that must be followed by a healthcare provider may be different from that of online retail stores.
+				\begin{itemize}
+					\item HIPAA (Health Insurance Portability and Accountability Act), sets forth requirements for protecting the privacy and security of patient health information
+					\item PCI DSS (Payment Card Industry Data Security Standard),  sets forth requirements for protecting credit card data
+					\item GDPR (General Data Protection Regulation), sets forth requirements for protecting the privacy and security of personal data of EU citizens.
+				\end{itemize}
+				
+				\item \textbf{Operational requirements} - The chosen framework should provide guidelines on how to implement and manage information security controls in a way that it supports the organization's day-to-day operations.
+				
+				\item \textbf{Complexity and scale} - Various frameworks support varying degree of complexity and scale. The framework must be selected in a way that it matches the complexity and scale of the organization needs and functionalities.
 			\end{itemize}
 		\end{answer}
 		
 		\item What are the most common vulnerabilities that may be identified during the cyber security authorization process, and how can organizations address them?
 		
 		\begin{answer}
-			%% TODO: Add answer here
-			Your answer here
+			
+			The following answer was adopted from
+			\\ 1. \url{https://goteleport.com/blog/authorization-vulnerabilities/} and `Bing Chat' feature.\\ 
+			
+			Common vulnerabilities that may be identified during the cyber security authorization process:
+			\begin{itemize}
+				\item \textbf{Insecure direct object reference (IDOR)}: This occurs when software allows a user to access resources or perform actions without adequately verifying the resource owner.
+				
+				\item \textbf{Unprotected resources}: This occurs when resources that should be protected are left accessible without proper authorization.
+				
+				\item \textbf{Maintaining client-side authorization state}: This occurs when authorization state is maintained on the client-side, allowing attackers to manipulate it.
+				
+				\item \textbf{Directory traversal}: This occurs when an attacker is able to access restricted directories by manipulating user input.
+				
+				\item \textbf{Misconfigured access policies}: This occurs when access policies are not properly configured, allowing unauthorized access to resources. 
+				
+				\item \textbf{Bypassable policies}: This occurs when policies (eg: policies based on user location, device type and etc.) can be bypassed by attackers, allowing unauthorized access to resources. 
+			\end{itemize}
+		
+		The mentioned vulnerabilities can be addressed through below actions:
+		
+		\begin{itemize}
+			\item \textbf{Mature access control mechanisms}: Organizations must incorporate best practices such as ``Zero-Trust'' and principles such ``Least-privilege'' to control the access. 
+			
+			\item \textbf{Regular assessments}: Regularly assessing of the system's user accounts and their access levels can mitigate potential risks. In addition, enforcing rules such as ``Password Rotation'' can be used to identify stale accounts which can become point of failures in the future.
+		\end{itemize}
 		\end{answer}
 		
 	\end{enumerate}
