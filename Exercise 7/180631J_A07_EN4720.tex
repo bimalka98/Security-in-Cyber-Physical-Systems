@@ -1,0 +1,254 @@
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[letterpaper,margin=0.8in,nohead]{geometry}
+
+\usepackage[colorlinks]{hyperref}
+\usepackage{url}
+\usepackage{breakurl}
+
+\hypersetup{
+	colorlinks,
+	linkcolor={red},
+	citecolor={red},
+	urlcolor={blue}
+}
+
+\usepackage{verbatim}
+\usepackage{fancyvrb}
+\usepackage{scrextend}
+\usepackage{enumitem}
+\usepackage{url}
+\usepackage{tabularx}
+
+\usepackage{caption}
+\usepackage{graphicx}
+\usepackage{subcaption}
+
+\usepackage{changepage}   % for the adjustwidth environment
+
+\newenvironment{answer}{\em \color{blue} \begin{adjustwidth}{1cm}{1cm}}{\end{adjustwidth}}
+
+% math
+\usepackage{amsthm,amsmath}
+\usepackage{amsfonts}
+
+\newcommand{\mc}[1]{\mathcal{#1}}	% Mechanisms / Algorithms
+\newcommand{\rv}[1]{\mathbf{#1}}    % Random variable
+
+\newcommand{\pr}[1]{\mathrm{Pr}\{#1\}} % Probability
+
+\newtheorem{corollary}{\bf Corollary}%[theorem]
+\newtheorem{lemma}{\bf Lemma}%[theorem]
+\newtheorem{definition}{\bf Definition}%[section]
+
+\newtheorem{observation}{\bf Observation}%[theorem]
+
+% load cleveref last!
+\usepackage[capitalise]{cleveref}
+
+
+\begin{document}
+	
+	\title{EN4720: Security in Cyber-Physical Systems \\ Exercise --- Privacy}
+	
+	%% This is an individual assignment!!
+	%% TODO: put your name and index number here here!
+\author{ \textcolor{blue}{Name: Thalagala B. P.} \\ \textcolor{blue}{Index No: 180631J}}
+	
+	\maketitle
+	
+	\begin{center}
+		\color{red}\bf This is an individual exercise! \\ Due Date: 23 June 2023 by 11.59 PM
+	\end{center}
+	
+	% \section*{Instructions}
+	% %
+	
+	% For this assignment, you have to read the given questions carefully and provide answers in the given space.
+	
+	\section*{Section 1}
+	
+	Provide answers to questions 1 through 7 in the given space referring to the Tables~\ref{tab:SampleData} and~\ref{tab:SampleData2} given below.
+	
+	\begin{table}[h!]
+		\caption{Example dataset on the weekly usage of taxis by certain individuals
+		} \label{tab:SampleData}
+		\begin{tabularx}{\columnwidth}{|p{2cm}|p{2cm}|p{3cm}|X|X|}
+			\hline
+			\textbf{Name} & \textbf{Age} & \textbf{Gender}  & \textbf{Occupation}  & \textbf{Average No. of taxi trips per week} \\
+			\hline
+			943145 & 21 & Female & Legal Counsel & 15\\\hline
+			
+			\hline
+			416765 & 38 & Male & Data Privacy Officer & 2 \\\hline
+			
+			\hline
+			356891 & 44 & Female & Database Administrator & 3 \\ \hline
+			
+			\hline
+			723145 & 25 & Female & Administrative 
+			Assistant & 1\\\hline
+			
+			\hline
+			239976 & 31 & Male & Data Privacy Officer & 5 \\\hline
+			
+			\hline
+			562396 & 42 & Female & Programmer & 3\\ \hline
+			
+			\hline
+			964825 & 22 & Female & Administrative 
+			Assistant & 4 \\ \hline
+			
+			\hline
+			873892 & 30 & Female & Legal Counsel & 2\\ \hline
+			
+		\end{tabularx}
+	\end{table}
+	
+	\begin{enumerate}
+		
+		\item What type of data anonymization technique is used for the dataset given in Table~\ref{tab:SampleData}? 
+		
+		\begin{answer}
+			%% TODO: Add answer here
+			Your answer here
+		\end{answer}
+		
+		\item Is this technique sufficient to protect the privacy of the associated individuals? If not, why?
+		
+		\begin{answer}
+			%% TODO: Add answer here
+			Your answer here
+		\end{answer}
+		
+		
+		
+		\item Briefly describe three other data anonymization techniques that can be used to anonymize data.
+		
+		\begin{answer}
+			%% TODO: Add answer here
+			Your answer here
+		\end{answer}
+		
+		\newpage 
+		
+		\begin{table}[h!]  
+			\caption{Modified example dataset on the weekly usage of taxis by certain individuals
+			} \label{tab:SampleData2}
+			
+			\begin{tabularx}{\columnwidth}{|p{2cm}|X|X|X|}
+				\hline
+				\textbf{Age} & \textbf{Gender}  & \textbf{Occupation}  & \textbf{Average No. of taxi trips per week} \\
+				\hline
+				21 to 30 & Female & Legal Counsel & 15\\\hline
+				
+				\hline
+				31 to 40 & Male & Data Privacy Officer & 2 \\\hline
+				
+				\hline
+				41 to 50 & Female & IT & 3 \\ \hline
+				
+				\hline
+				21 to 30 & Female & Administrative 
+				Assistant & 1\\\hline
+				
+				\hline
+				31 to 40 & Male & Data Privacy Officer & 5 \\\hline
+				
+				\hline
+				41 to 50 & Female & IT & 3\\ \hline
+				
+				\hline
+				21 to 30 & Female & Administrative 
+				Assistant & 4 \\ \hline
+				
+				\hline
+				21 to 30 & Female & Legal Counsel & 2\\ \hline
+				
+			\end{tabularx}
+		\end{table}
+		
+		\item The example dataset given in Table~\ref{tab:SampleData} was modified to improve anonymity. The new dataset is provided in Table~\ref{tab:SampleData2}. Mention all the data anonymization techniques that were used to achieve this.
+		
+		\begin{answer}
+			%% TODO: Add answer here
+			Your answer here
+		\end{answer}
+		
+		\item Can k-anonymity be observed in the data given in Table~\ref{tab:SampleData2}? If so, what is the value of k?
+		
+		\begin{answer}
+			%% TODO: Add answer here
+			Your answer here
+		\end{answer}
+		
+		\item Is privacy guaranteed for the data given in Table~\ref{tab:SampleData2}? Justify your answer.
+		
+		\begin{answer}
+			%% TODO: Add answer here
+			Your answer here
+		\end{answer}
+		
+		\item Calculate the risk of re-identification for data given in Table~\ref{tab:SampleData2} (mention as a percentage). Justify your answer.
+		
+		\begin{answer}
+			%% TODO: Add answer here
+			Your answer here
+		\end{answer}
+		
+		\item Suggest ways to enhance the privacy of this dataset considering l-diversity.
+		
+		\begin{answer}
+			%% TODO: Add answer here
+			
+			Your answer here.
+			
+		\end{answer}
+		
+	\end{enumerate}
+	
+	\section*{Section 2}
+	\begin{enumerate}
+		
+		\item What is differential privacy?
+		
+		\begin{answer}
+			%% TODO: Add answer here
+			Your answer here
+		\end{answer}
+		
+		\item Briefly describe what is \textbf{protected} and \textbf{not protected} by applying differential privacy.
+		
+		\begin{answer}
+			%% TODO: Add answer here
+			Your answer here
+		\end{answer}
+		
+		\item The following mechanism is used to satisfy differential privacy where Z denotes the noise added.\\
+		\centering
+		$F(x) = f(x) + Z $\\
+		
+		\vspace{0.25cm}
+		\begin{enumerate}
+			\item Provide an equation to show the relationship between $\epsilon$ (privacy budget) and $Z$? Are they directly or inversely related?
+			\begin{answer}
+				%% TODO: Add answer here
+				Your answer here
+			\end{answer}
+			
+			\item What does it mean to have $\epsilon = 0$?
+			\begin{answer}
+				%% TODO: Add answer here
+				Your answer here
+			\end{answer}
+			
+			\item What would be the result of adding a larger amount of noise?
+			\begin{answer}
+				%% TODO: Add answer here
+				Your answer here
+			\end{answer}
+		\end{enumerate}
+		
+	\end{enumerate}
+	
+\end{document}
