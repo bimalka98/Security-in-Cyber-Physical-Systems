@@ -82,10 +82,10 @@
 		
 		\item View the currently logged in user.
 		
-		\begin{figure}[h]
+		\begin{figure}[H]
 			\centering
-			\includegraphics[width=0.65\columnwidth]{images/ex4-sample-terminal-output.png}
-			\caption{Sample Terminal Output} \label{fig:sample-terminal-output}
+			\includegraphics[width=0.65\columnwidth]{images/part1/1.png}
+			\caption{Currently logged-in user} \label{fig:1}
 		\end{figure}
 		
 		\subsubsection*{Creating Firewall Rules with iptables}
@@ -93,65 +93,114 @@
 		\item Use \texttt{dpkg -l \textbar \ grep iptables} command to check whether iptables is installed on your system. If it does not existing in your system, install it by running \texttt{sudo apt-get install iptables}.
 		
 		\begin{answer}
-			%% TODO: Add answer here
-			Your answer here
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.65\columnwidth]{images/part1/2.png}
+				\caption{Checking whether {\tt iptables} is installed on the system}
+			\end{figure}
 		\end{answer}
 		
 		\item Check all available iptables rules in your system using the command \texttt{/sbin/iptables -n -L }.
 		
 		\begin{answer}
-			%% TODO: Add answer here
-			Your answer here
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.65\columnwidth]{images/part1/3.png}
+				\caption{Checking all available {\tt iptables} rules}
+			\end{figure}
 		\end{answer}
 		
 		\item Save all available iptables rules to a file named \textbf{iptablesRule.v4} using \texttt{iptables-save} command.
 		
 		\begin{answer}
-			%% TODO: Add answer here
-			Your answer here
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.65\columnwidth]{images/part1/4.png}
+				\caption{Saving all available {\tt iptables} rules}
+			\end{figure}
 		\end{answer}
 		
 		\item Flush all the iptables rules that exist in your system and set a default policy to drop packets.
 		\begin{answer}
-			%% TODO: Add answer here
-			Your answer here
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.65\columnwidth]{images/part1/5.png}
+				\caption{Flushing all the rules and setting a default policy to drop packets}
+			\end{figure}
 		\end{answer}
 		
 		\item Set iptables rules to permit input and output DNS traffic in your system.
 		
 		\begin{answer}
-			%% TODO: Add answer here
-			Your answer here
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.65\columnwidth]{images/part1/6.png}
+				\caption{Permitting input and output DNS traffic}
+			\end{figure}
 		\end{answer}
 		
 		\item Add iptables rules to accept local network incoming and outgoing traffic from the network 192.168.1.0/24. 
 		\begin{answer}
-			%% TODO: Add answer here
-			Your answer here
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.65\columnwidth]{images/part1/ifconfig.png}
+				\caption{Checking the CIDR of the current local network}
+			\end{figure}
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.65\columnwidth]{images/part1/7.png}
+				\caption{Adding rules to accept local network incoming and outgoing traffic}
+			\end{figure}
 		\end{answer}
 		
 		\item Configure iptables rules to allow all HTTP traffic.
 		\begin{answer}
-			%% TODO: Add answer here
-			Your answer here
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.65\columnwidth]{images/part1/8.png}
+				\caption{Configuring rules to allow all HTTP traffic}
+			\end{figure}
 		\end{answer}
 		
 		\item View all iptables rules in your system and save them to a file \textbf{iptablesRuleNew.v4}. 
 		\begin{answer}
-			%% TODO: Add answer here
-			Your answer here
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.65\columnwidth]{images/part1/9.png}
+				\caption{Viewing all rules and saving them to a file}
+			\end{figure}
 		\end{answer}
 		
 		\item Create a file called \textbf{iptablesCommands.sh} and put all commands you ran from steps 4, 5 and 6 in the file. After creating the file, flush your iptables commands again and run \textbf{iptablesCommands.sh} file. View the iptables rules now and compare with the previous result.
 		\begin{answer}
-			%% TODO: Add answer here
-			Your answer here
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.65\columnwidth]{images/part1/10_1.png}
+				\caption{Creating the shell script}
+			\end{figure}
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.65\columnwidth]{images/part1/10_2.png}
+				\caption{Making the script executable}
+			\end{figure}
+		
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=0.65\columnwidth]{images/part1/10_3.png}
+				\caption{Executing the shell script}
+			\end{figure}
 		\end{answer}
 		
 		\item Finally, flush your iptables rules again. But this time, load the saved iptables rules from the file \textbf{iptablesRuleNew.v4} using \texttt{iptables-restore} command. View the iptables rules and compare them with the ones you have in step 8.
 		\begin{answer}
-			%% TODO: Add answer here
-			Your answer here
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=0.65\columnwidth]{images/part1/11.png}
+				\caption{Flushing current rules and restoring saved rules}
+			\end{figure}
 		\end{answer}
 		
 		\subsubsection*{Creating Firewall Rules with UFW}
