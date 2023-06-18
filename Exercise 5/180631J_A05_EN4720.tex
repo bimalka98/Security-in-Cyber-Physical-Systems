@@ -235,8 +235,64 @@
 		If the firewall is physically implemented, you could have tested the connections using PuTTY or the command line.
 		
 		\begin{answer}
-			%% TODO: Add answer here
-			Your answer here
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.65\columnwidth]{images/part2/1.png}
+				\caption{Current firewall rules}
+			\end{figure}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.65\columnwidth]{images/part2/2.png}
+				\caption{Implementing the base rules}
+			\end{figure}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.65\columnwidth]{images/part2/3.png}
+				\caption{{\tt iptables} after setting up the base rules}
+			\end{figure}
+		\pagebreak
+			Following network administration in VM1 is configured using the associated commands given below.
+			\begin{itemize}
+				\item Access to VM1 from VM2 must only be allowed over FTP and Telnet
+				\begin{verbatim}
+					sudo ufw allow in from 192.168.46.141 to any port 21 proto tcp
+					sudo ufw allow in from 192.168.46.141 to any port 23 proto tcp
+				\end{verbatim}
+			
+				\item Access to VM1 from HOST must only be allowed over SSH
+				
+				\begin{verbatim}
+					sudo ufw allow in from 192.168.46.1 to any port 22 proto tcp
+				\end{verbatim}
+				
+				\item Allow all outgoing traffic from VM1 with the exception of access to HTTP websites
+				
+				\begin{verbatim}
+					sudo ufw default allow outgoing					
+					sudo ufw deny out to any port 80 proto tcp
+				\end{verbatim}
+			\end{itemize}
+		
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.65\columnwidth]{images/part2/4.png}
+				\caption{Output after running the command \texttt{sudo ufw status numbered}}
+			\end{figure}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.65\columnwidth]{images/part2/5.png}
+				\caption{{\tt iptables} ruleset after mentioned configurations}
+			\end{figure}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.65\columnwidth]{images/part2/6.png}
+				\caption{Mentioned configurations in the {\tt iptables}}
+			\end{figure}
 		\end{answer}
 		
 		\subsubsection*{Scan systems with NMAP}
