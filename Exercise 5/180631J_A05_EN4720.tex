@@ -222,7 +222,25 @@
 			\item Enable UFW using \texttt{sudo ufw enable}
 			\item Deny outgoing traffic using \texttt{sudo ufw default deny outgoing}
 		\end{itemize}
+	
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.75\columnwidth]{images/part2/1.png}
+			\caption{Current firewall rules}
+		\end{figure}
 		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.75\columnwidth]{images/part2/2.png}
+			\caption{Implementing the base rules}
+		\end{figure}
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.75\columnwidth]{images/part2/3.png}
+			\caption{{\tt iptables} after setting up the base rules}
+		\end{figure}
+		\pagebreak
 		\item Implement the following network administration in VM1:
 		\begin{itemize}
 			\item Access to VM1 from VM2 must only be allowed over FTP and Telnet.
@@ -234,25 +252,8 @@
 		
 		If the firewall is physically implemented, you could have tested the connections using PuTTY or the command line.
 		
-		\begin{answer}
-			\begin{figure}[H]
-				\centering
-				\includegraphics[width=0.65\columnwidth]{images/part2/1.png}
-				\caption{Current firewall rules}
-			\end{figure}
-		
-			\begin{figure}[H]
-				\centering
-				\includegraphics[width=0.65\columnwidth]{images/part2/2.png}
-				\caption{Implementing the base rules}
-			\end{figure}
-		
-			\begin{figure}[H]
-				\centering
-				\includegraphics[width=0.65\columnwidth]{images/part2/3.png}
-				\caption{{\tt iptables} after setting up the base rules}
-			\end{figure}
-		\pagebreak
+		\begin{answer}			
+
 			Following network administration in VM1 is configured using the associated commands given below.
 			\begin{itemize}
 				\item Access to VM1 from VM2 must only be allowed over FTP and Telnet
@@ -278,23 +279,23 @@
 		
 			\begin{figure}[H]
 				\centering
-				\includegraphics[width=0.65\columnwidth]{images/part2/4.png}
+				\includegraphics[width=0.75\columnwidth]{images/part2/4.png}
 				\caption{Output after running the command \texttt{sudo ufw status numbered}}
 			\end{figure}
 		
 			\begin{figure}[H]
 				\centering
-				\includegraphics[width=0.65\columnwidth]{images/part2/5.png}
+				\includegraphics[width=0.75\columnwidth]{images/part2/5.png}
 				\caption{{\tt iptables} ruleset after mentioned configurations}
 			\end{figure}
 		
 			\begin{figure}[H]
 				\centering
-				\includegraphics[width=0.65\columnwidth]{images/part2/6.png}
+				\includegraphics[width=0.75\columnwidth]{images/part2/6.png}
 				\caption{Mentioned configurations in the {\tt iptables}}
 			\end{figure}
 		\end{answer}
-		
+		\pagebreak
 		\subsubsection*{Scan systems with NMAP}
 		In this section, you will scan for the Ports of a remote host. You will need to have two devices connected to the same local network to perform this task. 
 		
