@@ -154,13 +154,14 @@
 				\caption{Adding rules to accept local network incoming and outgoing traffic}
 			\end{figure}
 		\end{answer}
-		
+		\pagebreak
 		\item Configure iptables rules to allow all HTTP traffic.
 		\begin{answer}
 			\begin{figure}[H]
 				\centering
 				\includegraphics[width=0.65\columnwidth]{images/part1/8.png}
 				\caption{Configuring rules to allow all HTTP traffic}
+				\label{fig:8}
 			\end{figure}
 		\end{answer}
 		
@@ -172,8 +173,9 @@
 				\caption{Viewing all rules and saving them to a file}
 			\end{figure}
 		\end{answer}
-		
+		\pagebreak
 		\item Create a file called \textbf{iptablesCommands.sh} and put all commands you ran from steps 4, 5 and 6 in the file. After creating the file, flush your iptables commands again and run \textbf{iptablesCommands.sh} file. View the iptables rules now and compare with the previous result.
+		
 		\begin{answer}
 			\begin{figure}[H]
 				\centering
@@ -187,22 +189,29 @@
 				\caption{Making the script executable}
 			\end{figure}
 		
-			\begin{figure}[h]
+			\begin{figure}[H]
 				\centering
 				\includegraphics[width=0.65\columnwidth]{images/part1/10_3.png}
 				\caption{Executing the shell script}
+				\label{scripting}
 			\end{figure}
-		\end{answer}
 		
+		As it can be observed in the Figure \ref{scripting}, it is possible to set {\tt iptables} rules through shell scripts, which is an efficient way when it comes to setting rules in multiple host devices. In terms of the differences there is no difference between setting the rules manually and setting the rules through the script. The reason for the change in the number of rules is just because some rules were not included in the script (only the rules from item 4, 5 and 6 are there).
+		\end{answer}
+				
+		\pagebreak
 		\item Finally, flush your iptables rules again. But this time, load the saved iptables rules from the file \textbf{iptablesRuleNew.v4} using \texttt{iptables-restore} command. View the iptables rules and compare them with the ones you have in step 8.
 		\begin{answer}
 			\begin{figure}[H]
 				\centering
 				\includegraphics[width=0.65\columnwidth]{images/part1/11.png}
 				\caption{Flushing current rules and restoring saved rules}
+				\label{fig:11}
 			\end{figure}
-		\end{answer}
 		
+		When comparing the output shown in the Figure \ref{fig:11} and the Figure \ref{fig:8}, it can be observed that there is no difference. This means it is possible to save {\tt iptables} of a host at a given moment and restore them at another moment as required. This can be a useful tool when it comes to backing up rules before any significant change to the rules, because if anything goes wrong we have a fallback position.
+		\end{answer}
+		\pagebreak
 		\subsubsection*{Creating Firewall Rules with UFW}
 		
 		The scenario comprises of two virtual machines (VM1 IP - 192.168.46.140 and VM2 IP - 192.168.46.141) running on a host (HOST IP - 192.168.46.1) machine. VM1 is an Ubuntu virtual machine that has a firewall implemented/configured. 
@@ -314,7 +323,7 @@
 				\includegraphics[width=0.9\columnwidth]{images/part3/4.png}
 				\caption{Scan Raspberry Pi device from the Laptop for TCP and UDP ports}
 			\end{figure}
-		\end{answer}\textbf{}
+		\end{answer}
 		
 		\section*{Section 2}
 		
