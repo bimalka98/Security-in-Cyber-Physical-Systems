@@ -347,7 +347,7 @@
 		\begin{table}[htbp]
 			\centering
 			\caption{Comparison of IPsec and SSL}
-			\begin{tabularx}{0.9\columnwidth}{|X|X|}
+			\begin{tabularx}{0.8\columnwidth}{|X|X|}
 				\hline
 				\textbf{IPsec} & \textbf{SSL}\\
 				\hline
@@ -373,18 +373,21 @@
 		\item Explain the differences between an IDS, an IPS, and a firewall?
 		
 		\begin{answer}
-			 An IDS (Intrusion Detection System)  is a passive network monitoring system, which is only capable of detecting threats and alerting the network administrator or the SOC (the security operations center).\\
+			 An \textbf{IDS (Intrusion Detection System)}  is a passive network monitoring system, which is only capable of detecting threats and alerting the network administrator or the SOC (the security operations center).\\
 			 
-			 Whereas IPS (Intrusion Prevention System) is an active network monitoring system which not only detect the threats, but also take actions to prevent or block them in real time. This is done through analyzing the traffic and checking them against known attack patterns or policies of the network.\\
+			 Whereas \textbf{IPS (Intrusion Prevention System)} is an active network monitoring system which not only detect the threats, but also take actions to prevent or block them in real time. This is done through analyzing the traffic and checking them against known attack patterns or policies of the network.\\
 			 
-			 In contrast to the above a firewall provides a general protection by simply controlling the access to a given network, based on predefined set of rules. This can include the rules to allow or block traffics from a given subnet, allow or block traffics through a specific port and etc.
+			 In contrast to the above a \textbf{Firewall} provides a general protection by simply controlling the access to a given network, based on predefined set of rules. This can include the rules to allow or block traffics from a given subnet, allow or block traffics through a specific port and etc.
 		\end{answer}
 		
 		\item What is the difference between anomaly detection and signature or heuristic-based intrusion detection?
 		
 		\begin{answer}
-			%% TODO: Add answer here
-			Your answer here
+			Both of the methods are used in intrusion detection systems to identify potential threats. However, the operating principal are different.\\
+			
+			When it comes to the anomaly detection, system evaluates the network traffic with respect to a \textit{normal/ usual behavior}, and reports if anything deviates from that baseline. This method is effective at \textbf{identifying new or unknown threats}.\\ 
+			
+			However, signature based system evaluates the traffic by comparing them with a know threat (signature/ pattern) database. This kind of system is effective at \textbf{identifying known threats}.
 		\end{answer}
 		
 	\end{enumerate}
