@@ -342,28 +342,42 @@
 		
 		\item Perform a comparison between IPsec and SSL.
 		
+		Answer was adapted from:\\ \url{https://www.geeksforgeeks.org/difference-between-ipsec-and-ssl/}
+		
 		\begin{table}[htbp]
+			\centering
 			\caption{Comparison of IPsec and SSL}
-			\begin{tabularx}{\columnwidth}{|X|X|}
+			\begin{tabularx}{0.9\columnwidth}{|X|X|}
 				\hline
 				\textbf{IPsec} & \textbf{SSL}\\
 				\hline
-				\textcolor{blue}{Your answer here} & 
-				\textcolor{blue}{Your answer here} \\ 
+				\textcolor{blue}{A set of protocols that provide security for IP (Internet Protocol) protocol} & 
+				\textcolor{blue}{A protocol developed for secure communication} \\  
 				\hline 
-				\textcolor{blue}{Your answer here} & 
-				\textcolor{blue}{Your answer here} \\ 
+				\textcolor{blue}{Operates in the \textit{Internet/ Network} layer of the TCP/IP stack} & 
+				\textcolor{blue}{Operates in between \textit{Transport} and \textit{Application} layers of the TCP/IP stack} \\ 
 				\hline 
-				
+				\textcolor{blue}{Used in securing VPNs} & 
+				\textcolor{blue}{Used in securing web transactions} \\ 
+				\hline
+				\textcolor{blue}{Involves a complex configurations } & 
+				\textcolor{blue}{Comparatively less complex to set up } \\ 
+				\hline
+				\textcolor{blue}{Installation is not specific to the vendor} & 
+				\textcolor{blue}{Installation is specific to the vendor} \\ 
+				\hline
 				
 			\end{tabularx}
 		\end{table}
-		
+		\pagebreak
 		\item Explain the differences between an IDS, an IPS, and a firewall?
 		
 		\begin{answer}
-			%% TODO: Add answer here
-			Your answer here
+			 An IDS (Intrusion Detection System)  is a passive network monitoring system, which is only capable of detecting threats and alerting the network administrator or the SOC (the security operations center).\\
+			 
+			 Whereas IPS (Intrusion Prevention System) is an active network monitoring system which not only detect the threats, but also take actions to prevent or block them in real time. This is done through analyzing the traffic and checking them against known attack patterns or policies of the network.\\
+			 
+			 In contrast to the above a firewall provides a general protection by simply controlling the access to a given network, based on predefined set of rules. This can include the rules to allow or block traffics from a given subnet, allow or block traffics through a specific port and etc.
 		\end{answer}
 		
 		\item What is the difference between anomaly detection and signature or heuristic-based intrusion detection?
