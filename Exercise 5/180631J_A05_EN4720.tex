@@ -76,8 +76,7 @@
 	
 	In this section, you will implement Firewall rules using \textbf{iptables} and \textbf{ufw} Linux commands. Moreover, you will scan network ports of a remote device using \textbf{nmap} Linux command.  
 	
-	For all the questions in this section, add a screenshot of the terminal (including all the commands you ran to perform the task) unless specified otherwise. The evaluator should be able to see each step that you followed to perform each task. In all screenshots, the areas marked (which are unique to your terminal display) in Figure 1 (the sample answer to Question 1) must be visible.
-	
+	For all the questions in this section, add a screenshot of the terminal (including all the commands you ran to perform the task) unless specified otherwise. The evaluator should be able to see each step that you followed to perform each task.
 	\begin{enumerate}
 		
 		\item View the currently logged in user.
@@ -335,7 +334,7 @@
 			
 			\textbf{VPN (a virtual private network)} allows an encrypted tunnel to be created between two end points in an unsecured network (eg: internet) for secure communication. This minimize the possibility of being tracked by a malicious third party. VPNs are used to connect remote employees or branches of an organization, to its corporate network for secure communication.\\
 			
-			\textbf{DMZ (a demilitarized zone)} or otherwise known as a perimeter network/ screened subnet is a physical or logical network segment (a buffer) that separates an organization's internal LAN from the other unsecured networks (eg: internet). This allows an additional layer of security to be maintained, as it restrict the direct access from the internet to the LAN. The services/ servers provided to public are placed in the DMZ, while organization's private resources are kept in the internal network.\\
+			\textbf{DMZ (a demilitarized zone)} or otherwise known as a perimeter network/ screened subnet is a physical or logical network segment (a buffer) that separates an organization's internal LAN from the other unsecured networks (eg: internet). This allows an additional layer of security to be maintained, as it restrict the direct access from the internet to the LAN. The services/ servers provided to public are placed in the DMZ, while organization's private resources are kept in the internal LAN network.\\
 			
 			\textbf{Network Segmentation} is a method to isolate/ control the traffic of a given network. As in the VLANs, improved performance due to reduced traffic congestion and improved security due to virtual isolation of networks are the benefits.\\		
 		\end{answer}
@@ -377,17 +376,17 @@
 			 
 			 Whereas \textbf{IPS (Intrusion Prevention System)} is an active network monitoring system which not only detect the threats, but also take actions to prevent or block them in real time. This is done through analyzing the traffic and checking them against known attack patterns or policies of the network.\\
 			 
-			 In contrast to the above a \textbf{Firewall} provides a general protection by simply controlling the access to a given network, based on predefined set of rules. This can include the rules to allow or block traffics from a given subnet, allow or block traffics through a specific port and etc.
+			 In contrast to the above, a \textbf{Firewall} provides a general protection by simply controlling the access to a given network, based on predefined set of rules. This can include the rules to allow or block traffics from a given subnet, allow or block traffics through a specific port and etc.
 		\end{answer}
 		
 		\item What is the difference between anomaly detection and signature or heuristic-based intrusion detection?
 		
 		\begin{answer}
-			Both of the methods are used in intrusion detection systems to identify potential threats. However, the operating principal are different.\\
+			Both of the methods are used in intrusion detection systems to identify potential threats. However, the operating principles are different.\\
 			
 			When it comes to the anomaly detection, system evaluates the network traffic with respect to a \textit{normal/ usual behavior}, and reports if anything deviates from that baseline. This method is effective at \textbf{identifying new or unknown threats}.\\ 
 			
-			However, signature based system evaluates the traffic by comparing them with a know threat (signature/ pattern) database. This kind of system is effective at \textbf{identifying known threats}.
+			However, signature based system evaluates the traffic by comparing them with a database of known threats (signatures/ patterns). This kind of system is effective at \textbf{identifying known threats}.
 		\end{answer}
 		
 	\end{enumerate}
