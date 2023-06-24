@@ -58,7 +58,7 @@
 	\maketitle
 	
 	\begin{center}
-		\color{red}\bf This is an individual exercise! \\ Due Date: 23 June 2023 by 11.59 PM
+		\color{red}\bf This is an individual exercise! \\ Due Date: 24 June 2023 by 11.59 PM
 	\end{center}
 	
 	% \section*{Instructions}
@@ -110,15 +110,13 @@
 		\item What type of data anonymization technique is used for the dataset given in Table~\ref{tab:SampleData}? 
 		
 		\begin{answer}
-			%% TODO: Add answer here
-			Your answer here
+			\textbf{De-identification}: actual names of the individuals have been replaced by a numerical identifier. Because, the attribute `Name' of a data record is a direct identifier which can be used to identify a given individual uniquely.
 		\end{answer}
 		
 		\item Is this technique sufficient to protect the privacy of the associated individuals? If not, why?
 		
 		\begin{answer}
-			%% TODO: Add answer here
-			Your answer here
+			No. Removing only the name can not guarantee the preservation of privacy, because it can be \textbf{susceptible to linkage attacks} which leads to re-identification of the individuals by linking the information with other external information (zip, sex, birth date).
 		\end{answer}
 		
 		
@@ -126,12 +124,16 @@
 		\item Briefly describe three other data anonymization techniques that can be used to anonymize data.
 		
 		\begin{answer}
-			%% TODO: Add answer here
-			Your answer here
+			\begin{itemize}
+				\item \textbf{Generalization}: Rather than including the specific information about an attribute (eg: age = 21) in a record, it can be replaced with more generalized value (eg: range of ages = (20 to 30)).
+				
+				\item \textbf{Suppression}: Some fields of the data base can be entirely removed, if that field contains highly unique identifiers such as national ID card numbers and telephone numbers of the individuals.
+				
+				\item \textbf{Data swapping}: some of the values of a given record can be swapped with some other record's value while keeping the statistical properties of the database intact.
+			\end{itemize}
 		\end{answer}
 		
-		\newpage 
-		
+				
 		\begin{table}[h!]  
 			\caption{Modified example dataset on the weekly usage of taxis by certain individuals
 			} \label{tab:SampleData2}
@@ -171,15 +173,16 @@
 		\item The example dataset given in Table~\ref{tab:SampleData} was modified to improve anonymity. The new dataset is provided in Table~\ref{tab:SampleData2}. Mention all the data anonymization techniques that were used to achieve this.
 		
 		\begin{answer}
-			%% TODO: Add answer here
-			Your answer here
+			\begin{itemize}
+				\item Generalization: ages have been replaced with ranges of ages, some value of the occupation filed hs been replaced with its parent set's value {\tt IT = \{Database Administrator, Programmer, ...\}}
+				\item Suppression: Name field has been removed entirely
+			\end{itemize}
 		\end{answer}
 		
 		\item Can k-anonymity be observed in the data given in Table~\ref{tab:SampleData2}? If so, what is the value of k?
 		
 		\begin{answer}
-			%% TODO: Add answer here
-			Your answer here
+			Yes. K = 2
 		\end{answer}
 		
 		\item Is privacy guaranteed for the data given in Table~\ref{tab:SampleData2}? Justify your answer.
