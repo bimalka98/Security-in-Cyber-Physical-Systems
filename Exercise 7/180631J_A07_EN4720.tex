@@ -287,20 +287,21 @@
 		\begin{enumerate}
 			\item Provide an equation to show the relationship between $\epsilon$ (privacy budget) and $Z$? Are they directly or inversely related?
 			\begin{answer}
-				%% TODO: Add answer here
-				Your answer here
+				\[
+					Z \sim Laplace\left( b \right), ~ where ~ b =\frac{\Delta}{\epsilon}
+				\]
+				
+				Here $\Delta$ denotes the global sensitivity whereas $\epsilon$ denotes the privacy budget. $Z$ and privacy budget are inversely related.
 			\end{answer}
 			
 			\item What does it mean to have $\epsilon = 0$?
 			\begin{answer}
-				%% TODO: Add answer here
-				Your answer here
+				$\epsilon = 0$ indicates the perfect membership privacy. That is output of a query must be exactly the same regardless of the fact that record about an individual is included or excluded in the database. This is practically not achievable and $\epsilon$ is always a trade off between privacy and the utility.
 			\end{answer}
 			
 			\item What would be the result of adding a larger amount of noise?
 			\begin{answer}
-				%% TODO: Add answer here
-				Your answer here
+				Large noise will destroy the utilization of the data, and make it impossible to make accurate or useful decisions.
 			\end{answer}
 		\end{enumerate}
 		
