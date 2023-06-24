@@ -196,7 +196,7 @@
 		\item Calculate the risk of re-identification for data given in Table~\ref{tab:SampleData2} (mention as a percentage). Justify your answer.
 		
 		\begin{answer}
-			Consider below tables with rearranged records.
+			Consider below tables with rearranged records for easy comparison bout the linkages between them. Let's define the risk of re-identification as the ratio between 
 			
 			\begin{table}[h!]
 				\caption{Original dataset}
@@ -244,7 +244,7 @@
 		\item Suggest ways to enhance the privacy of this dataset considering l-diversity.
 		
 		\begin{answer}
-			L-diversity ensures that withing each equivalence group (quasi-identifier group) there are at least $l$ distinct values for each attribute. This make it harder to learn the sensitive attribute through attribute disclosure attacks. In order to achieve l-diversity, generalization and suppression techniques has to be used on the original data set recursively until we get $l$ distinct values inside every quasi-identifier group.
+			L-diversity ensures that withing each equivalence group (quasi-identifier group) there are at least $l$ distinct values for each attribute. This make it harder to learn the sensitive attribute through attribute disclosure attacks. In order to achieve l-diversity, generalization and suppression techniques has to be used on the original data set recursively until we get $l$ distinct values under a given attribute, within every quasi-identifier group.
 		\end{answer}
 		
 	\end{enumerate}
@@ -255,15 +255,28 @@
 		\item What is differential privacy?
 		
 		\begin{answer}
-			%% TODO: Add answer here
-			Your answer here
+			Differential privacy ensures that the membership of a particular individual in a given database is not disclosed. That is, the data that can be inferred about an individual is roughly the same regardless of the fact that the data about that individual is actually available in the database or not. This functionality is achieved by adding a carefully calibrated noise to the output of the queries to the database.
 		\end{answer}
 		
 		\item Briefly describe what is \textbf{protected} and \textbf{not protected} by applying differential privacy.
 		
 		\begin{answer}
-			%% TODO: Add answer here
-			Your answer here
+			\begin{itemize}
+				\item \textbf{\sc Protected}:
+				\begin{itemize}
+					\item \textbf{Membership privacy} of an individual (described above)
+					
+					\item \textbf{Ability to withstand linkage attacks}, by making no assumptions about the availability of auxiliary information. That is even an attacker has some auxiliary info about a given individual, he will not be able to re-identify the individual by using the outputs of the queries.					
+				\end{itemize} 
+				
+				\item \textbf{\sc Not protected}:
+				\begin{itemize}
+					\item \textbf{Utility of the data} is destroyed if unnecessary amount of noise is added to the real data. This can make accurate decision making impossible. (eg: a particular application may provide \textit{false or less useful information} to the user depending on the data that the app accessed via a differential private protected database - location based suggestions)
+					
+					\item \textbf{Privacy of groups}: Even though an attacker is unable to infer accurate information about a given individual, the retrieved information can still be used to gain insights about the various groups/ teams inside a database.
+				\end{itemize}
+				
+			\end{itemize}
 		\end{answer}
 		
 		\item The following mechanism is used to satisfy differential privacy where Z denotes the noise added.\\
