@@ -175,8 +175,8 @@
 		
 		\begin{answer}
 			\begin{itemize}
-				\item Generalization: ages have been replaced with ranges of ages, some value of the occupation filed hs been replaced with its parent set's value {\tt IT = \{Database Administrator, Programmer, ...\}}
-				\item Suppression: Name field has been removed entirely
+				\item \textbf{Generalization}: ages have been replaced with ranges of ages, some value of the occupation filed hs been replaced with its parent set's value {\tt IT = \{Database Administrator, Programmer, ...\}} the latter is also known as `data aggregation'
+				\item \textbf{Suppression}: Name field has been removed entirely
 			\end{itemize}
 		\end{answer}
 		
@@ -196,32 +196,43 @@
 		\item Calculate the risk of re-identification for data given in Table~\ref{tab:SampleData2} (mention as a percentage). Justify your answer.
 		
 		\begin{answer}
-			Consider below tables with rearranged records for easy comparison bout the linkages between them. Let's define the risk of re-identification as the ratio between 
+			Consider below tables with rearranged records for easy comparison about the linkages between them. Let's define the risk of re-identification as the ratio between the number of actual records (always one) and the number of potential record matches. The matching procedure depends only on the quasi-identifiers (age, gender, occupation)\\
+			
+			As an example take the record of the name 943145. The risk $R$ of re-identifying the name corresponding to the average taxi trips of 15, using the records given in the Table \ref{t4},
+			
+			\[
+			R = \frac{1}{2} \times 100\% = 50\%
+			\]
+			
+			
+			Similarly, risk is calculated for all the other names and are given in the Table \ref{reid}. For the names in $5^{th} ~and ~6^{th}$ this risk is 100\% as there is no diversity in the values in the \textit{Average No. of taxi trips per week} column.
 			
 			\begin{table}[h!]
-				\caption{Original dataset}
+				\caption{Risk of re-identification}
+				\label{reid}
 				\begin{tabularx}{\columnwidth}{|p{2cm}|p{2cm}|p{3cm}|X|X|}
 					\hline
-					\textbf{Name} & \textbf{Age} & \textbf{Gender}  & \textbf{Occupation}  & \textbf{Average No. of taxi trips per week} \\\hline
-					943145 & 21 & Female & Legal Counsel & 15\\\hline
-					873892 & 30 & Female & Legal Counsel & 2\\ \hline
+					\textbf{Name} & \textbf{Age} & \textbf{Gender}  & \textbf{Occupation} & Risk (\%) \\\hline
+					943145 & 21 & Female & Legal Counsel & 50\\\hline
+					873892 & 30 & Female & Legal Counsel & 50\\ \hline
 					\hline
-					416765 & 38 & Male & Data Privacy Officer & 2 \\\hline
-					239976 & 31 & Male & Data Privacy Officer & 5 \\\hline
+					416765 & 38 & Male & Data Privacy Officer & 50 \\\hline
+					239976 & 31 & Male & Data Privacy Officer &50 \\\hline
 					\hline			
-					356891 & 44 & Female & Database Administrator & 3 \\ \hline
-					562396 & 42 & Female & Programmer & 3\\ \hline
+					356891 & 44 & Female & Database Administrator & 100 \\ \hline
+					562396 & 42 & Female & Programmer & 100 \\ \hline
 					\hline									
 					723145 & 25 & Female & Administrative 
-					Assistant & 1\\\hline
+					Assistant & 50\\\hline
 					964825 & 22 & Female & Administrative 
-					Assistant & 4 \\ \hline																																					
+					Assistant & 50 \\ \hline																																					
 				\end{tabularx}
 			\end{table}
 			
 			
 			\begin{table}[H]  
-				\caption{Rearranged example dataset}				
+				\caption{Rearranged example dataset}
+				\label{t4}				
 				\begin{tabularx}{\columnwidth}{|p{2cm}|p{2cm}|X|X|}
 					\hline
 					\textbf{Age} & \textbf{Gender}  & \textbf{Occupation}  & \textbf{Average No. of taxi trips per week} \\
@@ -240,7 +251,7 @@
 				\end{tabularx}
 			\end{table} 					
 		\end{answer}
-		
+		\pagebreak
 		\item Suggest ways to enhance the privacy of this dataset considering l-diversity.
 		
 		\begin{answer}
@@ -248,7 +259,7 @@
 		\end{answer}
 		
 	\end{enumerate}
-	
+
 	\section*{Section 2}
 	\begin{enumerate}
 		
