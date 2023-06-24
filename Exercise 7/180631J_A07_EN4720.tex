@@ -45,6 +45,7 @@
 
 % load cleveref last!
 \usepackage[capitalise]{cleveref}
+\usepackage{float}
 
 
 \begin{document}
@@ -188,24 +189,62 @@
 		\item Is privacy guaranteed for the data given in Table~\ref{tab:SampleData2}? Justify your answer.
 		
 		\begin{answer}
-			%% TODO: Add answer here
-			Your answer here
+			Although the above methods reduce the risk of re-identification, it is not possible to grantee the preservation of privacy of data. The database can be still \textbf{susceptible to attribute disclosure attacks}, if a given equivalence class (the group of $k$ records with the same quasi-identifiers) has the same value for the given sensitive attribute. Let's assume the sensitive attribute in the Table \ref{tab:SampleData2} is the \textit{Average No. of taxi trips per week}. Then if we consider the $3^{rd}$ and $6^{th}$ records in that table they have the same value for the sensitive attribute. 
 		\end{answer}
 		
+		\pagebreak
 		\item Calculate the risk of re-identification for data given in Table~\ref{tab:SampleData2} (mention as a percentage). Justify your answer.
 		
 		\begin{answer}
-			%% TODO: Add answer here
-			Your answer here
+			Consider below tables with rearranged records.
+			
+			\begin{table}[h!]
+				\caption{Original dataset}
+				\begin{tabularx}{\columnwidth}{|p{2cm}|p{2cm}|p{3cm}|X|X|}
+					\hline
+					\textbf{Name} & \textbf{Age} & \textbf{Gender}  & \textbf{Occupation}  & \textbf{Average No. of taxi trips per week} \\\hline
+					943145 & 21 & Female & Legal Counsel & 15\\\hline
+					873892 & 30 & Female & Legal Counsel & 2\\ \hline
+					\hline
+					416765 & 38 & Male & Data Privacy Officer & 2 \\\hline
+					239976 & 31 & Male & Data Privacy Officer & 5 \\\hline
+					\hline			
+					356891 & 44 & Female & Database Administrator & 3 \\ \hline
+					562396 & 42 & Female & Programmer & 3\\ \hline
+					\hline									
+					723145 & 25 & Female & Administrative 
+					Assistant & 1\\\hline
+					964825 & 22 & Female & Administrative 
+					Assistant & 4 \\ \hline																																					
+				\end{tabularx}
+			\end{table}
+			
+			
+			\begin{table}[H]  
+				\caption{Rearranged example dataset}				
+				\begin{tabularx}{\columnwidth}{|p{2cm}|p{2cm}|X|X|}
+					\hline
+					\textbf{Age} & \textbf{Gender}  & \textbf{Occupation}  & \textbf{Average No. of taxi trips per week} \\
+					\hline
+					21 to 30 & Female & Legal Counsel & 15\\\hline
+					21 to 30 & Female & Legal Counsel & 2\\ \hline					
+					\hline	
+					31 to 40 & Male & Data Privacy Officer & 2 \\\hline
+					31 to 40 & Male & Data Privacy Officer & 5 \\\hline					
+					\hline
+					41 to 50 & Female & IT & 3 \\ \hline
+					41 to 50 & Female & IT & 3\\ \hline					
+					\hline
+					21 to 30 & Female & Administrative Assistant & 1\\\hline
+					21 to 30 & Female & Administrative Assistant & 4 \\ \hline					
+				\end{tabularx}
+			\end{table} 					
 		\end{answer}
 		
 		\item Suggest ways to enhance the privacy of this dataset considering l-diversity.
 		
 		\begin{answer}
-			%% TODO: Add answer here
-			
-			Your answer here.
-			
+			L-diversity ensures that withing each equivalence group (quasi-identifier group) there are at least $l$ distinct values for each attribute. This make it harder to learn the sensitive attribute through attribute disclosure attacks. In order to achieve l-diversity, generalization and suppression techniques has to be used on the original data set recursively until we get $l$ distinct values inside every quasi-identifier group.
 		\end{answer}
 		
 	\end{enumerate}
