@@ -10,7 +10,7 @@
 | Ex 4 | Authorization | 6% | Submitted |
 | Ex 5 | Infrastructure security | 10% | Submitted |
 | Ex 6 | Application security | 4% | Skipped |
-| Ex 7 | Privacy | 4% | Not Submitted Yet |
+| Ex 7 | Privacy | 4% | Submitted |
 
 
 ## Assignments:
@@ -19,5 +19,5 @@
 | --- | --- | --- |
 | Quiz 1 | 10% | 8.5/10 |
 | Quiz 2 | 10% | 9/10 |
-| Quiz 3 | 10% | Not Done Yet |
+| Quiz 3 | 10% | 10/10 |
 | Programming Assignment | 25% | Not Done Yet |
