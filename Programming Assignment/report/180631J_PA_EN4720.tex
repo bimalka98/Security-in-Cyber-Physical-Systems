@@ -65,7 +65,7 @@
 	\maketitle
 	
 	\begin{center}
-		\color{red}\bf This is an individual assignment! \\ Due Date: 7 July 2023 by 11.59 PM
+		\color{red}\bf This is an individual assignment! \\ Due Date: 8 July 2023 by 11.59 PM
 	\end{center}
 	
 	\begin{center}
@@ -122,26 +122,60 @@
 		
 		\begin{answer}
 			
-			%% TODO: Write your answer here.	
-			Your answer here.
+			\begin{itemize}
+				\item A \textbf{combination of numbers, letters (upper case and/or lower case)  and special characters} must be used. This make the number of options per character to be large which eventually make it hard to brute-force.
+				
+				\item \textbf{The password must be sufficiently long}. This makes the number of possible password combinations (password space) extremely large which will make the brute-force attack computationally infeasible to be done in a shorter period of time. 
+			\end{itemize}
 			
 		\end{answer}
 		
 		\item (4 pts) Which passwords are recovered (for which users)? How long did the attack take (in seconds)? What was the speed of the attack (in hashes/second)? Add a screenshot of your terminal output showing the answer.
+				
 		
 		\begin{answer}
 			
-			%% TODO: Write your answer here.	
-			Your answer here.
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=0.8\columnwidth]{images/p0/q1.png}
+				\caption{Output of the {\tt python attack.py problem0}}
+			\end{figure}
+			
+			\begin{itemize}
+				\item Time for the attack = 28.2 seconds
+				\item Speed of the attack = 61213.7 hashes per second
+			\end{itemize}
+			
+			\begin{table}[h]
+				\centering
+				\begin{tabular}{|l|l|}
+					\hline
+					\textbf{User} & \textbf{Password} \\ \hline
+					Robert & hat \\ \hline
+					Susan & pen \\ \hline
+					Daniel & day2 \\ \hline
+					Judy & toy \\ \hline
+				\end{tabular}
+				\caption{Recovered Passwords}
+			\end{table}			
 			
 		\end{answer}
-		
+		\pagebreak
 		\item (2 pts) What is the total number of {\em possible} passwords of $l$ {\em or less} alphanumeric characters --- lowercase only? 
 		
 		\begin{answer}
 			
-			%% TODO: Write your answer here.	
-			Your answer here.
+			Since there are 26 lowercase letters and 10 digits, there are a total of 36 possible characters that can be used in each position of the password. For a password of length $n$, there are $36^n$ passwords. If we consider the passwords of length l and less, we can have the following number of total passwords, which is the sum of a geometric series where number of terms equal to $l$, common ratio is 36 and the first term is 36.
+			
+			\begin{equation}
+				\sum_{n=1}^{l} 36^n = 36 \cdot \frac{36^l -1}{36 - 1} = \frac{36^{l+1}-36}{35}
+			\end{equation}
+			
+			In addition, the program considers an empty string ({\tt `'})  as the first candidate password. Therefore the total password count becomes,
+			
+			\[
+				\frac{36^{l+1}-36}{35} + 1 = \frac{36^{l+1}-1}{35}
+			\]			
 			
 		\end{answer}
 		

@@ -112,6 +112,7 @@ def get_random_candidate(r, char_list, length):
 
 ## get password candidate for a bruteforce password generator
 def get_candidate_bf(counter, char_list):
+
     if counter == -1:
         return ''
 
@@ -125,7 +126,8 @@ def get_candidate_bf(counter, char_list):
         if c == 0:
             break
         c = int(c / lc)-1
-    return ''.join(reversed(candidate))
+    
+    return ''.join(reversed(candidate))   
 
 ## get password candidate for a dictionary-based password generator
 def get_candidate_dict(counter, words, suffix):
