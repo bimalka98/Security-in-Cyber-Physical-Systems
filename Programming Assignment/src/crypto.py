@@ -129,17 +129,6 @@ def get_candidate_bf(counter, char_list):
     
     return ''.join(reversed(candidate))   
 
-## get password candidate for a dictionary-based password generator
-def get_candidate_dict(counter, words, suffix):
-    lw = len(words)
-    if counter < lw:
-        return words[counter]
-    c = counter - lw
-    widx = c % lw
-    sidx = int(c / lw)
-    return words[widx] + suffix[sidx]
-
-
 """ 
 ## Generator of bruteforce passwords
 
@@ -166,6 +155,23 @@ def candidate_bf_generator(char_list, max_length):
 
         counter += 1
 
+## get password candidate for a dictionary-based password generator
+def get_candidate_dict(counter, words, suffix):
+    
+    # bare words 
+    lw = len(words)
+    if counter < lw:
+
+        # return bare word
+        return words[counter]
+    
+    # bare words * suffixes 
+    c = counter - lw
+    widx = c % lw
+    sidx = int(c / lw)
+    
+    # return combination
+    return words[widx] + suffix[sidx]
 
 ## TODO: Problem 1.2 ##
 """ 
@@ -184,7 +190,17 @@ def candidate_dict_generator(words, suffix):
     lw = len(words)
     lc = len(suffix)
 
-    ## TODO ##
-    ## Insert your code here
-    ## hint: use get_candidate_dict()
-    raise NotImplementedError()
+    # number of candidates = bare words + bare words * suffixes (combinations)
+    num_candidates = lw + lw * lc
+
+    # generate candidates
+    while True:
+
+        yield get_candidate_dict(counter, words, suffix)
+
+        # stop when all candidates have been generated: 
+        # counter goes from 0 to num_candidates-1
+        if counter >= num_candidates-1:
+            return
+
+        counter += 1

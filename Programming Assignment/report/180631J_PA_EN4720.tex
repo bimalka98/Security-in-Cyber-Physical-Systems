@@ -144,6 +144,7 @@
 			\begin{itemize}
 				\item Time for the attack = 28.2 seconds
 				\item Speed of the attack = 61213.7 hashes per second
+				\item Attack success rate: 40\%				
 			\end{itemize}
 			
 			\begin{table}[h]
@@ -225,18 +226,33 @@
 		
 		\begin{answer}
 			
+			
+		Differences between a dictionary attack and a bruteforce attack,
 			\begin{itemize}
+				\item A brute force attack tries all possible passwords for a given length (or less), whereas a dictionary attack tries a list of pre-defined words (or a list of commonly used passwords) and their combinations as the password candidates.
 				
+				\item Dictionary attack is relatively faster as there is no need of generating passwords considering all the possibilities of a given character in the password.							
+			\end{itemize}
+		
+		Steps that can be taken when building passwords to defend from dictionary attacks,
+		
+			\begin{itemize}
+				\item Avoid common words as the passwords.
+				\item Avoid personal information like birthdays, and names, as they can be easily used to launch an attack by making different combinations.
+				\item Avoid using the same password across different services and use unique strong passwords. Use of a password manager can help in this case.
 			\end{itemize}
 			
 		\end{answer}
 		
-		\item (8 pts) Implement the dictionary attack: \texttt{candidate\_dict\_generator}()! Add a screenshot of the modified function. 
+		\item (8 pts) Implement the dictionary attack: \texttt{candidate\_dict\_generator}() Add a screenshot of the modified function. 
 		
 		\begin{answer}
 			
-			%% TODO: Write your answer here.	
-			Your answer here.
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=0.8\columnwidth]{images/p1/q22.png}
+				\caption{Screenshot of the modified function}
+			\end{figure}
 			
 		\end{answer}
 		
@@ -244,8 +260,54 @@
 		
 		\begin{answer}
 			
-			%% TODO: Write your answer here.	
-			Your answer here.
+			When comparing with the password recovered from the bruteforce attack, dictionary attack has been able to recover longer passwords for the user, James, John and David.
+			
+			\begin{table}[h]
+				\centering
+				\begin{tabular}{|l|l|}
+					\hline
+					\textbf{User} & \textbf{Password} \\ \hline
+					James & mountain5 \\ \hline
+					Robert & hat \\ \hline
+					John & doughnut\# \\ \hline
+					David & catcher@ \\ \hline
+					Susan & pen \\ \hline
+					Daniel & day2 \\ \hline
+					Judy & toy \\ \hline
+				\end{tabular}
+				\caption{Recovered Passwords}
+			\end{table}
+		\begin{itemize}
+			\item Time for the attack = 115.4 seconds
+			\item Speed of the attack = 75130.7 hashes per second
+			\item Attack success rate: 70\%
+		\end{itemize}
+			
+				\begin{figure}[h]
+				\centering
+				\includegraphics[width=0.7\columnwidth]{images/p1/q21.png}
+				\caption{Output of the {\tt python attack.py problem1}}
+			\end{figure}
+			
+						
+			
+			The longest recovered password has $l=9$ characters and they contain special characters from the list (defined in the program) in addition to the alphabet characters, therefore in total we have 26 + 36 possibilities per location in the password.\\
+			
+			Total number of possible passwords say $P$,
+			
+			\[
+			P = \frac{62^{l+1}-1}{61} = \frac{62^{9+1}-1}{61} \approx 1.38 \times 10^{16}
+			\]
+			
+			Average speed of the attack (this changes runtime-to-runtime and depending on the specifications of the machine used) therefore assume it to be $S = 60 \times 10^{3}$ hashes per second (an approximate value to the value that observed previously in problem0).\\
+			
+			Therefore approximate time in years say $Y$,
+			
+			\[
+			Y = \frac{1.38 \times 10^{16}}{60 \times 10^{3}} \times \frac{1}{365 \times 24 \times 60 \times 60} \approx 7293.25 ~years 
+			\]
+			
+			Brute force attack is not possible on this kind of passwords.
 			
 		\end{answer}
 		
