@@ -114,3 +114,40 @@ Length of the lookup table: 5
 'xhxq': [{'chain': 3, 'end': 'xhxq', 'start': '6tnf'}]}
 
 ```
+# Problem 2 Progress
+
+```shell
+(bees-collection) PS E:\Security-in-Cyber-Physical-Systems\Programming Assignment\src> python attack.py problem2
+Building rainbow table................ done.
+Built rainbow table with 100000 chains of length 16 in 59.0 seconds (total hashes: 1600000, 27129.2 h/s)
+Type of the lookup table: <class 'dict'>
+Length of the lookup table: 66681
+<class 'list'>
+18e1dd392168f601d0e56861 3nkf {'chain': 58368, 'end': '3nkf', 'start': 'j8qh'}
+32b732701542a6cc2e42ca5a kc9l {'chain': 12974, 'end': 'kc9l', 'start': 'ro6q'}
+ef1e8baa7d076d7e4d1ba10c c2o8 {'chain': 27323, 'end': 'c2o8', 'start': 'qpg5'}
+226e4877959e54751e9ca78d bjyu {'chain': 62935, 'end': 'bjyu', 'start': 'tnun'}
+0f53133ce57ca8e8937bb4b1 htu7 {'chain': 51194, 'end': 'htu7', 'start': 'w192'}
+Lookups over rainbow table  found 0 passwords in 0.2 seconds (total hashes: 160 --- 666.7 h/s)
+        # For user James with pwhash: f3948b675c68a6c94f935c94 -> password: ?
+        For user Robert with pwhash: 18e1dd392168f601d0e56861 -> password: ?
+        # For user John with pwhash: 9bb940a6941f6d6269687865 -> password: ?
+        # For user David with pwhash: ad1bca2633cbbbe7d378e36b -> password: ?
+        # For user Linda with pwhash: 5994471abb01112afcc18159 -> password: ?
+        # For user Susan with pwhash: e21a6b0cb193057e06ac16b8 -> password: ?
+        For user Daniel with pwhash: 32b732701542a6cc2e42ca5a -> password: ?
+        For user Harold with pwhash: ef1e8baa7d076d7e4d1ba10c -> password: ?
+        For user Betty with pwhash: 226e4877959e54751e9ca78d -> password: ?
+        For user Judy with pwhash: 0f53133ce57ca8e8937bb4b1 -> password: ?
+Attack success rate: 0%!
+
+# upto problem 1
+User Password
+James mountain5
+Robert hat
+John doughnut#
+David catcher@
+Susan pen
+Daniel day2
+Judy toy
+```
