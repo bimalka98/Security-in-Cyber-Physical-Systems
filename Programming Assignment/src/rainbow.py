@@ -78,14 +78,21 @@ def build_rainbow(pc, out_fp, num_chains, k, pwhash_fn, reduce_fn, random_candid
 def lookup_rainbow(pc, in_fp, k, pwhash_fn, reduce_fn, pwhash_list, verbose = False):
 
     table = utils.read_json(in_fp)
+    
+    # code to understand the structure of the table
+    print("Type of the lookup table: {}".format(type(table)))
+    print("Length of the lookup table: {}".format(len(table)))
 
+    # print the table
+    print(table)
+    
     pwres = [None for i in range(len(pwhash_list))]
     for pwidx, pwhash in enumerate(pwhash_list):
 
         chain_infos = []
         ## TODO ##
         ## Put your code here
-        raise NotImplementedError()
+        
 
         pc.inc(k)  # increment by k
 

@@ -103,3 +103,14 @@ The function first converts the hexadecimal hash value into a list of bytes and 
 Next, the function determines the length of the output by counting the number of trailing zeros in the list of bytes modulo the length of the character set. The length of the output is then adjusted accordingly.
 
 Finally, the function generates the output by selecting characters from a predefined character set (`char_list`) based on the values of the first `l` bytes in the shuffled list of bytes. The selected characters are appended to a list, which is then joined into a string and returned as the result.
+
+```
+Type of the lookup table: <class 'dict'>
+Length of the lookup table: 5
+{'9g5i': [{'chain': 1, 'end': '9g5i', 'start': 'ex2b'}], 
+'mrh8': [{'chain': 4, 'end': 'mrh8', 'start': 'ltzw'}], 
+'no7e': [{'chain': 0, 'end': 'no7e', 'start': 'r7hm'}], 
+'qn9e': [{'chain': 2, 'end': 'qn9e', 'start': '8i89'}], 
+'xhxq': [{'chain': 3, 'end': 'xhxq', 'start': '6tnf'}]}
+
+```
