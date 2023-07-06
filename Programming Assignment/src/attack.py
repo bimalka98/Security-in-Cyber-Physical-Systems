@@ -233,8 +233,8 @@ def main():
     elif problem == 2 or problem == 3:
 
         # default values: num_chains = 100000, k=16
-        # num_chains = 100000
-        num_chains = 5
+        num_chains = 100000
+        # num_chains = 5
         k = 16
 
         rb_fp = os.path.join(test_workdir, 'rainbow-table.json')

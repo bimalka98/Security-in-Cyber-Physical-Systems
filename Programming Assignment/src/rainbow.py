@@ -77,6 +77,7 @@ def build_rainbow(pc, out_fp, num_chains, k, pwhash_fn, reduce_fn, random_candid
 """
 def lookup_rainbow(pc, in_fp, k, pwhash_fn, reduce_fn, pwhash_list, verbose = False):
 
+    # entry format: {'9g5i': [{'chain': 1, 'end': '9g5i', 'start': 'ex2b'}],...}
     table = utils.read_json(in_fp)
     
     # code to understand the structure of the table
@@ -84,29 +85,50 @@ def lookup_rainbow(pc, in_fp, k, pwhash_fn, reduce_fn, pwhash_list, verbose = Fa
     print("Length of the lookup table: {}".format(len(table)))
 
     # print the table
-    print(table)
+    print(type(table[list(table.keys())[0]]))
     
     pwres = [None for i in range(len(pwhash_list))]
     for pwidx, pwhash in enumerate(pwhash_list):
-
-        chain_infos = []
-        ## TODO ##
-        ## Put your code here
-        
+        # a lsit of list of dictionaries to store the chain info if there is a match
+        chain_infos = []                        
+        # apply the reduce function family to the hash value
+        current_hash = pwhash
+        for j in range(0, k):
+            # reduce the hash value
+            rv = reduce_fn(k-j-1, current_hash)
+            # check if the reduced value is in the table
+            if rv in table:                
+                # if it is in the table, then we have a match
+                chain_infos.append(table[rv][0])
+                break
+            
+            # if it is not in the table, then we need to compute the next hash value
+            hv = pwhash_fn(rv)
+            current_hash = hv
 
         pc.inc(k)  # increment by k
 
         for j, chain_info in enumerate(chain_infos):
             chain_idx = chain_info['chain']
             startpoint = chain_info['start']
+            # plaintext password candidate
             current = startpoint
 
             if pwres[pwidx] is not None:
                 break
 
             found = False
-            ## TODO ##
-            ## Put your code here
+            for l in range(0, k):
+                # do one iteration
+                hv = pwhash_fn(current)
+                # check if the hash value matches the target hash value
+                if hv == pwhash:
+                    found = True
+                    pwres[pwidx] = current
+                    break
+                # if not, then reduce the hash value
+                current = reduce_fn(l, hv)
+                
 
             if verbose and not found:
                 print('\t[False alarm] for pwhash {} in chain {} [start: {}, end: {}]!'.format(pwhash, chain_idx, startpoint, chain_info['end']))
