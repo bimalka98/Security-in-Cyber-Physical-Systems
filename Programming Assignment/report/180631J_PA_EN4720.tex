@@ -333,27 +333,36 @@
 		
 		\begin{answer}
 			
-			%% TODO: Write your answer here.	
-			Your answer here.
+			In below illustrations, si, hi, pi and ei stands for start, hash, plaintext and end values respectively.\\
+			
+			Hash-reduce chains use the same reduce function (R) throughout the chain. This leads to potential merging of some hash-reduce chains as the reduce functions may not be collision resistant. 
+			
+			\begin{verbatim}
+				s1 --H--> h1 --R--> p1 --H--> h2 --R--> e1
+				s2 --H--> h3 --R--> p2 --H--> h4 --R--> e2
+				s3 --H--> h5 --R--> p3 --H--> h6 --R--> e3				
+			\end{verbatim}
+			
+			Rainbow tables solves this problem by using different reduce functions, k number of different reduce functions, in a chain of length k. In this case a collisions is only posible if chains hit the same value at the same iteration.  
+			
+			\begin{verbatim}
+				s1 --H--> h1 --R1--> p4 --H--> h7 --R2--> e4
+				s2 --H--> h3 --R1--> p5 --H--> h8 --R2--> e5
+				s3 --H--> h5 --R1--> p6 --H--> h9 --R2--> e6								
+			\end{verbatim}
 			
 		\end{answer}
 		
 		\item (2 pts) Briefly explain how you determine the length of a chain and the number of chains in a rainbow table. 
 		
 		\begin{answer}
-			
-			%% TODO: Write your answer here.	
-			Your answer here.
-			
+		The length of a chain and the number of chains in a rainbow table represent a trade-off between the time and memory required to launch an attack. The more chains there are, the more disk space is required. The shorter the length of the chain, the faster the attack.	Therefore the values must be determined considering the available computing. resources 
 		\end{answer}
 		
 		\item (3 pts) How can you select different reduce functions to be used in different stages of the rainbow table?
 		
 		\begin{answer}
-			
-			%% TODO: Write your answer here.	
-			Your answer here.
-			
+			`Different' reduce functions not necessarily mean that they are completely different set of function implementations. Most of the time it is the same reduce function whose output made depend on the iteration (location) of the chain. The iteration is also passed as an argument to the reduce function, which makes sure the same hash does not produce the same reduce value if the iteration are different.
 		\end{answer}
 		
 		\item (16 pts) Complete the implementation of the rainbow table attack: \texttt{lookup\_rainbow}()! Test your implementation thoroughly. Your attack should recover the same kind of passwords as for Problem~0. Add screenshots of your terminal output showing the answer and the function implementation.
