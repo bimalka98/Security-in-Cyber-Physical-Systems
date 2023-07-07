@@ -242,7 +242,7 @@ def main():
 
         if problem == 2:
             utils.test_with_cleanup(                                     # replace with verb=True to show false alarms
-                    lambda: test_rainbow_attack(rb_fp, simple_pwlist_fp, num_chains, k, pw_length, pwhash_length, verb=False),
+                    lambda: test_rainbow_attack(rb_fp, simple_pwlist_fp, num_chains, k, pw_length, pwhash_length, verb=True),
                     lambda: shutil.rmtree(test_workdir))
 
         if problem == 3:

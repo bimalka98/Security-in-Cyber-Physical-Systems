@@ -34,6 +34,7 @@
 % math
 \usepackage{amsthm,amsmath}
 \usepackage{amsfonts}
+\usepackage{float}
 
 \newcommand{\mc}[1]{\mathcal{#1}}	% Mechanisms / Algorithms
 \newcommand{\rv}[1]{\mathbf{#1}}    % Random variable
@@ -368,9 +369,30 @@
 		\item (16 pts) Complete the implementation of the rainbow table attack: \texttt{lookup\_rainbow}()! Test your implementation thoroughly. Your attack should recover the same kind of passwords as for Problem~0. Add screenshots of your terminal output showing the answer and the function implementation.
 		
 		\begin{answer}
+			\begin{itemize}
+				\item Time for the attack = 57.0 seconds
+				\item Speed of the attack = 28058.5 h/s for rainbow-table building, 367.0 h/s for the attack
+				\item Attack success rate: 20\%
+			\end{itemize}
 			
-			%% TODO: Write your answer here.	
-			Your answer here.
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.7\columnwidth]{images/p2/q41.png}
+				\caption{Output of the {\tt python attack.py problem2}}
+			\end{figure}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.7\columnwidth]{images/p2/q42.png}
+				\caption{Implementation of the part 1 of \texttt{lookup\_rainbow}() function}
+			\end{figure}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.7\columnwidth]{images/p2/q43.png}
+				\caption{Implementation of the part 2 of \texttt{lookup\_rainbow}() function}
+			\end{figure}
+		
 			
 		\end{answer}
 		
@@ -378,8 +400,11 @@
 		
 		\begin{answer}
 			
-			%% TODO: Write your answer here.	
-			Your answer here.
+			False alarms are instances,\\
+			1. We get an end point that is available in the rainbow table through reduce-hash procedure for the hash of a given password, \\
+			2. However when we reconstruct the chain using the starting point of the corresponding end point, we do not hit the required hash of the given password.\\
+			
+			The reason for this, is reduce functions are not collision resistant and different hashes can reduce to the same value. 
 			
 		\end{answer}
 		
