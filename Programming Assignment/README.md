@@ -186,3 +186,69 @@ Lookups over rainbow table  found 0 passwords in 0.2 seconds (total hashes: 160 
         For user Judy with pwhash: 0f53133ce57ca8e8937bb4b1 -> password: ?
 Attack success rate: 0%!
 ```
+
+## Atempt 3
+
+```shell
+Building rainbow table................ done.
+Built rainbow table with 100000 chains of length 16 in 56.3 seconds (total hashes: 1600000, 28417.2 h/s)
+Type of the lookup table: <class 'dict'>
+Length of the lookup table: 66681
+f3948b675c68a6c94f935c94 jtw2 [{'chain': 34448, 'end': 'jtw2', 'start': 'yhb8'}, {'chain': 88878, 'end': 'jtw2', 'start': 'yhb8'}]
+f3948b675c68a6c94f935c94 bf6a [{'chain': 32415, 'end': 'bf6a', 'start': 'e4g5'}, {'chain': 38534, 'end': 'bf6a', 'start': 'ep53'}, {'chain': 54911, 'end': 'bf6a', 'start': 'c3i0'}]
+f3948b675c68a6c94f935c94 tfjf [{'chain': 43760, 'end': 'tfjf', 'start': 'e3iw'}]
+f3948b675c68a6c94f935c94 vkm0 [{'chain': 39836, 'end': 'vkm0', 'start': 'y8vb'}]
+18e1dd392168f601d0e56861 67dz [{'chain': 29485, 'end': '67dz', 'start': 'dnai'}, {'chain': 97470, 'end': '67dz', 'start': '10ls'}]
+18e1dd392168f601d0e56861 tva5 [{'chain': 39951, 'end': 'tva5', 'start': 'vlau'}, {'chain': 59734, 'end': 'tva5', 'start': 'aicy'}]
+18e1dd392168f601d0e56861 y369 [{'chain': 72714, 'end': 'y369', 'start': 'klt0'}]
+18e1dd392168f601d0e56861 cqqz [{'chain': 15409, 'end': 'cqqz', 'start': '21ig'}, {'chain': 84366, 'end': 'cqqz', 'start': '2iqj'}]
+18e1dd392168f601d0e56861 q9bf [{'chain': 14456, 'end': 'q9bf', 'start': 'vmdy'}, {'chain': 52230, 'end': 'q9bf', 'start': 'ox7h'}, {'chain': 92747, 'end': 'q9bf', 'start': 'ox7h'}]
+18e1dd392168f601d0e56861 wyrw [{'chain': 81431, 'end': 'wyrw', 'start': 'sqcc'}]
+18e1dd392168f601d0e56861 lqp [{'chain': 18069, 'end': 'lqp', 'start': 'c5mx'}]
+Password found:  hat
+9bb940a6941f6d6269687865 nskl [{'chain': 14253, 'end': 'nskl', 'start': '737m'}, {'chain': 63305, 'end': 'nskl', 'start': 'yfk3'}]
+9bb940a6941f6d6269687865 3eky [{'chain': 72191, 'end': '3eky', 'start': 'lfsq'}]
+9bb940a6941f6d6269687865 jarx [{'chain': 94198, 'end': 'jarx', 'start': 'pdu1'}]
+ad1bca2633cbbbe7d378e36b tlf6 [{'chain': 60353, 'end': 'tlf6', 'start': 'l2f8'}]
+ad1bca2633cbbbe7d378e36b dz2d [{'chain': 93501, 'end': 'dz2d', 'start': 'nng4'}]
+5994471abb01112afcc18159 ycf0 [{'chain': 39730, 'end': 'ycf0', 'start': 'e66v'}, {'chain': 69390, 'end': 'ycf0', 'start': 'd3xi'}]
+5994471abb01112afcc18159 pbij [{'chain': 28954, 'end': 'pbij', 'start': '9008'}, {'chain': 49540, 'end': 'pbij', 'start': 'fv0f'}, {'chain': 55356, 'end': 'pbij', 'start': 'haej'}, {'chain': 83467, 'end': 'pbij', 'start': 'llpy'}]
+5994471abb01112afcc18159 ceqw [{'chain': 10834, 'end': 'ceqw', 'start': 'a3ij'}]
+5994471abb01112afcc18159 w9cz [{'chain': 47112, 'end': 'w9cz', 'start': 'byce'}]
+5994471abb01112afcc18159 t5dc [{'chain': 739, 'end': 't5dc', 'start': 'jhf1'}]
+5994471abb01112afcc18159 nb8y [{'chain': 56049, 'end': 'nb8y', 'start': 'mnim'}, {'chain': 63719, 'end': 'nb8y', 'start': 'tzo0'}]
+e21a6b0cb193057e06ac16b8 wr8b [{'chain': 43620, 'end': 'wr8b', 'start': '3evl'}, {'chain': 53088, 'end': 'wr8b', 'start': 'fbsj'}, {'chain': 93180, 'end': 'wr8b', 'start': 'z5nl'}]
+e21a6b0cb193057e06ac16b8 z6j4 [{'chain': 86569, 'end': 'z6j4', 'start': 'hiwv'}]
+e21a6b0cb193057e06ac16b8 y5gs [{'chain': 45257, 'end': 'y5gs', 'start': 'hg8h'}, {'chain': 55063, 'end': 'y5gs', 'start': '6ex9'}, {'chain': 63765, 'end': 'y5gs', 'start': 'gzio'}]
+e21a6b0cb193057e06ac16b8 im5z [{'chain': 47774, 'end': 'im5z', 'start': 'ksdk'}]
+32b732701542a6cc2e42ca5a 07zn [{'chain': 1002, 'end': '07zn', 'start': '94yh'}, {'chain': 27406, 'end': '07zn', 'start': 'e67d'}]
+32b732701542a6cc2e42ca5a t52i [{'chain': 16970, 'end': 't52i', 'start': 'mbmb'}]
+32b732701542a6cc2e42ca5a d6yy [{'chain': 27261, 'end': 'd6yy', 'start': 'v5ou'}]
+ef1e8baa7d076d7e4d1ba10c c586 [{'chain': 59140, 'end': 'c586', 'start': '32zv'}]
+ef1e8baa7d076d7e4d1ba10c jexm [{'chain': 8678, 'end': 'jexm', 'start': '275t'}, {'chain': 16219, 'end': 'jexm', 'start': 'avdx'}, {'chain': 58864, 'end': 'jexm', 'start': '8k6l'}]
+ef1e8baa7d076d7e4d1ba10c 5ntj [{'chain': 13669, 'end': '5ntj', 'start': 'wv9l'}]
+ef1e8baa7d076d7e4d1ba10c kq0h [{'chain': 63837, 'end': 'kq0h', 'start': '3tmb'}]
+ef1e8baa7d076d7e4d1ba10c 66a7 [{'chain': 92386, 'end': '66a7', 'start': 'lf3w'}]
+226e4877959e54751e9ca78d qc97 [{'chain': 67149, 'end': 'qc97', 'start': '5tch'}]
+226e4877959e54751e9ca78d bgcx [{'chain': 20580, 'end': 'bgcx', 'start': 'utrq'}, {'chain': 37040, 'end': 'bgcx', 'start': 'mm8k'}]
+226e4877959e54751e9ca78d 4hpy [{'chain': 48394, 'end': '4hpy', 'start': 'iguj'}, {'chain': 71912, 'end': '4hpy', 'start': 'l3o1'}]
+226e4877959e54751e9ca78d pyfc [{'chain': 73869, 'end': 'pyfc', 'start': 'prwx'}]
+226e4877959e54751e9ca78d o9g [{'chain': 92896, 'end': 'o9g', 'start': 'zqos'}]
+0f53133ce57ca8e8937bb4b1 54qv [{'chain': 12612, 'end': '54qv', 'start': 'llw4'}]
+0f53133ce57ca8e8937bb4b1 ia5g [{'chain': 78718, 'end': 'ia5g', 'start': 'tqe5'}, {'chain': 86060, 'end': 'ia5g', 'start': 't43d'}]
+0f53133ce57ca8e8937bb4b1 dagb [{'chain': 16106, 'end': 'dagb', 'start': 's53a'}]
+0f53133ce57ca8e8937bb4b1 0zv7 [{'chain': 31098, 'end': '0zv7', 'start': 'izbb'}]
+Password found:  toy
+Lookups over rainbow table  found 2 passwords in 0.3 seconds (total hashes: 160 --- 483.4 h/s)
+        For user James with pwhash: f3948b675c68a6c94f935c94 -> password: ?
+        For user Robert with pwhash: 18e1dd392168f601d0e56861 -> password: hat
+        For user John with pwhash: 9bb940a6941f6d6269687865 -> password: ?
+        For user David with pwhash: ad1bca2633cbbbe7d378e36b -> password: ?
+        For user Linda with pwhash: 5994471abb01112afcc18159 -> password: ?
+        For user Susan with pwhash: e21a6b0cb193057e06ac16b8 -> password: ?
+        For user Daniel with pwhash: 32b732701542a6cc2e42ca5a -> password: ?
+        For user Harold with pwhash: ef1e8baa7d076d7e4d1ba10c -> password: ?
+        For user Betty with pwhash: 226e4877959e54751e9ca78d -> password: ?
+        For user Judy with pwhash: 0f53133ce57ca8e8937bb4b1 -> password: toy
+Attack success rate: 20%! (2 out of 10)
+```
