@@ -233,16 +233,16 @@ def main():
     elif problem == 2 or problem == 3:
 
         # default values: num_chains = 100000, k=16
-        num_chains = 100000
+        num_chains = 1600000
         # num_chains = 5
         # k = 4
-        k = 16
+        k = 1
 
         rb_fp = os.path.join(test_workdir, 'rainbow-table.json')
 
         if problem == 2:
             utils.test_with_cleanup(                                     # replace with verb=True to show false alarms
-                    lambda: test_rainbow_attack(rb_fp, simple_pwlist_fp, num_chains, k, pw_length, pwhash_length, verb=True),
+                    lambda: test_rainbow_attack(rb_fp, simple_pwlist_fp, num_chains, k, pw_length, pwhash_length, verb=False),
                     lambda: shutil.rmtree(test_workdir))
 
         if problem == 3:

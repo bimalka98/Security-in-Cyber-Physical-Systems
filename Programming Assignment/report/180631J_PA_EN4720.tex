@@ -430,8 +430,21 @@
 		
 		\begin{answer}
 			
-			%% TODO: Write your answer here.	
-			Your answer here.
+			Success rate = 52\%\\
+			
+			success of a rainbow table depends on several factors such as the size of the rainbow table built. In addition to that chances are there that some passwords have been defensed against rainbow-table attack using a salt value.
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.7\columnwidth]{images/p3/q11.png}
+				\caption{Launching the attack using the command {\tt python attack.py problem2}}
+			\end{figure}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.7\columnwidth]{images/p3/q12.png}
+				\caption{Output of the {\tt python attack.py problem2}}
+			\end{figure}
 			
 		\end{answer}
 		
@@ -447,7 +460,7 @@
 					\hline
 					$m$ & 25000 & 50000 & 100000 & 200000 & 400000 \\ \hline
 					$k$ & 64 & 32    & 16      & 8      & 4      \\ \hline \hline
-					$p$ &  &   &    &   &     \\ \hline
+					$p$ & 54\% & 53\%  &  52\%  & 56\%  &  55\%   \\ \hline
 				\end{tabular}	
 			\end{center}	
 			
@@ -457,9 +470,22 @@
 		
 		\begin{answer}
 			
-			%% TODO: Write your answer here.	
-			Your answer here.
+			Success rate for k = 1, is 60\%\\
 			
+			Note that, unlike for previous problems, in this step all passwords consist of 4 alphanumeric characters --- lowercase only, therefore total number of passwords $n = 36^4$.\\
+			
+			Expected success rate = $\frac{m \cdot k}{n} = \frac{1600000 \cdot 1}{36^4} = 95.26\% $\\
+			
+			A possible reason for this experimental success rate to be lower than the expected success rate is that, \textbf{start values of chains (password candidates) are randomly generated. Therefore, all possible passwords are not guaranteed to be captured during the table creation}. That means there can be chins with the same starting value.
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.7\columnwidth]{images/p3/q32.png}
+				\caption{Modifications to make sure there are no duplicate start points}
+				\label{p3q3}
+			\end{figure}
+			
+			As illustrated in the Figure \ref{p3q3}, once we avoid the duplicate start points the success rate is 94\%. 
 		\end{answer}
 		
 		\item (4 pts) [Theory] Explain the difference between hash and reduce functions and give 3 examples of possible reduce functions.

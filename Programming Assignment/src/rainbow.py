@@ -24,18 +24,21 @@ import utils
 def build_rainbow(pc, out_fp, num_chains, k, pwhash_fn, reduce_fn, random_candidates_fn):
 
     table = {}
-
-    ## TODO: Problem 3.3 ##
-    ## Put your code here to avoid duplicating start points
+    
+    # set of startpoints
+    startpoints = set()
 
     sys.stdout.write('Building rainbow table')
     for i in range(0, num_chains):
         # build chain i
+        # pick a random startpoint
         startpoint = random_candidates_fn()
-
-        ## TODO: Problem 3.3 ##
-        ## Put your code here to avoid duplicating start points
-
+        # make sure it's not already in the set
+        while startpoint in startpoints:
+            startpoint = random_candidates_fn()
+        # add it to the set
+        startpoints.add(startpoint)
+        # initialize the current value to the startpoint
         current = startpoint
 
         for j in range(0, k):
