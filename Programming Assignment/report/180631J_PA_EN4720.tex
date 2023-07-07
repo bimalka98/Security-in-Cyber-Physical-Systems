@@ -492,8 +492,14 @@
 		
 		\begin{answer}
 			
-			%% TODO: Write your answer here.	
-			Your answer here.
+			A hash function is a mathematical function which converts a given input message to a fixed-length string of bytes. The resultant representation is unique for a given input and small change in the input can cause a drastic change in the output (avalanche effect). In addition a hash functions are, 1. pre-image resistance, 2. second pre-image resistance and collision resistance.\\
+			
+			In contrast, reduce function is not an actual reverse of a hash value. It takes in a hash value and maps it to a value in the space of possible passwords through some mechanism. This mechanism yields a unique value for a given has. However, they are not collision resistant, meaning two different hash values can map to the same value. Possible examples of reduce functions are given below.
+			\begin{itemize}
+				\item \textbf{Truncation}: truncates the hash value to a fixed length and maps it to a value in the password space.
+				\item \textbf{Arithmetic operations}: performs arithmetic operations like modulo, integer division on the hash value or variant of it  to map it to a value in the password space. 
+				\item \textbf{Bit extraction}:  extracts certain bits from the hash value and uses them as an index into the password space. 
+			\end{itemize}
 			
 		\end{answer}
 		
@@ -505,8 +511,7 @@
 			
 			\begin{answer}
 				
-				%% TODO: Write your answer here.	
-				Your answer here.
+				Memory required = Memory per chain $\times$ Number of chains = 8 Bytes $\times$ $m$ = $8m~ Bytes$
 				
 			\end{answer}
 			
@@ -523,8 +528,13 @@
 			
 			\begin{answer}
 				
-				%% TODO: Write your answer here.	
-				Your answer here.
+				Memory required in Bytes = $8m$\\
+				Replacing $m$ using the equation  $n = m \cdot k \rightarrow m = \frac{n}{k}$\\
+				
+				Memory = $8 \times \frac{n}{k}$\\
+				
+				As it can be seen to minimize the memory usage, we need to increase the chain length. Therefore we need to select the largest possible $k$, which respects all the other available constraints as well. Therefore, $k$ value becomes a trade-off.
+				
 				
 			\end{answer}
 			
