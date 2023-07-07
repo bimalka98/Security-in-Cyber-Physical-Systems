@@ -91,21 +91,22 @@ def lookup_rainbow(pc, in_fp, k, pwhash_fn, reduce_fn, pwhash_list, verbose = Fa
     for pwidx, pwhash in enumerate(pwhash_list):
         # a lsit of list of dictionaries to store the chain info if there is a match
         chain_infos = []                        
-        # apply the reduce function family to the hash value
-        current_hash = pwhash
-        for j in range(0, k):
+        
+        for i in range(0, k):
+            # apply the reduce function family to the hash value
+            current_hash = pwhash
             # reduce the hash value
-            rv = reduce_fn(k-1-j, current_hash)
+            rv = None
+            for j in range(i, k):
+                rv = reduce_fn(j, current_hash)
+                current_hash = pwhash_fn(rv)
+
             # check if the reduced value is in the table
             if rv in table:                
                 # if it is in the table, then we have a match
-                chain_infos.append(table[rv][0])
-                print(pwhash, rv, table[rv][0])
+                chain_infos.extend(table[rv])
+                print(pwhash, rv, table[rv])
                 break
-            
-            # if it is not in the table, then we need to compute the next hash value
-            hv = pwhash_fn(rv)
-            current_hash = hv
 
         pc.inc(k)  # increment by k
 

@@ -235,6 +235,7 @@ def main():
         # default values: num_chains = 100000, k=16
         num_chains = 100000
         # num_chains = 5
+        # k = 4
         k = 16
 
         rb_fp = os.path.join(test_workdir, 'rainbow-table.json')

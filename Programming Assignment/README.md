@@ -116,6 +116,8 @@ Length of the lookup table: 5
 ```
 # Problem 2 Progress
 
+## Atempt 1
+
 ```shell
 (bees-collection) PS E:\Security-in-Cyber-Physical-Systems\Programming Assignment\src> python attack.py problem2
 Building rainbow table................ done.
@@ -150,4 +152,37 @@ David catcher@
 Susan pen
 Daniel day2
 Judy toy
+```
+
+## Atempt 2
+
+```shell
+(bees-collection) PS E:\Security-in-Cyber-Physical-Systems\Programming Assignment\src> python attack.py problem2
+Building rainbow table................ done.
+Built rainbow table with 100000 chains of length 16 in 56.9 seconds (total hashes: 1600000, 28106.2 h/s)
+Type of the lookup table: <class 'dict'>
+Length of the lookup table: 66681
+<class 'list'>
+f3948b675c68a6c94f935c94 jtw2 [{'chain': 34448, 'end': 'jtw2', 'start': 'yhb8'}, {'chain': 88878, 'end': 'jtw2', 'start': 'yhb8'}]
+18e1dd392168f601d0e56861 67dz [{'chain': 29485, 'end': '67dz', 'start': 'dnai'}, {'chain': 97470, 'end': '67dz', 'start': '10ls'}]
+9bb940a6941f6d6269687865 nskl [{'chain': 14253, 'end': 'nskl', 'start': '737m'}, {'chain': 63305, 'end': 'nskl', 'start': 'yfk3'}]
+ad1bca2633cbbbe7d378e36b tlf6 [{'chain': 60353, 'end': 'tlf6', 'start': 'l2f8'}]
+5994471abb01112afcc18159 ycf0 [{'chain': 39730, 'end': 'ycf0', 'start': 'e66v'}, {'chain': 69390, 'end': 'ycf0', 'start': 'd3xi'}]
+e21a6b0cb193057e06ac16b8 wr8b [{'chain': 43620, 'end': 'wr8b', 'start': '3evl'}, {'chain': 53088, 'end': 'wr8b', 'start': 'fbsj'}, {'chain': 93180, 'end': 'wr8b', 'start': 'z5nl'}]
+32b732701542a6cc2e42ca5a 07zn [{'chain': 1002, 'end': '07zn', 'start': '94yh'}, {'chain': 27406, 'end': '07zn', 'start': 'e67d'}]
+ef1e8baa7d076d7e4d1ba10c c586 [{'chain': 59140, 'end': 'c586', 'start': '32zv'}]
+226e4877959e54751e9ca78d qc97 [{'chain': 67149, 'end': 'qc97', 'start': '5tch'}]
+0f53133ce57ca8e8937bb4b1 54qv [{'chain': 12612, 'end': '54qv', 'start': 'llw4'}]
+Lookups over rainbow table  found 0 passwords in 0.2 seconds (total hashes: 160 --- 645.3 h/s)
+        For user James with pwhash: f3948b675c68a6c94f935c94 -> password: ?
+        For user Robert with pwhash: 18e1dd392168f601d0e56861 -> password: ?
+        For user John with pwhash: 9bb940a6941f6d6269687865 -> password: ?
+        For user David with pwhash: ad1bca2633cbbbe7d378e36b -> password: ?
+        For user Linda with pwhash: 5994471abb01112afcc18159 -> password: ?
+        For user Susan with pwhash: e21a6b0cb193057e06ac16b8 -> password: ?
+        For user Daniel with pwhash: 32b732701542a6cc2e42ca5a -> password: ?
+        For user Harold with pwhash: ef1e8baa7d076d7e4d1ba10c -> password: ?
+        For user Betty with pwhash: 226e4877959e54751e9ca78d -> password: ?
+        For user Judy with pwhash: 0f53133ce57ca8e8937bb4b1 -> password: ?
+Attack success rate: 0%!
 ```
