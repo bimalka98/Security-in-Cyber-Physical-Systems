@@ -256,7 +256,6 @@ Attack success rate: 20%! (2 out of 10)
 # Problem 3
 
 ## Computational complexity problem
-
 A series that is not geometric, where the difference between consecutive terms is constant, is called an **arithmetic series**. In an arithmetic series, the `n`-th term can be calculated as `a + (n-1)d`, where `a` is the first term and `d` is the common difference between the terms.
 
 For example, the series `1, 3, 5, 7, ...` is an arithmetic series with a common difference of `2`. The sum of the first `n` terms of an arithmetic series can be calculated using the formula `n/2 * (2a + (n-1)d)`.
