@@ -88,8 +88,9 @@ def lookup_rainbow(pc, in_fp, k, pwhash_fn, reduce_fn, pwhash_list, verbose = Fa
     print(type(table[list(table.keys())[0]]))
     
     pwres = [None for i in range(len(pwhash_list))]
+
     for pwidx, pwhash in enumerate(pwhash_list):
-        # a lsit of list of dictionaries to store the chain info if there is a match
+        # a lsit of dictionaries to store the chain info if there is a match
         chain_infos = []                        
         
         for i in range(0, k):
@@ -111,6 +112,7 @@ def lookup_rainbow(pc, in_fp, k, pwhash_fn, reduce_fn, pwhash_list, verbose = Fa
         pc.inc(k)  # increment by k
 
         for j, chain_info in enumerate(chain_infos):
+            # print("Chain info: {} : {}".format(j, chain_info))
             chain_idx = chain_info['chain']
             startpoint = chain_info['start']
             # plaintext password candidate
@@ -123,10 +125,12 @@ def lookup_rainbow(pc, in_fp, k, pwhash_fn, reduce_fn, pwhash_list, verbose = Fa
             for l in range(0, k):
                 # do one iteration
                 hv = pwhash_fn(current)
+                # print(current, hv)
                 # check if the hash value matches the target hash value
                 if hv == pwhash:
                     found = True
                     pwres[pwidx] = current
+                    print("Password found: ", current)
                     break
                 # if not, then reduce the hash value
                 current = reduce_fn(l, hv)
