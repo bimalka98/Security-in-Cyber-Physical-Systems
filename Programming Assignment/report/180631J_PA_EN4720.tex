@@ -385,12 +385,14 @@
 				\centering
 				\includegraphics[width=0.7\columnwidth]{images/p2/q42.png}
 				\caption{Implementation of the part 1 of \texttt{lookup\_rainbow}() function}
+				\label{rainbow_lookup_1}
 			\end{figure}
 		
 			\begin{figure}[H]
 				\centering
 				\includegraphics[width=0.7\columnwidth]{images/p2/q43.png}
 				\caption{Implementation of the part 2 of \texttt{lookup\_rainbow}() function}
+				\label{rainbow_lookup_2}
 			\end{figure}
 		
 			
@@ -519,8 +521,21 @@
 			
 			\begin{answer}
 				
-				%% TODO: Write your answer here.	
-				Your answer here.
+				Please note that, when calculating the time complexity of the lookup for a single password, the actual implementation of the function {\tt lookup\_rainbow()}  is used.
+				
+				It consists of two main phases,
+				
+				\begin{enumerate}
+					\item \textbf{Finding the chains which can potentially include the password.}\\
+					
+					This part of the function is shown in the Figure \ref{rainbow_lookup_1}. It consists of one nested for loop which computes hashing $+$ reducing, $\frac{k}{2}\times\left( k+1 \right)$ times. Finding a chain in the dictionary object has constant time complexity and therefore neglected.\\
+					
+					\item \textbf{Rebuilding the chains to find the password.}\\
+					
+					This part of the function is shown in the Figure \ref{rainbow_lookup_2}. It rebuilds the chain for each potential chain match and check whether the password is in a given chain. At most we can have $m$ potential chains (total chains) and  for each chain we have $k$ number of hashing $+$ reducing. Therefore this part of the function computes  hashing $+$ reducing $m \times k$ times.
+				\end{enumerate}
+			
+			Therefore the total time complexity
 				
 			\end{answer}
 			
