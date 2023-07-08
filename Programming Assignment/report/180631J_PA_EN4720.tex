@@ -625,17 +625,32 @@
 		
 		\begin{answer}
 			
-			%% TODO: Write your answer here.	
-			Your answer here.
+			It is a bad idea.
 			
+			One of the main properties of a hash value is its collision resistance, which makes it very difficult for an attacker to find two input values with the same hash. For this property to hold it hash should be of full length.
+			
+			However, considering the first $l$  bytes will reduce number of possible hashes, as now we do not need to consider the full hash length. This makes it easier for an attacker to find a collision.
+						
 		\end{answer}
 		
 		\item (3 pts) Suggest a suitable method to make this custom password hash scheme difficult to crack by the attackers.  
 		
 		\begin{answer}
 			
-			%% TODO: Write your answer here.	
-			Your answer here.
+			The fundamental weaknesses of Bob's password scheme are follows.
+			\begin{itemize}
+				\item Salt is not actually concatenated (applied) to the passwords; it is separate.
+				\item Password has been split into two parts making it easy to brute force them separately.
+				\item  Only the  first $l$ bytes of the hashes have been considered to build the final password hash. 
+			\end{itemize}
+			
+			Hashing it again will not address this fundamental weaknesses. Therefore, in order to make the scheme stronger, we have to directly address the mentioned weaknesses by doing followings.
+			
+			\begin{itemize}
+				\item Make it a requirement to have a minimum length (at least 8) to the bare password and add salt directly to the password parts to make the brute-forcing difficult. Eg. $p1 + s \geq 8 ~\&~ p2 + s \geq 8 $ will be a good choice.
+				
+				\item Increase the number of bytes ($l$) that we consider when building the password hash. This will make it more collision resistant.
+			\end{itemize} 
 			
 		\end{answer}
 		
