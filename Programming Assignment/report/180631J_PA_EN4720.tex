@@ -532,10 +532,14 @@
 					
 					\item \textbf{Rebuilding the chains to find the password.}\\
 					
-					This part of the function is shown in the Figure \ref{rainbow_lookup_2}. It rebuilds the chain for each potential chain match and check whether the password is in a given chain. At most we can have $m$ potential chains (total chains) and  for each chain we have $k$ number of hashing $+$ reducing. Therefore this part of the function computes  hashing $+$ reducing $m \times k$ times.
+					This part of the function is shown in the Figure \ref{rainbow_lookup_2}. It rebuilds the chain for each potential chain match and check whether the password is in a given chain. At most we can have $m$ potential chains (total chains) and  for each chain we have $k$ number of hashing $+$ reducing. Therefore this part of the function computes  hashing $+$ reducing, $m \times k$ times.
 				\end{enumerate}
 			
-			Therefore the total time complexity
+			Therefore the total time complexity of the entire lookup for a single password is,
+			
+			\[
+			  O\left( \frac{k}{2}\times\left( k+1 \right) \right) + O\left( m \times k \right) = O\left( k^2 \right) + O\left( m.k \right)
+			\]
 				
 			\end{answer}
 			
