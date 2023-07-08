@@ -357,13 +357,13 @@
 		\item (2 pts) Briefly explain how you determine the length of a chain and the number of chains in a rainbow table. 
 		
 		\begin{answer}
-		The length of a chain and the number of chains in a rainbow table represent a trade-off between the time and memory required to launch an attack. The more chains there are, the more disk space is required. The shorter the length of the chain, the faster the attack.	Therefore the values must be determined considering the available computing. resources 
+		The length of a chain and the number of chains in a rainbow table represent a trade-off between the time and memory required to launch an attack. The more chains there are, the more disk space is required. The shorter the length of chain, faster the attack.	Therefore the values must be determined considering the available computing resources.
 		\end{answer}
 		
 		\item (3 pts) How can you select different reduce functions to be used in different stages of the rainbow table?
 		
 		\begin{answer}
-			`Different' reduce functions not necessarily mean that they are completely different set of function implementations. Most of the time it is the same reduce function whose output made depend on the iteration (location) of the chain. The iteration is also passed as an argument to the reduce function, which makes sure the same hash does not produce the same reduce value if the iteration are different.
+			`Different' reduce functions not necessarily mean that they are completely different set of function implementations. Most of the time it is the same reduce function whose output made depend on the iteration (location) of the chain. The iteration is also passed as an argument to the reduce function, which makes sure the same hash does not produce the same reduce value if the iteration is different.
 		\end{answer}
 		\pagebreak
 		\item (16 pts) Complete the implementation of the rainbow table attack: \texttt{lookup\_rainbow}()! Test your implementation thoroughly. Your attack should recover the same kind of passwords as for Problem~0. Add screenshots of your terminal output showing the answer and the function implementation.
@@ -406,7 +406,7 @@
 			1. We get an end point that is available in the rainbow table through reduce-hash procedure for the hash of a given password, \\
 			2. However when we reconstruct the chain using the starting point of the corresponding end point, we do not hit the required hash of the given password.\\
 			
-			The reason for this, is reduce functions are not collision resistant and different hashes can reduce to the same value. 
+			The reason for this is, \textbf{reduce functions are not collision resistant and different hashes can reduce to the same value}. 
 			
 		\end{answer}
 		
@@ -434,7 +434,7 @@
 			
 			Success rate = 52\%\\
 			
-			success of a rainbow table depends on several factors such as the size of the rainbow table built. In addition to that chances are there that some passwords have been defensed against rainbow-table attack using a salt value.
+			Success of a rainbow table attack depends on several factors such as the number of chains built and the length of a chain. If he number of unique starting points of chains is limited (at most 100,000 in this case), the password space that this attack can explore is less that the actual password space which is $36^4$.
 			
 			\begin{figure}[H]
 				\centering
@@ -496,7 +496,7 @@
 			
 			A hash function is a mathematical function which converts a given input message to a fixed-length string of bytes. The resultant representation is unique for a given input and small change in the input can cause a drastic change in the output (avalanche effect). In addition a hash functions are, 1. pre-image resistance, 2. second pre-image resistance and collision resistance.\\
 			
-			In contrast, reduce function is not an actual reverse of a hash value. It takes in a hash value and maps it to a value in the space of possible passwords through some mechanism. This mechanism yields a unique value for a given has. However, they are not collision resistant, meaning two different hash values can map to the same value. Possible examples of reduce functions are given below.
+			In contrast, reduce function is not an actual reverse of a hash value. It takes in a hash value and maps it to a value in the space of possible passwords through some mechanism. This mechanism yields a unique value for a given hash. However, they are not collision resistant, meaning two different hash values can map to the same value. Possible examples of reduce functions are given below.
 			\begin{itemize}
 				\item \textbf{Truncation}: truncates the hash value to a fixed length and maps it to a value in the password space.
 				\item \textbf{Arithmetic operations}: performs arithmetic operations like modulo, integer division on the hash value or variant of it  to map it to a value in the password space. 
@@ -554,7 +554,7 @@
 				
 				Memory = $8 \times \frac{n}{k}$\\
 				
-				As it can be seen to minimize the memory usage, we need to increase the chain length. Therefore we need to select the largest possible $k$, which respects all the time complexity constraints as well. Therefore, $k$ value becomes a trade-off, which must be calculated experimentally.
+				As it can be seen to minimize the memory usage, we need to increase the chain length. However increasing $k$ will increase the time complexity of the lookup operation as proved in the previous problem. Therefore we need to select the largest possible $k$, which respects that constraint as well. Therefore, $k$ value becomes a trade-off, which must be calculated experimentally.
 				
 				
 			\end{answer}
@@ -581,7 +581,7 @@
 			\caption{Plot of the time for a lookup in each case}
 		\end{figure}
 			
-		 When this plot is compared with the  answer to Problem 3, part 5(b) the expected time complexity   $O(k^2)$ agrees with the experimental results. That is when the $k$ is decreased, the time for a lookup has reduced exponentially.
+		 When this plot is compared with the  answer to Problem 3, part 5(b) the expected time complexity   $O(k^2)$ agrees with the experimental results. That is when the $k$ is decreased, the time for a lookup has reduced exponentially. 
 			
 		\end{answer}
 		
@@ -693,8 +693,7 @@
 		
 		\begin{answer}
 			
-			%% TODO: Write your answer here.	
-			Your answer here.
+			Not implemented.
 			
 		\end{answer}
 		
