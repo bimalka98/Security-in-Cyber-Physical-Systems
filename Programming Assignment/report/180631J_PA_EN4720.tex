@@ -584,8 +584,12 @@
 		
 		\begin{answer}
 			
-			%% TODO: Write your answer here.	
-			Your answer here.
+			It is not advised to design your own crypto, especially if you are not an expert in the field of cryptography. 
+			
+			According to the Schneier's law ``Anyone, from the most clueless amateur to the best cryptographer, can create an 
+			algorithm that he himself can't break.'' 
+			
+			Therefore the best option is to go for a publicly available well-established crypto which has undergone extensive scrutiny.
 			
 		\end{answer}
 		
@@ -593,8 +597,11 @@
 		
 		\begin{answer}
 			
-			%% TODO: Write your answer here.	
-			Your answer here.
+			To serve the purpose of making it harder to crack the password, \textbf{the salt must be concatenated with the password before hashing it}. 
+			
+			However, what Bob has done is meaningless. Because, \textbf{the two parts of the password and salt are hashed separately and then concatenated}. Still the real password is not contaminated by the salt. 
+			
+			Password can still be recovered by attacking only the 	$H_l(p_1) || H_l(p_2)$ part of the hash without considering the hash part coming from the salt.
 			
 		\end{answer}
 		
@@ -602,8 +609,15 @@
 		
 		\begin{answer}
 			
-			%% TODO: Write your answer here.	
-			Your answer here.
+			Disagree with the statement.
+			
+			Splitting the password in to 2 equal parts, will not make the life of an attacker difficult to launch a bruteforce attack. Because now the length of the password has become half and possible size of the password space has reduced drastically. 
+			
+			As an example let's say password is 8 characters and lowercase alphanumeric.  
+			\begin{itemize}
+				\item If the password is not split, total possible passwords = $36^8$
+				\item however, after splitting total possible passwords = $36^4$, and each part can be brute forced separately. This would be much faster than brute-forcing the entire password.
+			\end{itemize}
 			
 		\end{answer}
 		
