@@ -458,7 +458,7 @@
 			
 			%% TODO: Write your answer here.	
 			\begin{center}
-				\begin{tabular}{l|c|c|c|c|c|}
+				\begin{tabular}{|l|c|c|c|c|c|}
 					\hline
 					$m$ & 25000 & 50000 & 100000 & 200000 & 400000 \\ \hline
 					$k$ & 64 & 32    & 16      & 8      & 4      \\ \hline \hline
@@ -540,6 +540,8 @@
 			\[
 			  O\left( \frac{k}{2}\times\left( k+1 \right) \right) + O\left( m \times k \right) = O\left( k^2 \right) + O\left( m.k \right)
 			\]
+			
+			Since we keep the $n= m.k$ constant, The actual time complexity of the lookup is $O(k^2)$.
 				
 			\end{answer}
 			
@@ -564,7 +566,7 @@
 		\begin{answer}
 			
 			\begin{center}
-				\begin{tabular}{l|c|c|c|c|c|}
+				\begin{tabular}{|l|c|c|c|c|c|}
 					\hline
 					$m$ & 25000 & 50000 & 100000 & 200000 & 400000 \\ \hline
 					$k$ & 64 & 32    & 16      & 8      & 4      \\ \hline \hline
@@ -572,6 +574,14 @@
 					$t/lookup$ &  0.11972 & 0.03027 &0.00837 & 0.00207& 0.00059\\ \hline
 				\end{tabular}	
 			\end{center}
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.6\columnwidth]{images/p3/plot.png}
+			\caption{Plot of the time for a lookup in each case}
+		\end{figure}
+			
+		 When this plot is compared with the  answer to Problem 3, part 5(b) the expected time complexity   $O(k^2)$ agrees with the experimental results. That is when the $k$ is decreased, the time for a lookup has reduced exponentially.
 			
 		\end{answer}
 		

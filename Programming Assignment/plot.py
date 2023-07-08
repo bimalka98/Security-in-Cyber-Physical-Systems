@@ -27,6 +27,6 @@ plt.ylabel('Time per Lookup (s)')
 plt.title('Rainbow Table Lookup Attack Experiment')
 
 # Saving the plot with maximum quality
-plt.savefig('plot.png', dpi=1000)
+plt.savefig('plot.png', dpi=300)
 
 plt.show()
