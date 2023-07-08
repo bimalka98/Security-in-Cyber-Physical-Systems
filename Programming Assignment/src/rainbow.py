@@ -4,6 +4,7 @@
 
 import sys
 import utils
+import time
 
 """
 ## Build rainbow table.
@@ -83,6 +84,10 @@ def lookup_rainbow(pc, in_fp, k, pwhash_fn, reduce_fn, pwhash_list, verbose = Fa
     table = utils.read_json(in_fp)       
     # initialize the results array for the cracked passwords
     pwres = [None for i in range(len(pwhash_list))]
+    
+    # measure time for a single hash
+    start_time = time.time()
+    
     # iterate over the password hashes
     for pwidx, pwhash in enumerate(pwhash_list):
         # a lsit of dictionaries to store the chain info if there is a match
@@ -124,5 +129,11 @@ def lookup_rainbow(pc, in_fp, k, pwhash_fn, reduce_fn, pwhash_list, verbose = Fa
                 
             if verbose and not found:
                 print('\t[False alarm] for pwhash {} in chain {} [start: {}, end: {}]!'.format(pwhash, chain_idx, startpoint, chain_info['end']))
+
+    # end time
+    end_time = time.time()
+
+    # print the time for a single hash
+    print('Time for a single hash: {} seconds'.format((end_time - start_time) / len(pwhash_list)))
 
     return pwres

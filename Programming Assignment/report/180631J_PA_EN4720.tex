@@ -552,7 +552,7 @@
 				
 				Memory = $8 \times \frac{n}{k}$\\
 				
-				As it can be seen to minimize the memory usage, we need to increase the chain length. Therefore we need to select the largest possible $k$, which respects all the other available constraints as well. Therefore, $k$ value becomes a trade-off.
+				As it can be seen to minimize the memory usage, we need to increase the chain length. Therefore we need to select the largest possible $k$, which respects all the time complexity constraints as well. Therefore, $k$ value becomes a trade-off, which must be calculated experimentally.
 				
 				
 			\end{answer}
@@ -563,14 +563,15 @@
 		
 		\begin{answer}
 			
-			%% TODO: insert your figure here (uncomment below)
-			%\begin{center}
-			%	\includegraphics{yourfigurefilename}
-			%	\captionof{figure}{Your caption here.}     
-			%\end{center}
-			
-			%% TODO: Write your answer here.	
-			Your answer here.
+			\begin{center}
+				\begin{tabular}{l|c|c|c|c|c|}
+					\hline
+					$m$ & 25000 & 50000 & 100000 & 200000 & 400000 \\ \hline
+					$k$ & 64 & 32    & 16      & 8      & 4      \\ \hline \hline
+					$p$ & 54\% & 53\%  &  52\%  & 56\%  &  55\%   \\ \hline
+					$t/lookup$ & & & & & \\ \hline
+				\end{tabular}	
+			\end{center}
 			
 		\end{answer}
 		

@@ -232,11 +232,12 @@ def main():
 
     elif problem == 2 or problem == 3:
 
-        # default values: num_chains = 100000, k=16
-        num_chains = 1600000
-        # num_chains = 5
-        # k = 4
-        k = 1
+        # Experiments with different values of num_chains and k
+        num_chains = 25000; k = 64
+        # num_chains = 50000; k = 32
+        # num_chains = 100000; k = 16 # default
+        # num_chains = 200000; k = 8
+        # num_chains = 400000; k = 4
 
         rb_fp = os.path.join(test_workdir, 'rainbow-table.json')
 
