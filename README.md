@@ -20,4 +20,4 @@
 | Quiz 1 | 10% | 8.5/10 |
 | Quiz 2 | 10% | 9/10 |
 | Quiz 3 | 10% | 10/10 |
-| Programming Assignment | 25% | Not Done Yet |
+| Programming Assignment | 25% | Submitted |
